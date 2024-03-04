@@ -21,32 +21,16 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 # 📝 Publications 
 #### 2024
 - ``WWW 2024`` [Mining Exploratory Queries for Conversational Search](), Wenhan Liu, Ziliang Zhao, **Yutao Zhu**, Zhicheng Dou.
-- [CL4DIV: A Contrastive Learning Framework for Search Result Diversification]() <br>
-Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen <br>
-In _Proceedings of the 17th ACM International Conference on Web Search and Data Mining_ (**WSDM 2024**).
+- ``WSDM2024`` [CL4DIV: A Contrastive Learning Framework for Search Result Diversification](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 
 #### 2023
-- [Joint Semantic and Strategy Matching for Persuasive Dialogue]() <br>
-Chuhao Jin, **Yutao Zhu**, Lingzhen Kong, Shijie Li, Xiao Zhang, Ruihua Song, Xu Chen, huan chen, Yuchong Sun, Yu Chen, and Jun Xu <br>
-In _Findings of the Association for Computational Linguistics: EMNLP 2023_ (**EMNLP 2023 Findings**).
-- [Learning to Relate to Previous Turns in Conversational Search](https://browse.arxiv.org/pdf/2306.02553.pdf) <br>
-Fengran Mo, Jian-Yun Nie, Kaiyu Huang, Kelong Mao, **Yutao Zhu**, Peng Li, and Yang Liu <br>
-In _Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining_ (**KDD 2023**).
-- [ConvGQR: Generative Query Reformulation for Conversational Search](https://arxiv.org/pdf/2305.15645.pdf) \[[Code](https://github.com/fengranMark/ConvGQR)\] <br>
-Fengran Mo, Kelong Mao, **Yutao Zhu**, Yihong Wu, Kaiyu Huang, and Jian-Yun Nie <br>
-In _Proceedings of the 61st annual meeting of the Association for Computational Linguistics_ (**ACL 2023**).
-- [Hence, Socrates is mortal: A Benchmark for Natural Language Syllogistic Reasoning]() \[[Code](https://github.com/casually-PYlearner/SYLLOBASE)\] <br> 
-Yongkang Wu, Meng Han, **Yutao Zhu**, Lei Li, Xinyu Zhang, Ruofei Lai, Xiaoguang Li, Yuanhang Ren, Zhicheng Dou, and Zhao Cao <br>
-In _Findings of the Association for Computational Linguistics: ACL 2023_ (**ACL 2023 Findings**).
-- [Contrastive Learning for Legal Judgment Prediction](https://dl.acm.org/doi/pdf/10.1145/3580489) <br>
-Han Zhang, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen <br>
-_ACM Transactions on Information Systems, 2023_ (**TOIS**).
-- [Learning from the Wisdom of Crowds: Exploiting Similar Sessions for Session Search](http://playbigdata.ruc.edu.cn/dou/publication/2023_aaai_session.pdf) <br>
-Yuhang Ye, Zhonghua Li, Zhicheng Dou, **Yutao Zhu**, Changwang Zhang, Shangquan Wu, and Zhao Cao <br>
-In _Proceedings of the 37th AAAI Conference on Artificial Intelligence_ (**AAAI 2023**).
-- [Heterogeneous Graph-based Context-aware Document Ranking](http://playbigdata.ruc.edu.cn/dou/publication/2023_wsdm_session.pdf) \[[Code](https://github.com/ShootingWong/HEXA)\] <br>
-Shuting Wang, Zhicheng Dou, and **Yutao Zhu** <br>
-In _Proceedings of the 16th ACM International Conference on Web Search and Data Mining_ (**WSDM 2023**).
+- ``EMNLP 2023 Findings``[Joint Semantic and Strategy Matching for Persuasive Dialogue](), Chuhao Jin, **Yutao Zhu**, Lingzhen Kong, Shijie Li, Xiao Zhang, Ruihua Song, Xu Chen, huan chen, Yuchong Sun, Yu Chen, and Jun Xu.
+- ``KDD 2023`` [Learning to Relate to Previous Turns in Conversational Search](https://browse.arxiv.org/pdf/2306.02553.pdf), Fengran Mo, Jian-Yun Nie, Kaiyu Huang, Kelong Mao, **Yutao Zhu**, Peng Li, and Yang Liu.
+- ``ACL 2023`` [ConvGQR: Generative Query Reformulation for Conversational Search](https://arxiv.org/pdf/2305.15645.pdf) \[[Code](https://github.com/fengranMark/ConvGQR)\], Fengran Mo, Kelong Mao, **Yutao Zhu**, Yihong Wu, Kaiyu Huang, and Jian-Yun Nie.
+- ``ACL 2023 Findings`` [Hence, Socrates is mortal: A Benchmark for Natural Language Syllogistic Reasoning]() \[[Code](https://github.com/casually-PYlearner/SYLLOBASE)\], Yongkang Wu, Meng Han, **Yutao Zhu**, Lei Li, Xinyu Zhang, Ruofei Lai, Xiaoguang Li, Yuanhang Ren, Zhicheng Dou, and Zhao Cao.
+- ``TOIS`` [Contrastive Learning for Legal Judgment Prediction](https://dl.acm.org/doi/pdf/10.1145/3580489), Han Zhang, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
+- ``AAAI 2023`` [Learning from the Wisdom of Crowds: Exploiting Similar Sessions for Session Search](http://playbigdata.ruc.edu.cn/dou/publication/2023_aaai_session.pdf), Yuhang Ye, Zhonghua Li, Zhicheng Dou, **Yutao Zhu**, Changwang Zhang, Shangquan Wu, and Zhao Cao.
+- ``WSDM 2023`` [Heterogeneous Graph-based Context-aware Document Ranking](http://playbigdata.ruc.edu.cn/dou/publication/2023_wsdm_session.pdf) \[[Code](https://github.com/ShootingWong/HEXA)\], Shuting Wang, Zhicheng Dou, and **Yutao Zhu**.
 
 #### 2022
 - [MCP: Self-supervised Pre-training for Personalized Chatbots with Multi-level Contrastive Sampling](https://arxiv.org/pdf/2210.08753.pdf) <br>
