@@ -25,14 +25,13 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 - ``arXiv`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
 - ``arXiv`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
 - ``arXiv`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/daod/INTERS"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
-
 - ``WWW 2024`` [Mining Exploratory Queries for Conversational Search](), Wenhan Liu, Ziliang Zhao, **Yutao Zhu**, Zhicheng Dou.
 - ``WSDM2024`` [CL4DIV: A Contrastive Learning Framework for Search Result Diversification](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 
 #### 2023
 - ``EMNLP 2023 Findings`` [Joint Semantic and Strategy Matching for Persuasive Dialogue](), Chuhao Jin, **Yutao Zhu**, Lingzhen Kong, Shijie Li, Xiao Zhang, Ruihua Song, Xu Chen, huan chen, Yuchong Sun, Yu Chen, and Jun Xu.
 - ``KDD 2023`` [Learning to Relate to Previous Turns in Conversational Search](https://browse.arxiv.org/pdf/2306.02553.pdf), Fengran Mo, Jian-Yun Nie, Kaiyu Huang, Kelong Mao, **Yutao Zhu**, Peng Li, and Yang Liu.
-- ``ACL 2023`` [ConvGQR: Generative Query Reformulation for Conversational Search](https://arxiv.org/pdf/2305.15645.pdf) \[[Code](https://github.com/fengranMark/ConvGQR)\], Fengran Mo, Kelong Mao, **Yutao Zhu**, Yihong Wu, Kaiyu Huang, and Jian-Yun Nie.
+- ``ACL 2023`` [ConvGQR: Generative Query Reformulation for Conversational Search](https://arxiv.org/pdf/2305.15645.pdf), Fengran Mo, Kelong Mao, **Yutao Zhu**, Yihong Wu, Kaiyu Huang, and Jian-Yun Nie. <a href="https://github.com/fengranMark/ConvGQR"><img alt="Static Badge" src="https://img.shields.io/badge/ConvGQR-white?logo=github&logoColor=black"></a>
 - ``ACL 2023 Findings`` [Hence, Socrates is mortal: A Benchmark for Natural Language Syllogistic Reasoning]() \[[Code](https://github.com/casually-PYlearner/SYLLOBASE)\], Yongkang Wu, Meng Han, **Yutao Zhu**, Lei Li, Xinyu Zhang, Ruofei Lai, Xiaoguang Li, Yuanhang Ren, Zhicheng Dou, and Zhao Cao.
 - ``TOIS`` [Contrastive Learning for Legal Judgment Prediction](https://dl.acm.org/doi/pdf/10.1145/3580489), Han Zhang, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 - ``AAAI 2023`` [Learning from the Wisdom of Crowds: Exploiting Similar Sessions for Session Search](http://playbigdata.ruc.edu.cn/dou/publication/2023_aaai_session.pdf), Yuhang Ye, Zhonghua Li, Zhicheng Dou, **Yutao Zhu**, Changwang Zhang, Shangquan Wu, and Zhao Cao.
