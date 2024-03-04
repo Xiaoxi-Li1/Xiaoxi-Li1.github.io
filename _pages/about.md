@@ -70,12 +70,12 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 - ``arXiv`` [BERT4SO: Neural Sentence Ordering by Fine-tuning BERT](https://arxiv.org/pdf/2103.13584.pdf), **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Shengchao Liu, Yabo Ling, and Pan Du.
 
 #### 2020
-- ``CIKM 2020`` [S^3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf) \[[Code](https://github.com/RUCAIBox/CIKM2020-S3Rec)\], Kun Zhou, Hui Wang, Wayne Xin Zhao, **Yutao Zhu**, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. <a href=""></a>
+- ``CIKM 2020`` [S^3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf), Kun Zhou, Hui Wang, Wayne Xin Zhao, **Yutao Zhu**, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen. <a href="https://github.com/RUCAIBox/CIKM2020-S3Rec"><img alt="Static Badge" src="https://img.shields.io/badge/S3Rec-white?logo=github&logoColor=black"></a>
 - ``ACL 2020`` [ScriptWriter: Narrative-Guided Script Generation](https://www.aclweb.org/anthology/2020.acl-main.765.pdf)\[[Video](http://slideslive.com/38928837)\], **Yutao Zhu**, Ruihua Song, Zhicheng Dou, Jian-Yun Nie, and Jin Zhou. <a href="https://github.com/DaoD/ScriptWriter"><img alt="Static Badge" src="https://img.shields.io/badge/ScriptWriter-white?logo=github&logoColor=black"></a>
 - ``PAKDD 2020`` [Improving Multi-Turn Response Selection Models with Complementary Last-Utterance Selection by Instance Weighting](https://arxiv.org/pdf/2002.07397.pdf), Kun Zhou, Wayne Xin Zhao, **Yutao Zhu**, Ji-Rong Wen, and Jingsong Yu.
 
 #### 2019
-- ``IRJ`` [ReBoost: A Retrieval-Boosted Sequence-to-SequenceModel for Neural Response Generation](http://rali.iro.umontreal.ca/rali/sites/default/files/publis/Zhu2020_Article_ReBoostARetrieval-boostedSeque.pdf) \[[Code](https://github.com/DaoD/ReBoost)\], **Yutao Zhu**, Zhicheng Dou, Jian-Yun Nie, and Ji-Rong Wen. <a href=""></a>
+- ``IRJ`` [ReBoost: A Retrieval-Boosted Sequence-to-SequenceModel for Neural Response Generation](http://rali.iro.umontreal.ca/rali/sites/default/files/publis/Zhu2020_Article_ReBoostARetrieval-boostedSeque.pdf), **Yutao Zhu**, Zhicheng Dou, Jian-Yun Nie, and Ji-Rong Wen. <a href="https://github.com/DaoD/ReBoost"><img alt="Static Badge" src="https://img.shields.io/badge/ReBoost-white?logo=github&logoColor=black"></a>
 - ``IRJ`` [Deep Cross-platform Product Matching in E-commerce](http://playbigdata.ruc.edu.cn/dou/publication/2019_IRJ_productmatching_aam.pdf), Juan Li, Zhicheng Dou, **Yutao Zhu**, Xiaochen Zuo, and Ji-Rong Wen.
 - ``NTCIR 2019`` [A Hybrid Framework of Emotion-Aware Seq2Seq Model for Emotional Conversation Generation](https://link.springer.com/content/pdf/10.1007%2F978-3-030-36805-0_12.pdf), Xiaohe Li, Jiaqing Liu, Weihao Zheng, Xiangbo Wang, **Yutao Zhu**, and Zhicheng Dou.
 
