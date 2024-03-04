@@ -18,7 +18,7 @@ redirect_from:
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
 - *2023.11*: We analyze the risk of data leakage in LLM pre-training and write a new paper to alert this problem. See more [details](https://arxiv.org/abs/2311.01964).
 - *2023.8*: We write a new survey about applying large language models for information retrieval. See more [details](https://arxiv.org/abs/2308.07107).
-- *2023.8*: We publish a new version of YuLan-Chat. It achieves better performance than the official LLaMA-2 and LLaMA-2-Chat on MMLU, C-Eval, and AGI-Gaokao benchmarks! See more [details](https://github.com/RUC-GSAI/YuLan-Chat). 
+- *2023.8*: We publish a new version of YuLan-Chat. It achieves better performance than the official LLaMA-2 and LLaMA-2-Chat on MMLU, C-Eval, and AGI-Gaokao benchmarks! <a href="https://github.com/RUC-GSAI/YuLan-Chat"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-GSAI/YuLan-Chat"></a> 
 
 # Publications 
 #### 2024
