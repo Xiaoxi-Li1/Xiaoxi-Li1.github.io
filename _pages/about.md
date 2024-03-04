@@ -20,9 +20,7 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 
 # 📝 Publications 
 #### 2024
-- ``WWW 2024`` [Mining Exploratory Queries for Conversational Search]() <br>
-Wenhan Liu, Ziliang Zhao, **Yutao Zhu**, Zhicheng Dou <br>
-In _Proceedings of the ACM Web Conference 2024_.
+- ``WWW 2024`` [Mining Exploratory Queries for Conversational Search](), Wenhan Liu, Ziliang Zhao, **Yutao Zhu**, Zhicheng Dou.
 - [CL4DIV: A Contrastive Learning Framework for Search Result Diversification]() <br>
 Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen <br>
 In _Proceedings of the 17th ACM International Conference on Web Search and Data Mining_ (**WSDM 2024**).
