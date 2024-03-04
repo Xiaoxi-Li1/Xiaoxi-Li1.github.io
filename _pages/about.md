@@ -74,7 +74,7 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 - *2018.8 - 2019.6*, Research Intern, XiaoIce, Microsoft Asia. Supervised by [Ruihua Song](https://www.microsoft.com/en-us/research/people/rsong/)  
 - *2016.9 - 2019.6*, Research Assistant, Beijing Key Lab of Big Data Management and Analysis Methods. Supervised by [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ)
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala)
-- 
-# 🎖 Academic Services
+
+# 👨‍🏫 Academic Services
 - PC Member: ACL, SIGIR, WWW, NeurIPS, SIGKDD, AAAI, EMNLP, CIKM, WSDM, COLING, COLM 
 - Journal Reviewer: TOIS, JASIST, KAIS, TALLIP, Computing Surveys, ACL Rolling Review
