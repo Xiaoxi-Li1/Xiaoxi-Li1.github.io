@@ -20,6 +20,11 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 
 # 📝 Publications 
 #### 2024
+- ``arXiv`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
+- ``arXiv`` [UFO: a Unified and Flexible Framework for Evaluating Factuality of Large Language Models](https://arxiv.org/pdf/2402.14690.pdf), Zhaoheng Huang, Zhicheng Dou, **Yutao Zhu**, and Ji-rong Wen.
+- ``arXiv`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
+- ``arXiv`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
+- ``arXiv`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen. ![GitHub Repo stars](https://img.shields.io/github/stars/daod/INTERS)
 - ``WWW 2024`` [Mining Exploratory Queries for Conversational Search](), Wenhan Liu, Ziliang Zhao, **Yutao Zhu**, Zhicheng Dou.
 - ``WSDM2024`` [CL4DIV: A Contrastive Learning Framework for Search Result Diversification](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 
@@ -31,6 +36,11 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 - ``TOIS`` [Contrastive Learning for Legal Judgment Prediction](https://dl.acm.org/doi/pdf/10.1145/3580489), Han Zhang, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 - ``AAAI 2023`` [Learning from the Wisdom of Crowds: Exploiting Similar Sessions for Session Search](http://playbigdata.ruc.edu.cn/dou/publication/2023_aaai_session.pdf), Yuhang Ye, Zhonghua Li, Zhicheng Dou, **Yutao Zhu**, Changwang Zhang, Shangquan Wu, and Zhao Cao.
 - ``WSDM 2023`` [Heterogeneous Graph-based Context-aware Document Ranking](http://playbigdata.ruc.edu.cn/dou/publication/2023_wsdm_session.pdf) \[[Code](https://github.com/ShootingWong/HEXA)\], Shuting Wang, Zhicheng Dou, and **Yutao Zhu**.
+- ``arXiv`` [Don’t Make Your LLM an Evaluation Benchmark Cheater](https://arxiv.org/pdf/2311.01964.pdf), Kun Zhou, **Yutao Zhu**, Zhipeng Chen, Wentong Chen, Wayne Xin Zhao, Xu Chen, Yankai Lin, Ji-Rong Wen, and Jiawei Han.
+- ``arXiv`` [Large Language Models for Information Retrieval: A Survey](https://arxiv.org/pdf/2308.07107.pdf), **Yutao Zhu**, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Zhicheng Dou, and Ji-Rong Wen.
+- ``arXiv`` [WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus](https://arxiv.org/pdf/2304.04358.pdf), Hongjing Qian\*, **Yutao Zhu**\*, Zhicheng Dou, Haoqi Gu, Xinyu Zhang, Zheng Liu, Ruofei Lai, Zhao Cao, Jian-Yun Nie, and Ji-Rong Wen.
+- ``arXiv`` [A Text-guided Protein Design Framework](https://arxiv.org/pdf/2302.04611.pdf), Shengchao Liu, **Yutao Zhu**, Jiarui Lu, Zhao Xu, Weili Nie, Anthony Gitter, Chaowei Xiao, Jian Tang, Hongyu Guo, and Anima Anandkumar.
+- ``arXiv`` [An Empirical Study of Uniform-Architecture Knowledge Distillation in Document Ranking](https://arxiv.org/pdf/2302.04112), Xubo Qin, Xiyuan Liu, Xiongfeng Zheng, Jie Liu, and **Yutao Zhu**.
 
 #### 2022
 - ``EMNLP 2022 Findings`` [MCP: Self-supervised Pre-training for Personalized Chatbots with Multi-level Contrastive Sampling](https://arxiv.org/pdf/2210.08753.pdf), Zhaoheng Huang, Zhicheng Dou, **Yutao Zhu**, and Zhengyi Ma.
@@ -41,6 +51,7 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 - ``KDD 2022`` [Knowledge Enhanced Search Result Diversification](https://dl.acm.org/doi/pdf/10.1145/3534678.3539459), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 - ``NAACL-HLT 2022`` [Less is More: Learning to Refine Dialogue History for Personalized Dialogue Generation](https://arxiv.org/pdf/2204.08128.pdf) \[[Code](https://github.com/bangbangbang12315/MSP/tree/release)\], Hanxun Zhong, Zhicheng Dou, **Yutao Zhu**, Hongjin Qian, and Ji-Rong Wen.
 - ``TOIS`` [Leveraging Narrative to Generate Movie Script](https://dl.acm.org/doi/pdf/10.1145/3507356) \[[Code](https://github.com/DaoD/ScriptWriter)\], **Yutao Zhu**, Ruihua Song, Jian-Yun Nie, Pan Du, Zhicheng Dou, and Jin Zhou.
+- ``arXiv`` [PReGAN: Answer Oriented Passage Ranking with Weakly Supervised GAN](https://arxiv.org/pdf/2207.01762.pdf), Du Pan, Jian-Yun Nie, **Yutao Zhu**, Hao Jiang, Lixin Zou, and Xiaohui Yan.
 
 #### 2021
 - ``CIKM 2021`` [Contrastive Learning of User Behavior Sequence for Context-Aware Document Ranking](https://arxiv.org/pdf/2108.10510.pdf) \[[Code](https://github.com/DaoD/COCA)\], **Yutao Zhu**, Jian-Yun Nie, Zhicheng Dou, Zhengyi Ma, Xinyu Zhang, Pan Du, Xiaochen Zuo, and Hao Jiang.
@@ -55,6 +66,8 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 - ``SIGIR 2021 Resource`` [Pchatbot: A Large-Scale Dataset for Personalized Chatbot](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_Pchatbot.pdf) \[[Code](https://github.com/qhjqhj00/SIGIR2021-Pchatbot)\], Hongjin Qian, Xiaohe Li, Hanxun Zhong, Yu Guo, Yueyuan Ma, **Yutao Zhu**, Zhanliang Liu, Zhicheng Dou, and Ji-Rong Wen.
 - ``ECIR 2021`` [Content Selection Network for Document-grounded Retrieval-based Chatbots](https://arxiv.org/pdf/2101.08426.pdf) \[[Code](https://github.com/DaoD/CSN/)\], **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, and Zhicheng Dou.
 - ``AAAI 2021`` [Neural Sentence Ordering Based on Constraint Graphs](https://arxiv.org/pdf/2101.11178.pdf) \[[Code](https://github.com/DaoD/ConstraintGraph4NSO)\], **Yutao Zhu**, Kun Zhou, Jian-Yun Nie, Shengchao Liu, and Zhicheng Dou.
+- ``arXiv`` [Emotion Eliciting Machine: Emotion Eliciting Conversation Generation based on Dual Generator](https://arxiv.org/pdf/2105.08251.pdf), Hao Jiang, **Yutao Zhu**, Xinyu Zhang, Zhicheng Dou, Pan Du, Te Pi, and Yantao Jia.
+- ``arXiv`` [BERT4SO: Neural Sentence Ordering by Fine-tuning BERT](https://arxiv.org/pdf/2103.13584.pdf), **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Shengchao Liu, Yabo Ling, and Pan Du.
 
 #### 2020
 - ``CIKM 2020`` [S^3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf) \[[Code](https://github.com/RUCAIBox/CIKM2020-S3Rec)\], Kun Zhou, Hui Wang, Wayne Xin Zhao, **Yutao Zhu**, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen.
