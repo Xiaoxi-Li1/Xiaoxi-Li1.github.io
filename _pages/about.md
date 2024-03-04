@@ -12,13 +12,13 @@ redirect_from:
 
 I am currently a postdoctoral researcher at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/) at [Renmin University of China](https://www.ruc.edu.cn/). I earned my PhD from [University of Montreal](https://www.umontreal.ca/en/), where I was mentored by Prof. [Jian-Yun Nie](http://rali.iro.umontreal.ca/nie/jian-yun-nie-en/). My research primarily focuses on natural language processing (NLP) and information retrieval (IR), with a particular emphasis on large language models and their application in IR tasks. I completed my master's (2019) and bachelor's (2016) degrees at Renmin University of China, under the guidance of Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and Prof. [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ), delving into various NLP challenges.
 
-# 🔥 News
+# News
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
 - *2023.11*: We analyze the risk of data leakage in LLM pre-training and write a new paper to alert this problem. See more [details](https://arxiv.org/abs/2311.01964).
 - *2023.8*: We write a new survey about applying large language models for information retrieval. See more [details](https://arxiv.org/abs/2308.07107).
 - *2023.8*: We publish a new version of YuLan-Chat. It achieves better performance than the official LLaMA-2 and LLaMA-2-Chat on MMLU, C-Eval, and AGI-Gaokao benchmarks! See more [details](https://github.com/RUC-GSAI/YuLan-Chat). 
 
-# 📝 Publications 
+# Publications 
 #### 2024
 - ``arXiv`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
 - ``arXiv`` [UFO: a Unified and Flexible Framework for Evaluating Factuality of Large Language Models](https://arxiv.org/pdf/2402.14690.pdf), Zhaoheng Huang, Zhicheng Dou, **Yutao Zhu**, and Ji-rong Wen.
@@ -82,12 +82,12 @@ I am currently a postdoctoral researcher at the [Gaoling School of Artificial In
 #### 2018
 - ``SIGIR 2018 Short`` [An Attribute-aware Neural Attentive Model for Next Basket Recommendation](http://rali.iro.umontreal.ca/rali/sites/default/files/publis/p1201-bai.pdf), Ting Bai, Jian-Yun Nie, Wayne Xin Zhao, **Yutao Zhu**, Pan Du, and Ji-Rong Wen.
 
-# 💻 Experiences
+# Experiences
 - *2021.12 - 2022.12*, Research Intern, Poisson Lab, Huawei. Supervised by Xinyu Zhang
 - *2018.8 - 2019.6*, Research Intern, XiaoIce, Microsoft Asia. Supervised by [Ruihua Song](https://www.microsoft.com/en-us/research/people/rsong/)  
 - *2016.9 - 2019.6*, Research Assistant, Beijing Key Lab of Big Data Management and Analysis Methods. Supervised by [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ)
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala)
 
-# 👨‍🏫 Academic Services
+# Academic Services
 - PC Member: ACL, SIGIR, WWW, NeurIPS, SIGKDD, AAAI, EMNLP, CIKM, WSDM, COLING, COLM 
 - Journal Reviewer: TOIS, JASIST, KAIS, TALLIP, Computing Surveys, ACL Rolling Review
