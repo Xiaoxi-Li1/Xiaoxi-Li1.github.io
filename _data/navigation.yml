@@ -4,13 +4,13 @@ main:
     url: "/#about-me"
 
   - title: "News"
-    url: "/#-news"
+    url: "/#news"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "/#publications"
 
   - title: "Experiences"
-    url: "/#-experiences"
+    url: "/#experiences"
 
   - title: "Academic Services"
-    url: "/#-academic-services"
+    url: "/#academic-services"
