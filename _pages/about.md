@@ -22,7 +22,7 @@ redirect_from:
 
 # Publications 
 #### 2024
-- ``TOIS`` [Passage-aware Search Result Diversification](), Zhan Su, Zhicheng Dou, Yutao Zhu, and Ji-Rong Wen.
+- ``TOIS`` [Passage-aware Search Result Diversification](), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 - ``arXiv`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
 - ``arXiv`` [UFO: a Unified and Flexible Framework for Evaluating Factuality of Large Language Models](https://arxiv.org/pdf/2402.14690.pdf), Zhaoheng Huang, Zhicheng Dou, **Yutao Zhu**, and Ji-rong Wen.
 - ``arXiv`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
