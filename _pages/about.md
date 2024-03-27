@@ -24,8 +24,7 @@ redirect_from:
 #### 2024
 - ``SIGIR 2024 Resource`` [JDivPS: A Diversified Product Search Dataset](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, Pengchao Cheng, Jiangxu Wu, and Hao Wang.
 - ``SIGIR 2024 Demo`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
-- ``TOIS`` [Passage-aware Search Result Diversification](https://dl.acm.org/doi/10.1145/3653672), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen. <a href="https://github.com/su-zhan/PAD"><img alt="Static Badge" src="https://img.shields.io/badge/PAD-white?logo=github&logoColor=black">
-</a>
+- ``TOIS`` [Passage-aware Search Result Diversification](https://dl.acm.org/doi/10.1145/3653672), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen. <a href="https://github.com/su-zhan/PAD"><img alt="Static Badge" src="https://img.shields.io/badge/PAD-white?logo=github&logoColor=black"></a>
 - ``arXiv`` [UFO: a Unified and Flexible Framework for Evaluating Factuality of Large Language Models](https://arxiv.org/pdf/2402.14690.pdf), Zhaoheng Huang, Zhicheng Dou, **Yutao Zhu**, and Ji-rong Wen.
 - ``arXiv`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
 - ``arXiv`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
