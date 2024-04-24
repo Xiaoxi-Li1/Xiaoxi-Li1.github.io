@@ -23,7 +23,7 @@ redirect_from:
 
 # Publications 
 #### 2024
-- ``arXiv`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, **Yutao Zhu**, and Zhicheng Dou.
+- ``arXiv`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, **Yutao Zhu**, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey"></a>
 - ``SIGIR 2024 Resource`` [JDivPS: A Diversified Product Search Dataset](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, Pengchao Cheng, Jiangxu Wu, and Hao Wang.
 - ``SIGIR 2024 Demo`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
 - ``TOIS`` [Passage-aware Search Result Diversification](https://dl.acm.org/doi/10.1145/3653672), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen. <a href="https://github.com/su-zhan/PAD"><img alt="Static Badge" src="https://img.shields.io/badge/PAD-white?logo=github&logoColor=black"></a>
