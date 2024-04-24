@@ -15,6 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
 - *2023.11*: We analyze the risk of data leakage in LLM pre-training and write a new paper to alert this problem. See more [details](https://arxiv.org/abs/2311.01964).
 - *2023.8*: We write a new survey about applying large language models for information retrieval. See more [details](https://arxiv.org/abs/2308.07107).
@@ -22,6 +23,7 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``arXiv`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, **Yutao Zhu**, and Zhicheng Dou.
 - ``SIGIR 2024 Resource`` [JDivPS: A Diversified Product Search Dataset](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, Pengchao Cheng, Jiangxu Wu, and Hao Wang.
 - ``SIGIR 2024 Demo`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
 - ``TOIS`` [Passage-aware Search Result Diversification](https://dl.acm.org/doi/10.1145/3653672), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen. <a href="https://github.com/su-zhan/PAD"><img alt="Static Badge" src="https://img.shields.io/badge/PAD-white?logo=github&logoColor=black"></a>
