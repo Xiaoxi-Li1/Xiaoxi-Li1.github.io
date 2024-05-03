@@ -23,6 +23,7 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``KAIS`` [How to Personalize and Whether to Personalize? Candidate Documents Decide](https://www.researchsquare.com/article/rs-3081159/v1.pdf), Wenhan Liu, Yujia Zhou, **Yutao Zhu**, and Zhicheng Dou.
 - ``arXiv`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, **Yutao Zhu**, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey"></a>
 - ``SIGIR 2024 Resource`` [JDivPS: A Diversified Product Search Dataset](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, Pengchao Cheng, Jiangxu Wu, and Hao Wang.
 - ``SIGIR 2024 Demo`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
