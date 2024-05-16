@@ -15,6 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.5*: Congrats! Our three papers have been accepted by ACL 2024! 
 - *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
 - *2023.11*: We analyze the risk of data leakage in LLM pre-training and write a new paper to alert this problem. See more [details](https://arxiv.org/abs/2311.01964).
@@ -23,15 +24,15 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``ACL 2024`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/daod/INTERS"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
+- ``ACL 2024`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
+- ``ACL 2024 Findings`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
 - ``KAIS`` [How to Personalize and Whether to Personalize? Candidate Documents Decide](https://www.researchsquare.com/article/rs-3081159/v1.pdf), Wenhan Liu, Yujia Zhou, **Yutao Zhu**, and Zhicheng Dou.
 - ``arXiv`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, **Yutao Zhu**, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey"></a>
 - ``SIGIR 2024 Resource`` [JDivPS: A Diversified Product Search Dataset](), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, Pengchao Cheng, Jiangxu Wu, and Hao Wang.
 - ``SIGIR 2024 Demo`` [An Integrated Data Processing Framework for Pretraining Foundation Models](https://arxiv.org/pdf/2402.16358.pdf), Yiding Sun, Feng Wang, **Yutao Zhu**, Wayne Xin Zhao, and Jiaxin Mao.
 - ``TOIS`` [Passage-aware Search Result Diversification](https://dl.acm.org/doi/10.1145/3653672), Zhan Su, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen. <a href="https://github.com/su-zhan/PAD"><img alt="Static Badge" src="https://img.shields.io/badge/PAD-white?logo=github&logoColor=black"></a>
 - ``arXiv`` [UFO: a Unified and Flexible Framework for Evaluating Factuality of Large Language Models](https://arxiv.org/pdf/2402.14690.pdf), Zhaoheng Huang, Zhicheng Dou, **Yutao Zhu**, and Ji-rong Wen.
-- ``arXiv`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
-- ``arXiv`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
-- ``arXiv`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/daod/INTERS"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
 - ``WWW 2024`` [Mining Exploratory Queries for Conversational Search](https://dl.acm.org/doi/abs/10.1145/3589334.3645424), Wenhan Liu, Ziliang Zhao, **Yutao Zhu**, Zhicheng Dou.
 - ``WSDM 2024`` [CL4DIV: A Contrastive Learning Framework for Search Result Diversification](https://dl.acm.org/doi/10.1145/3616855.3635851), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 
