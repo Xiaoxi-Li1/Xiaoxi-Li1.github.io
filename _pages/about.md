@@ -15,6 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help you implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
 - *2024.5*: Congrats! Our three papers have been accepted by ACL 2024! 
 - *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
@@ -24,6 +25,7 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``arXiv'' [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu**, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG?tab=readme-ov-file"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG"></a>
 - ``ACL 2024`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/daod/INTERS"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
 - ``ACL 2024`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
 - ``ACL 2024 Findings`` [BIDER: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence](https://arxiv.org/pdf/2402.12174.pdf), Jiajie Jin, **Yutao Zhu**, Yujia Zhou, and Zhicheng Dou.
