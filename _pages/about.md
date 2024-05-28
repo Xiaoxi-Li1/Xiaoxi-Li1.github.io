@@ -15,7 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
-- *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help you implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
+- *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
 - *2024.5*: Congrats! Our three papers have been accepted by ACL 2024! 
 - *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
