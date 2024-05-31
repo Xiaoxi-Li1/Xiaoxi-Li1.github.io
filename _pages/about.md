@@ -15,17 +15,17 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.5*: We propose a new lightweight tuning method for RAG. Only adding one token can siginificantly improve LLMs' RAG performance! See more [details](https://arxiv.org/abs/2405.19670).
 - *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
 - *2024.5*: Congrats! Our three papers have been accepted by ACL 2024! 
 - *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
 - *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
+- *2024.1*: We update our survey about applying large language models for information retrieval. See more [details](https://arxiv.org/abs/2308.07107).
 - *2023.11*: We analyze the risk of data leakage in LLM pre-training and write a new paper to alert this problem. See more [details](https://arxiv.org/abs/2311.01964).
-- *2023.8*: We write a new survey about applying large language models for information retrieval. See more [details](https://arxiv.org/abs/2308.07107).
-- *2023.8*: We publish a new version of YuLan-Chat. It achieves better performance than the official LLaMA-2 and LLaMA-2-Chat on MMLU, C-Eval, and AGI-Gaokao benchmarks! <a href="https://github.com/RUC-GSAI/YuLan-Chat"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-GSAI/YuLan-Chat"></a> 
 
 # Publications 
 #### 2024
-- ``arXiv`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING"></a>
+- ``arXiv`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2405.19670), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING"></a>
 - ``arXiv`` [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu**, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG"></a>
 - ``ACL 2024`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zheng Liu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/daod/INTERS"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
 - ``ACL 2024`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
