@@ -25,7 +25,7 @@ redirect_from:
 
 # Publications 
 #### 2024
-- ``TKDE'' [Query-oriented Data Augmentation for Session Search], Haonan Chen, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
+- ``TKDE`` [Query-oriented Data Augmentation for Session Search](), Haonan Chen, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 - ``arXiv`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2405.19670), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``arXiv`` [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu**, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``ACL 2024`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zheng Liu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/INTERS?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
