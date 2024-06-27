@@ -25,6 +25,9 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``arXiv`` [DemoRank: Selecting Effective Demonstrations for Large Language Models in Ranking Task](https://arxiv.org/pdf/2406.16332), Wenhan Liu, **Yutao Zhu**, and Zhicheng Dou
+- ``arXiv`` [RichRAG: Crafting Rich Responses for Multi-faceted Queries in Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.12566), Shuting Wang, Xin Xu, Mang Wang, Weipeng Chen, **Yutao Zhu**, and Zhicheng Dou
+- ``arXiv`` [DomainRAG: A Chinese Benchmark for Evaluating Domain-specific Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.05654), Shuting Wang, Jiongnan Liu, Shiren Song, Jiehan Cheng, Yuqi Fu, Peidong Guo, Kun Fang, **Yutao Zhu**, and Zhicheng Dou.
 - ``TKDE`` [Query-oriented Data Augmentation for Session Search](), Haonan Chen, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
 - ``arXiv`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2405.19670), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``arXiv`` [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu**, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
