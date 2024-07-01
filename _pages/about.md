@@ -15,6 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.7*: We publish YuLan-Base-12B and YuLan-Chat-3-12B, a series of new LLMs training from scratch! See more [details](https://github.com/RUC-GSAI/YuLan-Chat).
 - *2024.5*: We propose a new lightweight tuning method for RAG. Only adding one token can siginificantly improve LLMs' RAG performance! See more [details](https://arxiv.org/abs/2405.19670).
 - *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
 - *2024.5*: Congrats! Our three papers have been accepted by ACL 2024! 
@@ -25,6 +26,7 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``arXiv`` [YuLan: An Open-source Large Language Model](https://arxiv.org/pdf/2406.19853), **Yutao Zhu**, Kun Zhou, Kelong Mao, Wentong Chen, Yiding Sun, Zhipeng Chen, Qian Cao, Yihan Wu, Yushuo Chen, Feng Wang, Lei Zhang, Junyi Li, Xiaolei Wang, Lei Wang, Beichen Zhang, Zican Dong, Xiaoxue Cheng, Yuhan Chen, Xinyu Tang, Yupeng Hou, Qiangqiang Ren, Xincheng Pang, Shufang Xie, Wayne Xin Zhao, Zhicheng Dou, Jiaxin Mao, Yankai Lin, Ruihua Song, Jun Xu, Xu Chen, Rui Yan, Zhewei Wei, Di Hu, Wenbing Huang, Ze-Feng Gao, Yueguo Chen, Weizheng Lu, and Ji-Rong Wen
 - ``arXiv`` [DemoRank: Selecting Effective Demonstrations for Large Language Models in Ranking Task](https://arxiv.org/pdf/2406.16332), Wenhan Liu, **Yutao Zhu**, and Zhicheng Dou
 - ``arXiv`` [RichRAG: Crafting Rich Responses for Multi-faceted Queries in Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.12566), Shuting Wang, Xin Xu, Mang Wang, Weipeng Chen, **Yutao Zhu**, and Zhicheng Dou
 - ``arXiv`` [DomainRAG: A Chinese Benchmark for Evaluating Domain-specific Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.05654), Shuting Wang, Jiongnan Liu, Shiren Song, Jiehan Cheng, Yuqi Fu, Peidong Guo, Kun Fang, **Yutao Zhu**, and Zhicheng Dou.
