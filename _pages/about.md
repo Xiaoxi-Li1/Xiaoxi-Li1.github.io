@@ -26,6 +26,7 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``arXiv`` [Toward General Instruction-Following Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2410.09584), Guanting Dong, Xiaoshuai Song, **Yutao Zhu**, Runqi Qiao, Zhicheng Dou, and Ji-Rong Wen
 - ``arXiv`` [From Pixels to Tokens: Revisiting Object Hallucinations in Large Vision-Language Models](https://arxiv.org/pdf/2410.06795), Yuying Shang, Xinyi Zeng, **Yutao Zhu**, Xiao Yang, Zhengwei Fang, Jingyuan Zhang, Jiawei Chen, Zinan Liu, and Yu Tian.
 - ``arXiv`` [Root Defence Strategies: Ensuring Safety of LLM at the Decoding Level](https://arxiv.org/pdf/2410.06809), Xinyi Zeng, Yuying Shang, **Yutao Zhu**, Xiao Yang, Jiawei Chen, and Yu Tian.
 - ``arXiv`` [LLMs + Persona-Plug = Personalized LLMs](https://arxiv.org/pdf/2409.11901), Jiongnan Liu, **Yutao Zhu**, Shuting Wang, Xiaochi Wei, Erxue Min, Yu Lu, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
