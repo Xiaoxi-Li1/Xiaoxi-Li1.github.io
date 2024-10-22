@@ -15,6 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.10*: We write a new survey about conversational search. See more [details](https://arxiv.org/abs/2410.15576).
 - *2024.7*: We publish YuLan-Base-12B and YuLan-Chat-3-12B, a series of new LLMs training from scratch! See more [details](https://github.com/RUC-GSAI/YuLan-Chat).
 - *2024.5*: We propose a new lightweight tuning method for RAG. Only adding one token can siginificantly improve LLMs' RAG performance! See more [details](https://arxiv.org/abs/2405.19670).
 - *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
@@ -26,6 +27,7 @@ redirect_from:
 
 # Publications 
 #### 2024
+- ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Jian-Yun Nie.
 - ``arXiv`` [Toward General Instruction-Following Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2410.09584), Guanting Dong, Xiaoshuai Song, **Yutao Zhu**, Runqi Qiao, Zhicheng Dou, and Ji-Rong Wen
 - ``arXiv`` [From Pixels to Tokens: Revisiting Object Hallucinations in Large Vision-Language Models](https://arxiv.org/pdf/2410.06795), Yuying Shang, Xinyi Zeng, **Yutao Zhu**, Xiao Yang, Zhengwei Fang, Jingyuan Zhang, Jiawei Chen, Zinan Liu, and Yu Tian.
 - ``arXiv`` [Root Defence Strategies: Ensuring Safety of LLM at the Decoding Level](https://arxiv.org/pdf/2410.06809), Xinyi Zeng, Yuying Shang, **Yutao Zhu**, Xiao Yang, Jiawei Chen, and Yu Tian.
