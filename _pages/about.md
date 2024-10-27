@@ -21,9 +21,6 @@ redirect_from:
 - *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
 - *2024.5*: Congrats! Our three papers have been accepted by ACL 2024! 
 - *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
-- *2024.1*: We propose a new instruction tuning dataset (INTERS) for unlocking the power of LLMs on search tasks. See more [details](https://arxiv.org/abs/2401.06532).
-- *2024.1*: We update our survey about applying large language models for information retrieval. See more [details](https://arxiv.org/abs/2308.07107).
-- *2023.11*: We analyze the risk of data leakage in LLM pre-training and write a new paper to alert this problem. See more [details](https://arxiv.org/abs/2311.01964).
 
 # Publications 
 #### 2024
