@@ -23,7 +23,7 @@ redirect_from:
 - *2024.4*: We write a new survey about generative information retrieval. See more [details](https://arxiv.org/abs/2404.14851).
 
 # Publications 
-* for corresponding author.
+\* for corresponding author.
 #### 2024
 - ``TKDE`` [CAGS: Context-Aware Document Ranking with Contrastive Graph Sampling](https://ieeexplore.ieee.org/abstract/document/10742917/), Zhaoheng Huang, **Yutao Zhu\***, Zhicheng Dou, and Ji-Rong Wen.
 - ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Jian-Yun Nie.
