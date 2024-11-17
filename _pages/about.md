@@ -25,6 +25,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2024
+- ``KDD`` [Embedding Prior Task-specific Knowledge into Language Models for Context-aware Document Ranking](), Shuting Wang, **Yutao Zhu**, and Zhicheng Dou.
 - ``TKDE`` [CAGS: Context-Aware Document Ranking with Contrastive Graph Sampling](https://ieeexplore.ieee.org/abstract/document/10742917/), Zhaoheng Huang, **Yutao Zhu\***, Zhicheng Dou, and Ji-Rong Wen.
 - ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Jian-Yun Nie.
 - ``arXiv`` [Toward General Instruction-Following Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2410.09584), Guanting Dong, Xiaoshuai Song, **Yutao Zhu**, Runqi Qiao, Zhicheng Dou, and Ji-Rong Wen
