@@ -15,6 +15,7 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2024.11*: Congrats! Our paper "A Text-guided Protein Design Framework" has been accepted by Nature Machine Intelligence!
 - *2024.10*: We write a new survey about conversational search. See more [details](https://arxiv.org/abs/2410.15576).
 - *2024.7*: We publish YuLan-Base-12B and YuLan-Chat-3-12B, a series of new LLMs training from scratch! See more [details](https://github.com/RUC-GSAI/YuLan-Chat).
 - *2024.5*: We propose a new lightweight tuning method for RAG. Only adding one token can siginificantly improve LLMs' RAG performance! See more [details](https://arxiv.org/abs/2405.19670).
@@ -25,6 +26,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2024
+- ``NMI`` [A Text-guided Protein Design Framework](https://arxiv.org/pdf/2302.04611.pdf), Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, **Yutao Zhu**, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao, Jian Tang, Hongyu Guo, and Anima Anandkumar.
 - ``KDD`` [Embedding Prior Task-specific Knowledge into Language Models for Context-aware Document Ranking](), Shuting Wang, **Yutao Zhu**, and Zhicheng Dou.
 - ``TKDE`` [CAGS: Context-Aware Document Ranking with Contrastive Graph Sampling](https://ieeexplore.ieee.org/abstract/document/10742917/), Zhaoheng Huang, **Yutao Zhu\***, Zhicheng Dou, and Ji-Rong Wen.
 - ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Jian-Yun Nie.
@@ -64,7 +66,6 @@ redirect_from:
 - ``arXiv`` [Don’t Make Your LLM an Evaluation Benchmark Cheater](https://arxiv.org/pdf/2311.01964.pdf), Kun Zhou, **Yutao Zhu**, Zhipeng Chen, Wentong Chen, Wayne Xin Zhao, Xu Chen, Yankai Lin, Ji-Rong Wen, and Jiawei Han.
 - ``arXiv`` [Large Language Models for Information Retrieval: A Survey](https://arxiv.org/pdf/2308.07107.pdf), **Yutao Zhu**, Huaying Yuan, Shuting Wang, Jiongnan Liu, Wenhan Liu, Chenlong Deng, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/RUC-NLPIR/LLM4IR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/LLM4IR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``arXiv`` [WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus](https://arxiv.org/pdf/2304.04358.pdf), Hongjing Qian\*, **Yutao Zhu**\*, Zhicheng Dou, Haoqi Gu, Xinyu Zhang, Zheng Liu, Ruofei Lai, Zhao Cao, Jian-Yun Nie, and Ji-Rong Wen. <a href="https://github.com/RUC-GSAI/YuLan-IR/tree/main/WebBrain"><img alt="Static Badge" src="https://img.shields.io/badge/WebBrain-white?logo=github&logoColor=black"></a>
-- ``arXiv`` [A Text-guided Protein Design Framework](https://arxiv.org/pdf/2302.04611.pdf), Shengchao Liu, **Yutao Zhu**, Jiarui Lu, Zhao Xu, Weili Nie, Anthony Gitter, Chaowei Xiao, Jian Tang, Hongyu Guo, and Anima Anandkumar.
 - ``arXiv`` [An Empirical Study of Uniform-Architecture Knowledge Distillation in Document Ranking](https://arxiv.org/pdf/2302.04112), Xubo Qin, Xiyuan Liu, Xiongfeng Zheng, Jie Liu, and **Yutao Zhu**.
 
 #### 2022
