@@ -25,13 +25,17 @@ redirect_from:
 
 # Publications 
 \* for corresponding author.
-#### 2024
+#### 2025
+- ``AAAI 2025`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2405.19670), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+- ``AAAI 2025`` [Toward General Instruction-Following Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2410.09584), Guanting Dong, Xiaoshuai Song, **Yutao Zhu**, Runqi Qiao, Zhicheng Dou, and Ji-Rong Wen.
+- ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](), Jiehan Cheng, Zhicheng Dou, **Yutao Zhu**, and Xiaoxi Li.
 - ``COLING 2025`` [RichRAG: Crafting Rich Responses for Multi-faceted Queries in Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.12566), Shuting Wang, Xin Xu, Mang Wang, Weipeng Chen, **Yutao Zhu**, and Zhicheng Dou.
-- ``NMI`` [A Text-guided Protein Design Framework](https://arxiv.org/pdf/2302.04611.pdf), Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, **Yutao Zhu**, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao, Jian Tang, Hongyu Guo, and Anima Anandkumar.
 - ``KDD 2025`` [Embedding Prior Task-specific Knowledge into Language Models for Context-aware Document Ranking](), Shuting Wang, **Yutao Zhu**, and Zhicheng Dou.
+
+#### 2024
+- ``NMI`` [A Text-guided Protein Design Framework](https://arxiv.org/pdf/2302.04611.pdf), Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, **Yutao Zhu**, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao, Jian Tang, Hongyu Guo, and Anima Anandkumar.
 - ``TKDE`` [CAGS: Context-Aware Document Ranking with Contrastive Graph Sampling](https://ieeexplore.ieee.org/abstract/document/10742917/), Zhaoheng Huang, **Yutao Zhu\***, Zhicheng Dou, and Ji-Rong Wen.
 - ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Jian-Yun Nie.
-- ``arXiv`` [Toward General Instruction-Following Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2410.09584), Guanting Dong, Xiaoshuai Song, **Yutao Zhu**, Runqi Qiao, Zhicheng Dou, and Ji-Rong Wen
 - ``arXiv`` [From Pixels to Tokens: Revisiting Object Hallucinations in Large Vision-Language Models](https://arxiv.org/pdf/2410.06795), Yuying Shang, Xinyi Zeng, **Yutao Zhu**, Xiao Yang, Zhengwei Fang, Jingyuan Zhang, Jiawei Chen, Zinan Liu, and Yu Tian.
 - ``arXiv`` [Root Defence Strategies: Ensuring Safety of LLM at the Decoding Level](https://arxiv.org/pdf/2410.06809), Xinyi Zeng, Yuying Shang, **Yutao Zhu**, Xiao Yang, Jiawei Chen, and Yu Tian.
 - ``arXiv`` [LLMs + Persona-Plug = Personalized LLMs](https://arxiv.org/pdf/2409.11901), Jiongnan Liu, **Yutao Zhu**, Shuting Wang, Xiaochi Wei, Erxue Min, Yu Lu, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
@@ -41,7 +45,6 @@ redirect_from:
 - ``arXiv`` [DemoRank: Selecting Effective Demonstrations for Large Language Models in Ranking Task](https://arxiv.org/pdf/2406.16332), Wenhan Liu, **Yutao Zhu**, and Zhicheng Dou.
 - ``arXiv`` [DomainRAG: A Chinese Benchmark for Evaluating Domain-specific Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.05654), Shuting Wang, Jiongnan Liu, Shiren Song, Jiehan Cheng, Yuqi Fu, Peidong Guo, Kun Fang, **Yutao Zhu**, and Zhicheng Dou.
 - ``TKDE`` [Query-oriented Data Augmentation for Session Search](https://ieeexplore.ieee.org/abstract/document/10574178), Haonan Chen, Zhicheng Dou, **Yutao Zhu**, and Ji-Rong Wen.
-- ``arXiv`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2405.19670), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``arXiv`` [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu**, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``ACL 2024`` [INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning](https://arxiv.org/pdf/2401.06532.pdf), **Yutao Zhu**, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zheng Liu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/DaoD/INTERS"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/INTERS?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a> <a href="https://huggingface.co/datasets/yutaozhu94/INTERS"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=8A2BE2"></a>
 - ``ACL 2024`` [Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs](https://arxiv.org/pdf/2402.12052.pdf), Jiejun Tan, Zhicheng Dou, **Yutao Zhu**, Peidong Guo, Kun Fang, and Ji-Rong Wen.
