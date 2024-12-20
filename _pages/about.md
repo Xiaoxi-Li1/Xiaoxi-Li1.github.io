@@ -116,5 +116,6 @@ redirect_from:
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited <img src="./images/Infosys.png" style="width: 3em;">. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala)
 
 # Academic Services
+- AC/SPC: ACL Rolling Review
 - PC Member: ACL, SIGIR, NeurIPS, ICLR, ICML, WWW, SIGKDD, AAAI, EMNLP, CIKM, WSDM, COLING, COLM 
-- Journal Reviewer: TOIS, JASIST, KAIS, TALLIP, Computing Surveys, ACL Rolling Review
+- Journal Reviewer: TOIS, JASIST, KAIS, TALLIP, Computing Surveys
