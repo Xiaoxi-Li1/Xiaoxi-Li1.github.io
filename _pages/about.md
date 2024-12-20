@@ -31,6 +31,8 @@ redirect_from:
 - ``KDD 2025`` [Embedding Prior Task-specific Knowledge into Language Models for Context-aware Document Ranking](), Shuting Wang, **Yutao Zhu**, and Zhicheng Dou.
 
 #### 2024
+- ``arXiv`` [Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models](https://arxiv.org/pdf/2412.14574), Wenhan Liu, Xinyu Ma, **Yutao Zhu**, Ziliang Zhao, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
+- ``arXiv`` [Progressive Multimodal Reasoning via Active Retrieval](https://arxiv.org/pdf/2412.14835), Guanting Dong, Chenghao Zhang, Mengjie Deng, **Yutao Zhu**, Zhicheng Dou, and Ji-Rong Wen.
 - ``arXiv`` [From Novice to Expert: LLM Agent Policy Optimization via Step-wise Reinforcement Learning](https://arxiv.org/pdf/2411.03817), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Ji-Rong Wen, Ruibin Xiong, Mang Wang, and Weipeng Chen.
 - ``arXiv`` [Little Giants: Synthesizing High-Quality Embedding Data at Scale](https://arxiv.org/pdf/2410.18634), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
 - ``NMI`` [A Text-guided Protein Design Framework](https://arxiv.org/pdf/2302.04611.pdf), Shengchao Liu, Yanjing Li, Zhuoxinran Li, Anthony Gitter, **Yutao Zhu**, Jiarui Lu, Zhao Xu, Weili Nie, Arvind Ramanathan, Chaowei Xiao, Jian Tang, Hongyu Guo, and Anima Anandkumar.
