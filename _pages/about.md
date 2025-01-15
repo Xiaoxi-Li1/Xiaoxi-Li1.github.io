@@ -24,6 +24,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2025
+- ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), Xiaoxi Li, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, **Yutao Zhu**, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``AAAI 2025`` [One Token Can Help! Learning Scalable and Pluggable Virtual Tokens for Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2405.19670), **Yutao Zhu**, Zhaoheng Huang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/DaoD/SPRING"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DaoD/SPRING?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``AAAI 2025`` [Toward General Instruction-Following Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2410.09584), Guanting Dong, Xiaoshuai Song, **Yutao Zhu**, Runqi Qiao, Zhicheng Dou, and Ji-Rong Wen.
 - ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](), Jiehan Cheng, Zhicheng Dou, **Yutao Zhu**, and Xiaoxi Li.
