@@ -24,6 +24,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2025
+- ``NAACL 2025`` [Little Giants: Synthesizing High-Quality Embedding Data at Scale](https://arxiv.org/pdf/2410.18634), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
 - ``WWW 2025`` [Understand What LLM Needs: Dual Preference Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.18676), Guanting Dong, **Yutao Zhu**, Chenghao Zhang, Zechen Wang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/dongguanting/DPA-RAG"><img alt="Static Badge" src="https://img.shields.io/badge/DPA%20RAG-white?logo=github&logoColor=black"></a>
 - ``WWW 2025 Resource`` [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu**, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), Xiaoxi Li, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, **Yutao Zhu**, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
@@ -50,7 +51,6 @@ redirect_from:
 - ``arXiv`` [Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models](https://arxiv.org/pdf/2412.14574), Wenhan Liu, Xinyu Ma, **Yutao Zhu**, Ziliang Zhao, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
 - ``arXiv`` [Progressive Multimodal Reasoning via Active Retrieval](https://arxiv.org/pdf/2412.14835), Guanting Dong, Chenghao Zhang, Mengjie Deng, **Yutao Zhu**, Zhicheng Dou, and Ji-Rong Wen.
 - ``arXiv`` [From Novice to Expert: LLM Agent Policy Optimization via Step-wise Reinforcement Learning](https://arxiv.org/pdf/2411.03817), Zhirui Deng, Zhicheng Dou, **Yutao Zhu**, Ji-Rong Wen, Ruibin Xiong, Mang Wang, and Weipeng Chen.
-- ``arXiv`` [Little Giants: Synthesizing High-Quality Embedding Data at Scale](https://arxiv.org/pdf/2410.18634), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
 - ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Jian-Yun Nie.
 - ``arXiv`` [From Pixels to Tokens: Revisiting Object Hallucinations in Large Vision-Language Models](https://arxiv.org/pdf/2410.06795), Yuying Shang, Xinyi Zeng, **Yutao Zhu**, Xiao Yang, Zhengwei Fang, Jingyuan Zhang, Jiawei Chen, Zinan Liu, and Yu Tian.
 - ``arXiv`` [Root Defence Strategies: Ensuring Safety of LLM at the Decoding Level](https://arxiv.org/pdf/2410.06809), Xinyi Zeng, Yuying Shang, **Yutao Zhu**, Xiao Yang, Jiawei Chen, and Yu Tian.
