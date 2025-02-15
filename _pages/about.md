@@ -24,7 +24,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2025
-- ``arXiv'' [mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Data](https://arxiv.org/pdf/2502.08468), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
+- ``arXiv`` [mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Data](https://arxiv.org/pdf/2502.08468), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
 - ``NAACL 2025`` [Little Giants: Synthesizing High-Quality Embedding Data at Scale](https://arxiv.org/pdf/2410.18634), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
 - ``WWW 2025`` [Understand What LLM Needs: Dual Preference Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.18676), Guanting Dong, **Yutao Zhu**, Chenghao Zhang, Zechen Wang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/dongguanting/DPA-RAG"><img alt="Static Badge" src="https://img.shields.io/badge/DPA%20RAG-white?logo=github&logoColor=black"></a>
 - ``WWW 2025 Resource`` [FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/abs/2405.13576), Jiajie Jin, **Yutao Zhu\***, Xinyu Yang, Chenghao Zhang, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/FlashRAG"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
