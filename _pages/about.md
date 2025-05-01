@@ -24,6 +24,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2025
+- ``arXiv`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), Xiaoxi Li, Jiajie Jin, Guanting Dong, Hongjin Qian, **Yutao Zhu**, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://github.com/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, **Yutao Zhu**, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``NAACL 2025`` [Little Giants: Synthesizing High-Quality Embedding Data at Scale](https://arxiv.org/pdf/2410.18634), Haonan Chen, Liang Wang, Nan Yang, **Yutao Zhu**, Ziliang Zhao, Furu Wei, and Zhicheng Dou.
 - ``WWW 2025`` [Understand What LLM Needs: Dual Preference Alignment for Retrieval-Augmented Generation](https://arxiv.org/pdf/2406.18676), Guanting Dong, **Yutao Zhu**, Chenghao Zhang, Zechen Wang, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/dongguanting/DPA-RAG"><img alt="Static Badge" src="https://img.shields.io/badge/DPA%20RAG-white?logo=github&logoColor=black"></a>
