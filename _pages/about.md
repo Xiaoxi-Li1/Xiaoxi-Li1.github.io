@@ -25,7 +25,9 @@ redirect_from:
 <!-- \* for corresponding author. -->
 #### 2025
 - ``arXiv`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), **Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+
 - ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+
 - ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](), Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.
 
