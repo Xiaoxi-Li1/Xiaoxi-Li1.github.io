@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yutao Zhu"
+title                    : "Xiaoxi Li"
 description              : ""
-repository               : "daod.github.io"
+repository               : "xiaoxi-li1.github.io"
 google_scholar_stats_use_cdn : false
 
 # google analytics
@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Yutao Zhu (朱余韬)"
+  name             : "Xiaoxi Li (李晓熙)"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Postdoc @ GSAI, RUC"
+  bio              : "PhD @ RUC"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=tBqVOWsAAAAJ&hl=en"
-  email            : "yutaozhu94@gmail.com"
+  googlescholar    : "https://scholar.google.com/citations?user=XDljV4YAAAAJ"
+  email            : "xiaoxi_li@ruc.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,21 +37,21 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "DaoD"
+  github           : "sunnynexus"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # e.g., "linkedin username"
-  dblp             : "https://dblp.org/pid/71/9704-1.html"
-  orcid            : "https://orcid.org/0000-0002-9432-3251"
+  dblp             : "https://dblp.org/pid/135/5865.html"
+  orcid            : "https://orcid.org/0009-0003-0708-418X"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "https://x.com/XiaoxiLi0111"
   vine             :
   weibo            :
   xing             :
