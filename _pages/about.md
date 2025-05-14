@@ -14,12 +14,13 @@ redirect_from:
 - Research interests: Retrieval-augmented Generation, Large Language Model Reasoning, Deep Search and Deep Research
 
 # News
-- *2025.5*: We release WebThinker, a fully open-source implementation of a deep research framework. It achieves compelling performance across several challenging benchmarks! See more [details](https://arxiv.org/abs/2504.21776).
-- *2024.12*: Congrats! Our three papers have been accepted by AAAI 2025! 
-- *2024.11*: Congrats! Our paper "A Text-guided Protein Design Framework" has been accepted by Nature Machine Intelligence!
-- *2024.10*: We write a new survey about conversational search. See more [details](https://arxiv.org/abs/2410.15576).
-- *2024.7*: We publish YuLan-Base-12B and YuLan-Chat-3-12B, a series of new LLMs training from scratch! See more [details](https://github.com/RUC-GSAI/YuLan-Chat).
-- *2024.5*: We publish a new toolkit ⚡FlashRAG, which can help implement RAG methods quickly! See more [details](https://arxiv.org/abs/2405.13576).
+- *2025.5*: We release 🌐WebThinker, a fully open-source implementation of a deep research framework. It achieves compelling performance across several challenging benchmarks! See more [details](https://arxiv.org/abs/2504.21776).
+- *2025.01*: We release 🔍Search-o1, leveraging agentic search mechanism to enhance o1-like large reasoning models! See more [details](https://arxiv.org/abs/2501.05366).
+
+- *2025.3*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
+- *2024.3*: Our work CorpusLM on unified language models for knowledge-intensive tasks has been accepted by SIGIR 2025!
+- *2023.12*: Our unified generative framework UniGen for retrieval and QA has been accepted by AAAI 2024!
+
 
 # Publications 
 <!-- \* for corresponding author. -->
