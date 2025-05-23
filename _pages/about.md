@@ -25,14 +25,14 @@ redirect_from:
 # 📝 Publications 
 <!-- \* for corresponding author. -->
 #### 2025
-- ``arXiv`` [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://arxiv.org/abs/2505.16410), Guanting Dong, Yifei Chen, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+- ``arXiv`` [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://arxiv.org/abs/2505.16410), Guanting Dong, Yifei Chen, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen.
 
 - ``arXiv`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), 
-**Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+**Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
 
-- ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+- ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
 
-- ``ACL 2025`` [RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation](https://arxiv.org/abs/2412.11919), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou. <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+- ``ACL 2025`` [RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation](https://arxiv.org/abs/2412.11919), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou. <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
 
 - ``ACL 2025`` [Hierarchical Document Refinement for Long-context Retrieval-augmented Generation](https://arxiv.org/abs/2505.10413), Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yongkang Wu, Zhonghua Li, Qi Ye, and Zhicheng Dou.
 
@@ -41,7 +41,7 @@ redirect_from:
 - ``ACL 2025 Findings`` [Neuro-Symbolic Query Compiler](https://arxiv.org/abs/2505.11932),
 Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, and Ji-Rong Wen.
 
-- ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+- ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
 
 - ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](), Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.
 
