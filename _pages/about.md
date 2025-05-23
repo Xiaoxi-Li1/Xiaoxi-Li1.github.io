@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About me
 - I am currently a 2nd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
-- Research interests: Retrieval-augmented Generation, LLM Reasoning, Deep Research
+- Research interests: Retrieval-augmented Generation, LLM Reasoning, Deep Search, Deep Research
 
 # 🔥 News
 - *2025.05*: Four papers have been accepted by ACL 2025!
