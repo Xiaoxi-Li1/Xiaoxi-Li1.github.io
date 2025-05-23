@@ -25,7 +25,7 @@ redirect_from:
 # 📝 Publications 
 <!-- \* for corresponding author. -->
 
-### As the Core Author
+### As the First Author
 
 #### 2025
 - ``arXiv`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), 
