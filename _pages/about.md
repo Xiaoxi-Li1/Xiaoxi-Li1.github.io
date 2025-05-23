@@ -13,7 +13,7 @@ redirect_from:
 - I am currently a 2nd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 - Research interests: Retrieval-augmented Generation, LLM Reasoning, Deep Research
 
-# 🎉 News
+# 🔥 News
 - *2025.05*: Four papers have been accepted by ACL 2025!
 - *2025.05*: We release 🌐WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
 - *2025.01*: We release 🔍Search-o1, enhancing o1-like large reasoning models with agentic search! See more [details](https://arxiv.org/abs/2501.05366).
