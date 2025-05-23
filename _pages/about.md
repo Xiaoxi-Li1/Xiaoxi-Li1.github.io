@@ -33,7 +33,6 @@ redirect_from:
 - ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
 - ``ACL 2025`` [RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation](https://arxiv.org/abs/2412.11919), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou. <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
 - ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
-
 #### 2024
 - ``SIGIR 2024`` [CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), **Xiaoxi Li**, Zhicheng Dou, Yujia Zhou, Fangchao Liu.
 - ``AAAI 2024`` [UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380), **Xiaoxi Li**, Yujia Zhou, Zhicheng Dou.
@@ -46,8 +45,7 @@ redirect_from:
 - ``ACL 2025`` [RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation](https://arxiv.org/abs/2505.xxxxxx), Guanting Dong, Jiajie Jin, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen.
 - ``ACL 2025 Findings`` [Neuro-Symbolic Query Compiler](https://arxiv.org/abs/2505.11932),
 Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, and Ji-Rong Wen.
-- ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](), Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.
-
+- ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](https://doi.org/10.1609/aaai.v39i11.33253), Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.
 #### 2024
 - ``TOIS`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie.
 - ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu.
