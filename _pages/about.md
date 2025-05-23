@@ -13,8 +13,8 @@ redirect_from:
 - I am currently a 2nd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 - Research interests: Retrieval-augmented Generation, LLM Reasoning, Deep Research
 
-# News
-- *2025.05*: Congrats! Our four papers have been accepted by ACL 2025!
+# 🎉 News
+- *2025.05*: Four papers have been accepted by ACL 2025!
 - *2025.05*: We release 🌐WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
 - *2025.01*: We release 🔍Search-o1, enhancing o1-like large reasoning models with agentic search! See more [details](https://arxiv.org/abs/2501.05366).
 - *2025.03*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
@@ -22,7 +22,7 @@ redirect_from:
 - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
 
 
-# Publications 
+# 📝 Publications 
 <!-- \* for corresponding author. -->
 #### 2025
 - ``arXiv`` [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://arxiv.org/abs/2505.16410), Guanting Dong, Yifei Chen, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
