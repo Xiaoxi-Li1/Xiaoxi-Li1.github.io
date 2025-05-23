@@ -49,7 +49,7 @@ redirect_from:
 
 - ``ACL 2025`` [Hierarchical Document Refinement for Long-context Retrieval-augmented Generation](https://arxiv.org/abs/2505.10413), Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yongkang Wu, Zhonghua Li, Qi Ye, and Zhicheng Dou.
 
-- ``ACL 2025`` RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation, Guanting Dong, Jiajie Jin, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen.
+- ``ACL 2025`` [RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation](https://arxiv.org/abs/2505.xxxxxx), Guanting Dong, Jiajie Jin, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen.
 
 - ``ACL 2025 Findings`` [Neuro-Symbolic Query Compiler](https://arxiv.org/abs/2505.11932),
 Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, and Ji-Rong Wen.
