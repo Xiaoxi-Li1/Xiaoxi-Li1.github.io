@@ -10,13 +10,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # About me
-- I am currently a PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
+- I am currently a 2nd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 - Research interests: Retrieval-augmented Generation, LLM Reasoning, Deep Research
 
 # News
 - *2025.05*: Congrats! Our four papers have been accepted by ACL 2025!
 - *2025.05*: We release 🌐WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
-- *2025.01*: We release 🔍Search-o1, leveraging agentic search mechanism to enhance o1-like large reasoning models! See more [details](https://arxiv.org/abs/2501.05366).
+- *2025.01*: We release 🔍Search-o1, enhancing o1-like large reasoning models with agentic search! See more [details](https://arxiv.org/abs/2501.05366).
 - *2025.03*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
 - *2024.03*: Our work on unified language models for knowledge-intensive tasks has been accepted by SIGIR 2024! See more [details](https://arxiv.org/abs/2404.14851).
 - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
@@ -26,10 +26,8 @@ redirect_from:
 <!-- \* for corresponding author. -->
 #### 2025
 - ``arXiv`` [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://arxiv.org/abs/2505.16410), Guanting Dong, Yifei Chen, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen. <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
-
 - ``arXiv`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), 
 **Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
-
 - ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 
 - ``ACL 2025`` [RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation](https://arxiv.org/abs/2412.11919), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou. <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
@@ -53,6 +51,11 @@ Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, 
 - ``SIGIR 2024`` [CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), **Xiaoxi Li**, Zhicheng Dou, Yujia Zhou, Fangchao Liu.
 
 - ``AAAI 2024`` [UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380), **Xiaoxi Li**, Yujia Zhou, Zhicheng Dou.
+
+
+# 📖 Educations
+- 2023.09 - Present, PhD, Gaoling School of Artificial Intelligence, Renmin University of China, Beijing.
+- 2019.09 - 2023.06, Bachelor, College of Artificial Intelligence, Nankai University, Tianjin.
 
 <!-- # Experiences
 - *2021.12 - 2022.12*, Research Intern, Poisson Lab, Huawei <img src="./images/huawei.png" style="width: 4em;">. Supervised by [Xinyu Zhang](https://scholar.google.com/citations?user=W_WZEQEAAAAJ)
