@@ -3,14 +3,14 @@
     "short_name": "",
     "icons": [
        {
-          "src": "/X2.png",
+          "src": "/X2.jpg",
           "sizes": "1024x1024",
-          "type": "image/png"
+          "type": "image/jpg"
        },
        {
-        "src": "/X2.png",
+        "src": "/X2.jpg",
         "sizes": "1024x1024",
-        "type": "image/png"
+        "type": "image/jpg"
         }
     ],
     "theme_color": "#FFFFFF",
