@@ -31,29 +31,29 @@ redirect_from:
 ### As the First Author
 
 #### 2025
-- <span class='paper-prebadge'>arXiv</span> **WebThinker: Empowering Large Reasoning Models with Deep Research Capability**  
+- ``arXiv`` **WebThinker: Empowering Large Reasoning Models with Deep Research Capability**  
   ***Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou*
   <br>_arXiv (preprint), 2025_
   <br><a href="https://arxiv.org/abs/2504.21776"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"> <a href="https://huggingface.co/collections/lixiaoxi45/webthinker-6812d5fd1287ee53d68f0557"><img alt="Hugging Face Models" src="https://img.shields.io/badge/🤗_Models-ffffff">
-- <span class='paper-prebadge'>arXiv</span> **Search-o1: Agentic Search-Enhanced Large Reasoning Models**  
+- ``arXiv`` **Search-o1: Agentic Search-Enhanced Large Reasoning Models**  
   ***Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou*
   <br>_arXiv (preprint), 2025_
   <br><a href="https://arxiv.org/abs/2504.21776"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=283590861766656057'><img src="https://img.shields.io/badge/Citations-37-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
-- <span class='paper-badge'>ACL 2025</span> **RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation**  
+- ``ACL 2025`` **RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation**  
   ***Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou*
   <br>_The 63rd Annual Meeting of the Association for Computational Linguistics_
   <br><a href="https://arxiv.org/abs/2412.11919"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a>
-- <span class='paper-badge'>TOIS 2025</span> **From Matching to Generation: A Survey on Generative Information Retrieval**  
+- ``TOIS 2025`` **From Matching to Generation: A Survey on Generative Information Retrieval**  
   ***Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou*
   <br>_ACM Transactions on Information Systems_
   <br><a href="https://arxiv.org/pdf/2404.14851.pdf"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1433442328918110034'><img src="https://img.shields.io/badge/Citations-67-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
 
 #### 2024
-- <span class='paper-badge'>SIGIR 2024</span> **CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks**  
+- ``SIGIR 2024`` **CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks**  
   ***Xiaoxi Li**, Zhicheng Dou, Yujia Zhou, Fangchao Liu*
   <br>_The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval_
   <br><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657778"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15744127386164548655,16522243399981860431'><img src="https://img.shields.io/badge/Citations-20-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
-- <span class='paper-badge'>AAAI 2024</span> **UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models**  
+- ``AAAI 2024`` **UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models**  
   ***Xiaoxi Li**, Yujia Zhou, Zhicheng Dou*
   <br>_The 38th AAAI Conference on Artificial Intelligence_
   <br><a href="https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5058310051629328060'><img src="https://img.shields.io/badge/Citations-28-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
@@ -61,33 +61,33 @@ redirect_from:
 ### As a Co-author
 
 #### 2025
-- <span class='paper-prebadge'>arXiv</span> **Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning**  
+- ``arXiv`` **Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning**  
   *Guanting Dong, Yifei Chen, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen*
   <br>_arXiv (preprint), 2025_
   <br><a href="https://arxiv.org/abs/2505.16410"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a>
-- <span class='paper-badge'>ACL 2025</span> **Hierarchical Document Refinement for Long-context Retrieval-augmented Generation**  
+- ``ACL 2025`` **Hierarchical Document Refinement for Long-context Retrieval-augmented Generation**  
   *Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yongkang Wu, Zhonghua Li, Qi Ye, and Zhicheng Dou*
   <br>_The 63rd Annual Meeting of the Association for Computational Linguistics_
   <br><a href="https://arxiv.org/abs/2505.10413"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a>
-- <span class='paper-badge'>ACL 2025</span> **RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation**  
+- ``ACL 2025`` **RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation**  
   *Guanting Dong, Jiajie Jin, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen*
   <br>_The 63rd Annual Meeting of the Association for Computational Linguistics_
   <br><a href="https://arxiv.org/abs/2505.xxxxxx"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a>
-- <span class='paper-badge'>ACL 2025 Findings</span> **Neuro-Symbolic Query Compiler**  
+- ``ACL 2025 Findings`` **Neuro-Symbolic Query Compiler**  
   *Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, and Ji-Rong Wen*
   <br>_Findings of the Association for Computational Linguistics: ACL 2025_
   <br><a href="https://arxiv.org/abs/2505.11932"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a>
-- <span class='paper-badge'>AAAI 2025</span> **Descriptive and Discriminative Document Identifiers for Generative Retrieval**  
+- ``AAAI 2025`` **Descriptive and Discriminative Document Identifiers for Generative Retrieval**  
   *Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li***
   <br>_The 39th AAAI Conference on Artificial Intelligence_
   <br><a href="https://doi.org/10.1609/aaai.v39i11.33253"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a>
 
 #### 2024
-- <span class='paper-badge'>TOIS 2025</span> **A Survey of Conversational Search**  
+- ``TOIS 2025`` **A Survey of Conversational Search**  
   *Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie*
   <br>_ACM Transactions on Information Systems_
   <br><a href="https://arxiv.org/pdf/2410.15576"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=645244174191248292'><img src="https://img.shields.io/badge/Citations-20-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
-- <span class='paper-prebadge'>arXiv</span> **Trustworthiness in retrieval-augmented generation systems: A survey**  
+- ``arXiv`` **Trustworthiness in retrieval-augmented generation systems: A survey**  
   *Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu*
   <br>_arXiv (preprint), 2024_
   <br><a href="https://arxiv.org/abs/2409.10102"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/Citations-39-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
