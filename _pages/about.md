@@ -52,7 +52,7 @@ Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, 
 - ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](https://doi.org/10.1609/aaai.v39i11.33253), Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.
 
 #### 2024
-- ``TOIS 2025`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=645244174191248292'><img src="https://img.shields.io/badge/Citations-20-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
+- ``arXiv`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=645244174191248292'><img src="https://img.shields.io/badge/Citations-20-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
 - ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/Citations-39-9cf?logo=Google%20Scholar&style=flat&labelColor=ffffff&color=ffffff"></a>
 
 
