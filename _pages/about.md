@@ -34,7 +34,7 @@ redirect_from:
 - ``arXiv`` **WebThinker: Empowering Large Reasoning Models with Deep Research Capability**  
   ***Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou*
   <br>_arXiv (preprint), 2025_
-  <br><a href="https://arxiv.org/abs/2504.21776"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"> <a href="https://huggingface.co/collections/lixiaoxi45/webthinker-6812d5fd1287ee53d68f0557"><img alt="Hugging Face Models" src="https://img.shields.io/badge/🤗_Models-ffffff"></a>
+  <br><a href="https://arxiv.org/abs/2504.21776"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a> <a href="https://huggingface.co/collections/lixiaoxi45/webthinker-6812d5fd1287ee53d68f0557"><img alt="Hugging Face Models" src="https://img.shields.io/badge/🤗_Models-ffffff"></a>
 - ``arXiv`` **Search-o1: Agentic Search-Enhanced Large Reasoning Models**  
   ***Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou*
   <br>_arXiv (preprint), 2025_
