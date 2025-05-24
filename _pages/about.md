@@ -50,7 +50,7 @@ Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, 
 
 #### 2024
 - ``TOIS`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie.
-- ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu.
+- ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu. <strong><span class='show_paper_citations' data='XDljV4YAAAAJ:Tyk-4Ss8FVUC'></span></strong>
 
 
 # 📖 Educations
