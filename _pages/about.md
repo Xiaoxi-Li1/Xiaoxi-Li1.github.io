@@ -31,7 +31,7 @@ redirect_from:
 ### As the First Author
 
 #### 2025
-- ``arXiv`` **WebThinker: Empowering Large Reasoning Models with Deep Research Capability**  
+- <span class='paper-badge'>CIKM 2024</span> **WebThinker: Empowering Large Reasoning Models with Deep Research Capability**  
   ***Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou*
   <br>_arXiv (preprint), 2025_
   <br><a href="https://arxiv.org/abs/2504.21776"><img alt="arXiv" src="https://img.shields.io/badge/Paper-ffffff?logo=arxiv&logoColor=red"></a> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"> <a href="https://huggingface.co/collections/lixiaoxi45/webthinker-6812d5fd1287ee53d68f0557"><img alt="Hugging Face Models" src="https://img.shields.io/badge/🤗_Models-ffffff">
