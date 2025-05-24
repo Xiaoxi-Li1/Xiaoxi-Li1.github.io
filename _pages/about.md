@@ -13,6 +13,9 @@ redirect_from:
 - I am currently a 2nd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 - Research interests: Retrieval-augmented Generation, LLM Reasoning, Search Agent, Deep Research
 
+<!-- <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fxiaoxi-li1%2Fxiaoxi-li1.github.io%40google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> -->
+
+
 # 🔥 News
 - *2025.05*: Four papers have been accepted by ACL 2025! Looking forward to seeing you in Vienna!
 - *2025.05*: We release 🌐 WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
@@ -30,13 +33,13 @@ redirect_from:
 #### 2025
 - ``arXiv`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), 
 **Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
-- ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
+- ``arXiv`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=283590861766656057'><img src="https://img.shields.io/badge/Citations-37-9cf?logo=Google%20Scholar&style=flat"></a>
 - ``ACL 2025`` [RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation](https://arxiv.org/abs/2412.11919), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou. <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a>
-- ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a> <strong><span class='show_paper_citations' data='XDljV4YAAAAJ:qjMakFHDy7sC'></span></strong>
+- ``TOIS`` [From Matching to Generation: A Survey on Generative Information Retrieval](https://arxiv.org/pdf/2404.14851.pdf), **Xiaoxi Li**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat&logo=github&logoColor=black&labelColor=white&color=white&label=Stars"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1433442328918110034'><img src="https://img.shields.io/badge/Citations-67-9cf?logo=Google%20Scholar&style=flat"></a>
 
 #### 2024
-- ``SIGIR 2024`` [CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), **Xiaoxi Li**, Zhicheng Dou, Yujia Zhou, Fangchao Liu.
-- ``AAAI 2024`` [UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380), **Xiaoxi Li**, Yujia Zhou, Zhicheng Dou.
+- ``SIGIR 2024`` [CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), **Xiaoxi Li**, Zhicheng Dou, Yujia Zhou, Fangchao Liu. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15744127386164548655,16522243399981860431'><img src="https://img.shields.io/badge/Citations-20-9cf?logo=Google%20Scholar&style=flat"></a>
+- ``AAAI 2024`` [UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380), **Xiaoxi Li**, Yujia Zhou, Zhicheng Dou. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5058310051629328060'><img src="https://img.shields.io/badge/Citations-28-9cf?logo=Google%20Scholar&style=flat"></a>
 
 ### As a Co-author
 
@@ -49,8 +52,8 @@ Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, 
 - ``AAAI 2025`` [Descriptive and Discriminative Document Identifiers for Generative Retrieval](https://doi.org/10.1609/aaai.v39i11.33253), Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.
 
 #### 2024
-- ``TOIS`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie.
-- ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu. <strong><span class='show_paper_citations' data='XDljV4YAAAAJ:Tyk-4Ss8FVUC'></span></strong>
+- ``TOIS`` [A Survey of Conversational Search](https://arxiv.org/pdf/2410.15576), Fengran Mo, Kelong Mao, Ziliang Zhao, Hongjin Qian, Haonan Chen, Yiruo Cheng, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, and Jian-Yun Nie. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=645244174191248292'><img src="https://img.shields.io/badge/Citations-20-9cf?logo=Google%20Scholar&style=flat"></a>
+- ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/Citations-39-9cf?logo=Google%20Scholar&style=flat"></a>
 
 
 # 📖 Educations
