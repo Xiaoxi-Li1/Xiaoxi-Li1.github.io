@@ -17,7 +17,6 @@ redirect_from:
 
 
 
-
 # 🔥 News
 - *2025.05*: Four papers have been accepted by ACL 2025! Looking forward to seeing you in Vienna!
 - *2025.05*: We release 🌐 WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
