@@ -26,7 +26,6 @@ redirect_from:
 - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
 
 
-
 # 📝 Publications
 <!-- \* for corresponding author. -->
 
