@@ -47,7 +47,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
-    padding: 2em 0.5em 2em 0.5em;
+    padding: 2em 0 2em 0;
     
 
     .paper-box-image{
@@ -101,9 +101,9 @@ h1:before, .anchor:before {
     padding-left: 1rem;
     padding-right: 1rem;
     position: absolute;
-    margin-top: 1em;
-    margin-left: -1em;
+    margin-top: 1rem;
+    margin-left: -1rem;
     color: white;
     background-color: #00369f;
-    font-size: 1em;
+    font-size: .8em;
 }
