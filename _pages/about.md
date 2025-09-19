@@ -61,7 +61,8 @@ Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, 
 - ``arXiv`` [Trustworthiness in retrieval-augmented generation systems: A survey](https://arxiv.org/abs/2409.10102), Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu. <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ATyk-4Ss8FVUC%27%5D.num_citations&label=Citations&color=ffffff&logo=Google%20Scholar&style=flat&labelColor=ffffff"></a>
 
 # Experiences
-- *2025.6 - Present*, REDStar Research Intern, Xiaohongshu Inc. <img src="./images/xiaohongshu.png" style="width: 1.1em;">
+- 2025.06 - Present, <span style="color:#b22222;">**REDStar**</span> Research Intern, Xiaohongshu Inc. (小红书)
+<!-- <img src="./images/xiaohongshu.png" style="width: 1.1em;"> -->
 
 # 📖 Educations
 - 2023.09 - Present, PhD, Gaoling School of Artificial Intelligence, Renmin University of China, Beijing.
