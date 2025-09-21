@@ -18,8 +18,8 @@ redirect_from:
 
 
 # 🔥 News
-- *2025.09*: WebThinker has been accepted by NeurIPS 2025! See more [details](https://github.com/RUC-NLPIR/WebThinker).
-- *2025.08*: Search-o1 has been accepted by EMNLP 2025 as Oral Presentation! See more [details](https://github.com/sunnynexus/Search-o1).
+- *2025.09*: WebThinker has been accepted by NeurIPS 2025!
+- *2025.08*: Search-o1 has been accepted by EMNLP 2025 as Oral Presentation!
 - *2025.05*: Four papers have been accepted by ACL 2025! Looking forward to seeing you in Vienna!
 - *2025.05*: We release 🌐 WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
 - *2025.02*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
