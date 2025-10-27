@@ -18,7 +18,7 @@ redirect_from:
 
 
 # 🔥 News
-- *2025.10*: We release 🤖 DeepAgent, a general reasoning agent with scalable toolsets! See more [details](https://arxiv.org/abs/2510.21618).
+- *2025.10*: We release 🛠️ DeepAgent, a general reasoning agent with scalable toolsets! See more [details](https://arxiv.org/abs/2510.21618).
 - *2025.09*: WebThinker has been accepted by NeurIPS 2025!
 - *2025.08*: Search-o1 has been accepted by EMNLP 2025 as Oral Presentation!
 - *2025.05*: Four papers have been accepted by ACL 2025! Looking forward to seeing you in Vienna!
