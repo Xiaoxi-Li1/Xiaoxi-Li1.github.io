@@ -18,6 +18,7 @@ redirect_from:
 
 
 # 🔥 News
+- *2025.10*: We release 🤖 DeepAgent, a general reasoning agent with scalable toolsets! See more [details](https://arxiv.org/abs/2510.21618).
 - *2025.09*: WebThinker has been accepted by NeurIPS 2025!
 - *2025.08*: Search-o1 has been accepted by EMNLP 2025 as Oral Presentation!
 - *2025.05*: Four papers have been accepted by ACL 2025! Looking forward to seeing you in Vienna!
@@ -35,6 +36,8 @@ redirect_from:
 ## As the First Author
 
 ### 2025
+
+- ``arXiv 2025`` [DeepAgent: A General Reasoning Agent with Scalable Toolsets](https://arxiv.org/abs/2510.21618), **Xiaoxi Li**, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a>
 - ``NeurIPS 2025`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), 
 **Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a>  <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2494358555732420670'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ALkGwnXOMwfcC%27%5D.num_citations&label=Citations&color=ffffff&logo=Google%20Scholar&style=flat&labelColor=ffffff"></a> <a href="https://huggingface.co/collections/lixiaoxi45/webthinker-6812d5fd1287ee53d68f0557"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-blue?color=ffffff"></a>
 - ``EMNLP 2025`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), **Xiaoxi Li**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, and Zhicheng Dou.  <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=ffffff&color=ffffff&label=Stars"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=283590861766656057,17334087535406948909,11110584847133377481'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AYsMSGLbcyi4C%27%5D.num_citations&label=Citations&color=ffffff&logo=Google%20Scholar&style=flat&labelColor=ffffff"></a>
