@@ -25,8 +25,8 @@ redirect_from:
 - *2025.05*: We release 🌐 WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
 - *2025.02*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
 - *2025.01*: We release 🔍 Search-o1, enhancing o1-like large reasoning models with agentic search! See more [details](https://arxiv.org/abs/2501.05366).
-- *2024.03*: Our work on unified language models for knowledge-intensive tasks has been accepted by SIGIR 2024! See more [details](https://arxiv.org/abs/2404.14851).
-- *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
+<!-- - *2024.03*: Our work on unified language models for knowledge-intensive tasks has been accepted by SIGIR 2024! See more [details](https://arxiv.org/abs/2404.14851).
+- *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380). -->
 
 
 
