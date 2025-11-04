@@ -93,7 +93,7 @@ redirect_from:
 <span style="font-size: 0.87em; color: #c00000;"><img src="./images/logo-venue.png" style="width: 0.95em; position: relative; top: -0.1em;"> **ACL 2025 (CCF-A)**</span>
 - [**Neuro-Symbolic Query Compiler**](https://aclanthology.org/2025.findings-acl.628/)  \
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, and Ji-Rong Wen.</span>\
-<span style="font-size: 0.87em;"><img src="./images/logo-venue.png" style="width: 0.95em; position: relative; top: -0.1em;"> ACL 2025 (Findings)</span>
+<span style="font-size: 0.87em; color: #c00000;"><img src="./images/logo-venue.png" style="width: 0.95em; position: relative; top: -0.1em;"> **ACL 2025 (Findings)**</span>
 - [**Descriptive and Discriminative Document Identifiers for Generative Retrieval**](https://doi.org/10.1609/aaai.v39i11.33253)  \
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.</span>\
 <span style="font-size: 0.87em; color: #c00000;"><img src="./images/logo-venue.png" style="width: 0.95em; position: relative; top: -0.1em;"> **AAAI 2025 (CCF-A)**</span>
