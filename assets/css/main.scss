@@ -107,3 +107,13 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+// Style for Stars/Citations badges with shadow
+a img[style*="border"] {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease;
+    
+    &:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+    }
+}
