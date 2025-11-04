@@ -82,7 +82,7 @@ Guanting Dong, Jiajie Jin, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen.\
 <span style="color: #c00000;">**ACL 2025, CCF-A**</span>
 - [**Neuro-Symbolic Query Compiler**](https://aclanthology.org/2025.findings-acl.628/)  \
 Yuyao Zhang, Zhicheng Dou, **Xiaoxi Li**, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, and Ji-Rong Wen.\
-**ACL 2025 Findings**
+<span style="color: #c00000;">**ACL 2025 Findings**</span>
 - [**Descriptive and Discriminative Document Identifiers for Generative Retrieval**](https://doi.org/10.1609/aaai.v39i11.33253)  \
 Jiehan Cheng, Zhicheng Dou, Yutao Zhu, and **Xiaoxi Li**.\
 <span style="color: #c00000;">**AAAI 2025, CCF-A**</span>
