@@ -40,6 +40,7 @@ redirect_from:
 
 - [**DeepAgent: A General Reasoning Agent with Scalable Toolsets**](https://arxiv.org/abs/2510.21618) \
 <span style="font-size: 0.87em;">**Xiaoxi Li**, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</span>\
+<span style="font-size: 0.87em;">Preprint. Under review.</span>\
 <a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 - [**WebThinker: Empowering Large Reasoning Models with Deep Research Capability**](https://arxiv.org/abs/2504.21776) \
 <span style="font-size: 0.87em;">**Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou.</span>\
@@ -73,12 +74,15 @@ redirect_from:
 ### 2025
 - [**Agentic Entropy-Balanced Policy Optimization**](https://arxiv.org/abs/2510.14545) \
 <span style="font-size: 0.87em;">Guanting Dong, Licheng Bao, Zhongyuan Wang, Kangzhi Zhao, **Xiaoxi Li**, Jiajie Jin, Jinghan Yang, Hangyu Mao, Fuzheng Zhang, Kun Gai, Guorui Zhou, Yutao Zhu, Ji-Rong Wen, Zhicheng Dou.</span>\
+<span style="font-size: 0.87em;">Preprint. Under review.</span>\
 <a href="https://github.com/dongguanting/ARPO"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/ARPO?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 - [**Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search**](https://arxiv.org/abs/2507.02652) \
 <span style="font-size: 0.87em;">Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yang Zhao, Hongjin Qian, Zhicheng Dou.</span>\
+<span style="font-size: 0.87em;">Preprint. Under review.</span>\
 <a href="https://github.com/ignorejjj/HiRA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/HiRA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 - [**Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning**](https://arxiv.org/abs/2505.16410) \
 <span style="font-size: 0.87em;">Guanting Dong, Yifei Chen, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen.</span>\
+<span style="font-size: 0.87em;">Preprint. Under review.</span>\
 <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars" style="border: 1px solid #ddd; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=11602636321899326654'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AhqOjcs7Dif8C%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 - [**Hierarchical Document Refinement for Long-context Retrieval-augmented Generation**](https://aclanthology.org/2025.acl-long.176/)  \
 <span style="font-size: 0.87em;">Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yongkang Wu, Zhonghua Li, Qi Ye, and Zhicheng Dou.</span>\
@@ -101,6 +105,7 @@ redirect_from:
 ### 2024
 - [**Trustworthiness in retrieval-augmented generation systems: A survey**](https://arxiv.org/abs/2409.10102) \
 <span style="font-size: 0.87em;">Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu.</span>\
+<span style="font-size: 0.87em;">Preprint. Under review.</span>\
 <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ATyk-4Ss8FVUC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 
 # 💻 Experiences
