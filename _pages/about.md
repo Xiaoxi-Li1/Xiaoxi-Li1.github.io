@@ -82,7 +82,8 @@ redirect_from:
 <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars" style="border: 1px solid #ddd; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=11602636321899326654'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AhqOjcs7Dif8C%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 - [**Hierarchical Document Refinement for Long-context Retrieval-augmented Generation**](https://aclanthology.org/2025.acl-long.176/)  \
 <span style="font-size: 0.87em;">Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yongkang Wu, Zhonghua Li, Qi Ye, and Zhicheng Dou.</span>\
-<span style="font-size: 0.87em; color: #c00000;">**ACL 2025 (CCF-A) (Oral)**</span>
+<span style="font-size: 0.87em; color: #c00000;">**ACL 2025 (CCF-A) (Oral)**</span>\
+<a href="https://github.com/ignorejjj/LongRefiner"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ignorejjj/LongRefiner?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars" style="border: 1px solid #ddd; border-radius: 4px;"></a>
 - [**RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation**](https://aclanthology.org/2025.acl-long.179/)  \
 <span style="font-size: 0.87em;">Guanting Dong, Jiajie Jin, **Xiaoxi Li**, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen.</span>\
 <span style="font-size: 0.87em; color: #c00000;">**ACL 2025 (CCF-A)**</span>
