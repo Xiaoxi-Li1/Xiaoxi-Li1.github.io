@@ -110,7 +110,7 @@ redirect_from:
 
 # 💻 Experiences
 - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc.
-  - <span style="font-size: 0.87em;">Research Direction: Reasoning & Agentic LLM, Deep Research</span>
+  - <span style="font-size: 0.925em;">Research Direction: Agentic LLM</span>
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 # 📖 Educations
