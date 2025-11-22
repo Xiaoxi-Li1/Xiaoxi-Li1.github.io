@@ -11,10 +11,10 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About me
 - I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
-- Research interests: 
+- Research Focus: 
   - <span style="font-size: 0.9em;">Retrieval-Augmented LLM: [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [RetroLLM](https://aclanthology.org/2025.acl-long.819/)</span>
-  - <span style="font-size: 0.9em;">Deep Research: [Search-o1](https://arxiv.org/abs/2501.05366), [WebThinker](https://arxiv.org/abs/2504.21776)</span>
-  - <span style="font-size: 0.9em;">General Agent: [DeepAgent](https://arxiv.org/abs/2510.21618)</span>
+  - <span style="font-size: 0.9em;">Deep Research Agent: [Search-o1](https://arxiv.org/abs/2501.05366), [WebThinker](https://arxiv.org/abs/2504.21776)</span>
+  - <span style="font-size: 0.9em;">General Reasoning Agent: [DeepAgent](https://arxiv.org/abs/2510.21618)</span>
 
 <!-- <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> -->
 
