@@ -122,7 +122,7 @@ redirect_from:
 # 📖 Educations
 - 2023.09 - Present, PhD, Gaoling School of Artificial Intelligence, Renmin University of China, Beijing.
 - 2019.09 - 2023.06, Bachelor, College of Artificial Intelligence, Nankai University, Tianjin.
-<img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/></a>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/>
 
 
 <!-- # Experiences
