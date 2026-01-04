@@ -10,8 +10,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # About me
-- I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
-- Research Focus: Retrieval-Augmented LLM, LLM Reasoning, Deep Research, Autonomous Agent
+I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
+
+I’m currently a REDstar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 10+ papers in top-tier AI conferences and journals (6 first-author papers), including NeurIPS, ACL, EMNLP, AAAI, SIGIR, and TOIS.
+
+**Research Interests：**
+- **Foundation Agents:** Training fully autonomous LLM/MLLM agents for general scenarios;
+- **Deep Research:** Enhancing long-horizon reasoning with web information seeking;
+- **Retrieval-Augmented LLMs:** Improving large language models with knowledge retrieval.
+
+
+<!-- - Research Focus: Retrieval-Augmented LLM, LLM Reasoning, Deep Research, Autonomous Agent -->
 
 
 <!-- - Research Focus: 
@@ -24,17 +33,21 @@ redirect_from:
 
 
 # 🔥 News
-- *2025.10*: We release 🛠️ DeepAgent, a general reasoning agent with scalable toolsets! See more [details](https://arxiv.org/abs/2510.21618).
-- *2025.09*: WebThinker has been accepted by NeurIPS 2025!
-- *2025.08*: Search-o1 has been accepted by EMNLP 2025 as Oral Presentation!
-- *2025.05*: Four papers have been accepted by ACL 2025! Looking forward to seeing you in Vienna!
-- *2025.05*: We release 🌐 WebThinker, a deep research agent capable of autonomous web search, navigation, and research report generation during reasoning! See more [details](https://arxiv.org/abs/2504.21776).
+- *2025.10*: We release 🛠️ [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets, which was featured as [HF Daily Paper #1](https://huggingface.co/papers/date/2025-10-27).
+- *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced policy optimization method for multi-turn LLM agents, which was featured as [HF Daily Paper #2](https://huggingface.co/papers/2510.14545)!
+- *2025.09*: 🌐 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**! A powerful open-source deep research agent. Check out our [demo](https://github.com/RUC-NLPIR/WebThinker)!
+- *2025.08*: 🔍 [Search-o1]((https://arxiv.org/abs/2501.05366)) has been accepted by **EMNLP 2025** as **Oral Presentation**!
+- *2025.05*: **Four papers** have been accepted by **ACL 2025**! Looking forward to seeing you in Vienna!
 - *2025.02*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
 - *2025.01*: We release 🔍 Search-o1, enhancing o1-like large reasoning models with agentic search! See more [details](https://arxiv.org/abs/2501.05366).
+- *2024.03*: [CorpusLM](https://arxiv.org/abs/2404.14851) has been accepted by **SIGIR 2024**! A unified language models for knowledge-intensive tasks. Looking forward to seeing you in Washington D.C.!
+<!-- - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380). -->
 
-<!-- - *2024.03*: Our work on unified language models for knowledge-intensive tasks has been accepted by SIGIR 2024! See more [details](https://arxiv.org/abs/2404.14851).
-- *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380). -->
 
+# 💻 Experiences
+- 2025.06 - Present, <span style="color:#ff2442;">**REDstar**</span> Research Intern on Foundation Agents and Deep Research, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu Inc.
+<!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.95em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
+<!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 
 # 📝 Publications
@@ -113,11 +126,6 @@ redirect_from:
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu.</span>\
 <span style="font-size: 0.87em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
 <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ATyk-4Ss8FVUC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a>
-
-# 💻 Experiences
-- 2025.06 - Present, **REDstar** Research Intern on Agentic AI, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu Inc.
-<!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.95em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
-<!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 # 📖 Educations
 - 2023.09 - Present, PhD, Gaoling School of Artificial Intelligence, Renmin University of China, Beijing.
