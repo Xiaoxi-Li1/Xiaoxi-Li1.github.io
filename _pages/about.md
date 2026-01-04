@@ -36,10 +36,9 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 - *2025.10*: We release 🛠️ [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets, which was featured as [HF Daily Paper #1](https://huggingface.co/papers/date/2025-10-27). Check out our [demo](https://github.com/RUC-NLPIR/DeepAgent)!
 - *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced agentic RL method, which was featured as [HF Daily Paper #2](https://huggingface.co/papers/2510.14545)!
 - *2025.09*: 🌐 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025** and reaching **1200 stars** and **100 citations**! It is a powerful open-source deep research agent. Check out our [demo](https://github.com/RUC-NLPIR/WebThinker)!
-- *2025.08*: 🔍 [Search-o1]((https://arxiv.org/abs/2501.05366)) has been accepted by **EMNLP 2025** as **Oral Presentation**!
+- *2025.08*: 🔍 [Search-o1]((https://arxiv.org/abs/2501.05366)) has been accepted by **EMNLP 2025** as **Oral Presentation**! It is the first framework that performs interleaved reasoning and web-search for o1-like large reasoning models.
 - *2025.05*: **Four papers** have been accepted by **ACL 2025**! Looking forward to seeing you in Vienna!
 - *2025.02*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
-- *2025.01*: We release 🔍 [Search-o1](https://arxiv.org/abs/2501.05366), the first framework that performs interleaved reasoning and web-search for o1-like large reasoning models!
 - *2024.03*: [CorpusLM](https://arxiv.org/abs/2404.14851) has been accepted by **SIGIR 2024** as **Oral Presentation**! It is a unified LLM for retrieval and question answering.
 <!-- - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380). -->
 
