@@ -35,7 +35,7 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 # 🔥 News
 - *2025.10*: We release 🛠️ [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets, which was featured as [HF Daily Paper #1](https://huggingface.co/papers/date/2025-10-27).
 - *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced policy optimization method for multi-turn LLM agents, which was featured as [HF Daily Paper #2](https://huggingface.co/papers/2510.14545)!
-- *2025.09*: 🌐 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025** and reaching **1000 stars** and **100 citations**! It is a powerful open-source deep research agent. Check out our [demo](https://github.com/RUC-NLPIR/WebThinker)!
+- *2025.09*: 🌐 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025** and reaching **1200 stars** and **100 citations**! It is a powerful open-source deep research agent. Check out our [demo](https://github.com/RUC-NLPIR/WebThinker)!
 - *2025.08*: 🔍 [Search-o1]((https://arxiv.org/abs/2501.05366)) has been accepted by **EMNLP 2025** as **Oral Presentation**!
 - *2025.05*: **Four papers** have been accepted by **ACL 2025**! Looking forward to seeing you in Vienna!
 - *2025.02*: Our survey on Generative Information Retrieval has been accepted by TOIS! See more [details](https://arxiv.org/abs/2404.14851).
