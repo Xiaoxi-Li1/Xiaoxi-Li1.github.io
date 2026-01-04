@@ -44,11 +44,6 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 <!-- - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380). -->
 
 
-# 💻 Experiences
-- 2025.06 - Present, **REDstar** Research Intern on Foundation Agents and Deep Research, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu Inc.
-<!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.95em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
-<!-- <span style="color:#ff2442;">**REDstar**</span> -->
-
 
 # 📝 Publications
 <!-- \* for corresponding author. -->
@@ -126,6 +121,13 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Yujia Zhou, Yan Liu, **Xiaoxi Li**, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo Li, Zhicheng Dou, Tsung-Yi Ho, Philip S Yu.</span>\
 <span style="font-size: 0.87em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
 <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ATyk-4Ss8FVUC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a>
+
+
+# 💻 Experiences
+- 2025.06 - Present, <span style="color:#ff2442;">**REDstar**</span> Research Intern on Foundation Agents and Deep Research, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu Inc.
+<!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.95em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
+<!-- <span style="color:#ff2442;">**REDstar**</span> -->
+
 
 # 📖 Educations
 - 2023.09 - Present, PhD, Gaoling School of Artificial Intelligence, Renmin University of China, Beijing.
