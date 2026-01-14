@@ -33,6 +33,8 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 
 
 # 🔥 News
+
+- *2026.01*: [DeepAgent](https://arxiv.org/abs/2510.21618) and [AEPO](https://arxiv.org/abs/2510.14545) accepted by **WWW 2026**. Looking forward to seeing you in Dubai!
 - *2025.10*: We release [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets. Check out our [demo](https://github.com/RUC-NLPIR/DeepAgent)!
 - *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced agentic RL method.
 - *2025.09*: [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025** and reached **1200 stars** and **100 citations**! It's a powerful open-source deep research agent. Check out our [demo](https://github.com/RUC-NLPIR/WebThinker)!
@@ -53,7 +55,7 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 
 - [**DeepAgent: A General Reasoning Agent with Scalable Toolsets**](https://arxiv.org/abs/2510.21618) \
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **Xiaoxi Li**, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</span>\
-<span style="font-size: 0.87em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
+<span style="font-size: 0.87em; color: #c00000;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **WWW 2026 (CCF-A)**</span>\
 <a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 - [**WebThinker: Empowering Large Reasoning Models with Deep Research Capability**](https://arxiv.org/abs/2504.21776) \
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **Xiaoxi Li**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou.</span>\
