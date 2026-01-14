@@ -89,11 +89,13 @@ I’m currently a REDstar research intern focusing on foundation agent research 
 
 ## As a Co-author
 
-### 2025
+### 2026
 - [**Agentic Entropy-Balanced Policy Optimization**](https://arxiv.org/abs/2510.14545) \
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Guanting Dong, Licheng Bao, Zhongyuan Wang, Kangzhi Zhao, **Xiaoxi Li**, Jiajie Jin, Jinghan Yang, Hangyu Mao, Fuzheng Zhang, Kun Gai, Guorui Zhou, Yutao Zhu, Ji-Rong Wen, Zhicheng Dou.</span>\
-<span style="font-size: 0.87em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
+<span style="font-size: 0.87em; color: #c00000;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **WWW 2026 (CCF-A)**</span>\
 <a href="https://github.com/dongguanting/ARPO"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/ARPO?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
+
+### 2025
 - [**Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search**](https://arxiv.org/abs/2507.02652) \
 <span style="font-size: 0.869em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Jiajie Jin, **Xiaoxi Li**, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yang Zhao, Hongjin Qian, Zhicheng Dou.</span>\
 <span style="font-size: 0.87em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
