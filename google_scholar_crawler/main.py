@@ -26,6 +26,7 @@ first_author_ids = [
     'XDljV4YAAAAJ:IjCSPb-OGe4C',  # CorpusLM
     'XDljV4YAAAAJ:9yKSN-GCB0IC',  # UniGen
     'XDljV4YAAAAJ:QIV2ME_5wuYC',  # DeepAgent
+    'XDljV4YAAAAJ:d1gkVwhDpl0C',  # Immersion and invariance-based adaptive control... (quadrotor)
 ]
 
 first_author_citations = 0
@@ -117,9 +118,33 @@ try:
 
     author['github_stars'] = total_stars
     print(f"GitHub total stars (with orgs): {total_stars}")
+
+    # GitHub stars for first-author-paper repos (selected)
+    first_author_repos = [
+        ("RUC-NLPIR", "DeepAgent"),
+        ("RUC-NLPIR", "WebThinker"),
+        ("sunnynexus", "Search-o1"),
+        ("sunnynexus", "RetroLLM"),
+        ("RUC-NLPIR", "GenIR-Survey"),
+    ]
+    first_author_repo_stars = 0
+    for owner, repo in first_author_repos:
+        repo_resp = requests.get(
+            f"https://api.github.com/repos/{owner}/{repo}",
+            headers=headers,
+            timeout=20,
+        )
+        if repo_resp.status_code == 200:
+            repo_json = repo_resp.json()
+            first_author_repo_stars += repo_json.get("stargazers_count", 0)
+        else:
+            print(f"Failed to fetch repo {owner}/{repo}: {repo_resp.status_code}")
+    author["first_author_repo_stars"] = first_author_repo_stars
+    print(f"First-author repos stars (selected): {first_author_repo_stars}")
 except Exception as e:
     print(f"Error fetching GitHub stars: {e}")
     author['github_stars'] = 0
+    author["first_author_repo_stars"] = 0
 
 print(json.dumps(author, indent=2))
 os.makedirs('results', exist_ok=True)
