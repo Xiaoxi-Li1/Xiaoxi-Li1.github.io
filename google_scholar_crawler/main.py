@@ -4,17 +4,56 @@ import json
 from datetime import datetime
 import os
 import requests
+import time
 
-# Setup proxy
-pg = ProxyGenerator()
-pg.FreeProxies()  # Use free rotating proxies
-scholarly.use_proxy(pg)
+def fetch_previous_author_data() -> dict:
+    """
+    Fallback: load the last successfully generated gs_data.json from google-scholar-stats branch.
+    This prevents GitHub Actions from failing when Google Scholar blocks scraping.
+    """
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if not repo:
+        raise RuntimeError("GITHUB_REPOSITORY is not set; cannot fetch previous gs_data.json")
 
-author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
-scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
-name = author['name']
-author['updated'] = str(datetime.now())
-author['publications'] = {v['author_pub_id']:v for v in author['publications']}
+    url = f"https://raw.githubusercontent.com/{repo}/google-scholar-stats/gs_data.json"
+    resp = requests.get(url, timeout=20)
+    if resp.status_code != 200:
+        raise RuntimeError(f"Failed to fetch previous gs_data.json: {resp.status_code}")
+    return resp.json()
+
+
+def fetch_author_data_with_retries(google_scholar_id: str, attempts: int = 5) -> dict:
+    last_err = None
+    for i in range(1, attempts + 1):
+        try:
+            pg = ProxyGenerator()
+            pg.FreeProxies()  # free rotating proxies (sometimes flaky)
+            scholarly.use_proxy(pg)
+
+            author: dict = scholarly.search_author_id(google_scholar_id)
+            scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
+            author["updated"] = str(datetime.now())
+            author["publications"] = {v["author_pub_id"]: v for v in author["publications"]}
+            return author
+        except Exception as e:
+            last_err = e
+            print(f"[scholarly] attempt {i}/{attempts} failed: {e}")
+            time.sleep(min(5 * i, 20))
+
+    raise RuntimeError(f"scholarly failed after {attempts} attempts: {last_err}")
+
+
+google_scholar_id = os.environ["GOOGLE_SCHOLAR_ID"]
+try:
+    author = fetch_author_data_with_retries(google_scholar_id, attempts=5)
+except Exception as e:
+    print(f"[scholarly] giving up, fallback to previous gs_data.json. reason: {e}")
+    author = fetch_previous_author_data()
+    author["updated"] = str(datetime.now())
+    if isinstance(author.get("publications"), list):
+        author["publications"] = {v["author_pub_id"]: v for v in author["publications"]}
+
+name = author.get("name", "")
 
 # Calculate first-author citations
 # List of first-author paper IDs (update this list if needed)
