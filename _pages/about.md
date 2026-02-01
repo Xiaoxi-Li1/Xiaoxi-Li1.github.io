@@ -26,9 +26,6 @@ I'm currently a REDstar research intern focusing on foundation agent research at
 - **Retrieval-Augmented LLMs:** Improving large language models with knowledge retrieval ([RetroLLM](https://aclanthology.org/2025.acl-long.819/), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)).
 
 
-**Invited Talks:**
-- *2025.04*: **"WebThinker: Empowering Large Reasoning Models with Deep Research Capability"**, MLNLP Community.
-
 <!-- - Research Focus: Retrieval-Augmented LLM, LLM Reasoning, Deep Research, Autonomous Agent -->
 
 
@@ -135,6 +132,10 @@ I'm currently a REDstar research intern focusing on foundation agent research at
 - 2025.06 - Present, <span style="color: #c00000;">**REDstar**</span> Research Intern on Foundation Agents and Deep Research, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu Inc.
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.95em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
+
+
+# 🎤 Invited Talks
+- *2025.04*: **"WebThinker: Empowering Large Reasoning Models with Deep Research Capability"**, MLNLP Community.
 
 
 # 📖 Educations
