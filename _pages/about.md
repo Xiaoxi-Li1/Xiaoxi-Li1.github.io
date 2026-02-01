@@ -135,7 +135,7 @@ I'm currently a REDstar research intern focusing on foundation agent research at
 
 
 # 🎤 Invited Talks
-- *2025.04*: **"WebThinker: Empowering Large Reasoning Models with Deep Research Capability"**, MLNLP Community.
+- *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community.
 
 
 # 📖 Educations
