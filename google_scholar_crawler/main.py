@@ -35,42 +35,88 @@ for pub_id in first_author_ids:
 
 author['first_author_citations'] = first_author_citations
 
-# Get GitHub total stars
+# Get GitHub total stars (include organization repos)
 github_username = os.environ.get('GITHUB_USERNAME', 'sunnynexus')
-github_token = os.environ.get('GITHUB_TOKEN', '')  # Optional: use token to avoid rate limits
+github_pat = os.environ.get('GITHUB_PAT', '')
+github_token = github_pat or os.environ.get('GITHUB_TOKEN', '')
+github_orgs_env = os.environ.get('GITHUB_ORGS', '')
+github_orgs = [org.strip() for org in github_orgs_env.split(',') if org.strip()]
+
+
+def fetch_paginated(url: str, headers: dict) -> list:
+    results = []
+    page = 1
+    while True:
+        sep = '&' if '?' in url else '?'
+        response = requests.get(
+            f'{url}{sep}page={page}',
+            headers=headers,
+            timeout=20,
+        )
+        if response.status_code != 200:
+            print(f"Failed to fetch {url}: {response.status_code}")
+            break
+        batch = response.json()
+        if not batch:
+            break
+        results.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+    return results
+
+
+def sum_stars(repos: list, seen: set) -> int:
+    total = 0
+    for repo in repos:
+        full_name = repo.get('full_name')
+        if not full_name or full_name in seen:
+            continue
+        seen.add(full_name)
+        total += repo.get('stargazers_count', 0)
+    return total
+
 
 try:
     headers = {}
     if github_token:
         headers['Authorization'] = f'token {github_token}'
-    
-    # Get all repositories
-    repos_url = f'https://api.github.com/users/{github_username}/repos?per_page=100'
-    response = requests.get(repos_url, headers=headers)
-    
-    if response.status_code == 200:
-        repos = response.json()
-        total_stars = sum(repo.get('stargazers_count', 0) for repo in repos)
-        
-        # If user has more than 100 repos, handle pagination
-        page = 2
-        while len(repos) == 100:
-            response = requests.get(f'{repos_url}&page={page}', headers=headers)
-            if response.status_code == 200:
-                new_repos = response.json()
-                if not new_repos:
-                    break
-                repos.extend(new_repos)
-                total_stars += sum(repo.get('stargazers_count', 0) for repo in new_repos)
-                page += 1
-            else:
-                break
-        
-        author['github_stars'] = total_stars
-        print(f"GitHub total stars: {total_stars}")
+
+    total_stars = 0
+    seen_repos = set()
+
+    if github_pat:
+        # Use user-scoped token to include organization repos the user can access
+        repos_url = (
+            'https://api.github.com/user/repos'
+            '?per_page=100&affiliation=owner,organization_member'
+        )
+        repos = fetch_paginated(repos_url, headers)
+        total_stars += sum_stars(repos, seen_repos)
     else:
-        print(f"Failed to fetch GitHub data: {response.status_code}")
-        author['github_stars'] = 0
+        # Public fallback: user repos + public org repos
+        user_repos_url = (
+            f'https://api.github.com/users/{github_username}/repos'
+            '?per_page=100&type=public'
+        )
+        repos = fetch_paginated(user_repos_url, headers)
+        total_stars += sum_stars(repos, seen_repos)
+
+        orgs_url = f'https://api.github.com/users/{github_username}/orgs?per_page=100'
+        orgs = fetch_paginated(orgs_url, headers)
+        orgs_from_api = [org.get('login') for org in orgs if org.get('login')]
+        orgs_all = sorted(set(github_orgs + orgs_from_api))
+
+        for org in orgs_all:
+            org_repos_url = (
+                f'https://api.github.com/orgs/{org}/repos'
+                '?per_page=100&type=public'
+            )
+            org_repos = fetch_paginated(org_repos_url, headers)
+            total_stars += sum_stars(org_repos, seen_repos)
+
+    author['github_stars'] = total_stars
+    print(f"GitHub total stars (with orgs): {total_stars}")
 except Exception as e:
     print(f"Error fetching GitHub stars: {e}")
     author['github_stars'] = 0

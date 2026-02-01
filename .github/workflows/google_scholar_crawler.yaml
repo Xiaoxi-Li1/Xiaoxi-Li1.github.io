@@ -29,3 +29,5 @@ jobs:
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
         GITHUB_USERNAME: sunnynexus
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        GITHUB_ORGS: ${{ secrets.GITHUB_ORGS }}
