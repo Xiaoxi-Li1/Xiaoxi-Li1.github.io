@@ -168,19 +168,20 @@ I'm currently a REDstar research intern focusing on foundation agent research at
 <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8987613846345750009'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ATyk-4Ss8FVUC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a> -->
 
 
+
 # 💻 Experiences
-- 2025.06 - Present, <span style="color: #c00000;">**REDstar**</span> Research Intern on Foundation Agents and Deep Research, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu Inc.
+- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> Xiaohongshu, Central Platform Algorithm Team
+  - Research Intern on General AI Agents (<span style="color: #c00000;">**RedStar**</span> Program)
+  - Mentors: Wenxiang Jiao, Yuan Lu
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 
-# 🎤 Invited Talks
-- *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community.
-
-
 # 📖 Educations
-- 2023.09 - Present, PhD, Gaoling School of Artificial Intelligence, Renmin University of China, Beijing.
-- 2019.09 - 2023.06, Bachelor, College of Artificial Intelligence, Nankai University, Tianjin.
+- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1.4em; position: relative; top: -0.1em; margin-left: 0.2em;"> Ph.D. in Artificial Intelligence  
+  Gaoling School of Artificial Intelligence, Renmin University of China
+- 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1.4em; position: relative; top: -0.1em; margin-left: 0.2em;"> B.Sc. in Intelligence Science and Technology  
+  College of Artificial Intelligence, Nankai University
 <img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/>
 <!-- <img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/> -->
 
@@ -191,7 +192,11 @@ I'm currently a REDstar research intern focusing on foundation agent research at
 - *2016.9 - 2019.6*, Research Assistant, Beijing Key Lab of Big Data Management and Analysis Methods. Supervised by [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ)
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited <img src="./images/Infosys.png" style="width: 3em;">. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) -->
 
-<!-- # Academic Services
-- AC/SPC: ACL Rolling Review
-- PC Member: ACL, SIGIR, NeurIPS, ICLR, ICML, WWW, SIGKDD, AAAI, EMNLP, CIKM, WSDM, COLING, COLM 
-- Journal Reviewer: TOIS, JASIST, KAIS, TALLIP, Computing Surveys -->
+# 🎤 Invited Talks
+- *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community.
+
+
+# 📚 Academic Services
+<!-- - AC/SPC: ACL Rolling Review -->
+- PC Member: ACL Rolling Review, ICML, ICLR, SIGIR, AAAI
+- Journal Reviewer: Computing Surveys, TOIS
