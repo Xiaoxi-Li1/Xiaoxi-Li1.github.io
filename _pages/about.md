@@ -170,7 +170,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 
 # 💻 Experiences
-- 2025.06 - 2028.06 (Expected) | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Algorithm Team  
+- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Algorithm Team  
   Research Intern on General AI Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
   Mentors: Wenxiang Jiao, Yuan Lu
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
@@ -178,7 +178,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 
 # 📖 Educations
-- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence  
+- 2023.09 - 2028.06 (Expected) | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence  
   Gaoling School of Artificial Intelligence, Renmin University of China
 - 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> B.Sc. in Intelligence Science and Technology  
   College of Artificial Intelligence, Nankai University
