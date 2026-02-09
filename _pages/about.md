@@ -52,7 +52,7 @@ redirect_from:
 # About me
 I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
-I'm currently a REDstar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 10+ papers in top-tier AI conferences and journals (7 first-author papers), including NeurIPS, ICLR, ACL, EMNLP, AAAI, SIGIR, WWW, and TOIS. 
+I'm currently a RedStar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 10+ papers in top-tier AI conferences and journals (7 first-author papers), including NeurIPS, ICLR, ACL, EMNLP, AAAI, SIGIR, WWW, and TOIS. 
 
 <!-- My research has received <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.citedby&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a> and <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.github_stars&label=Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black" style="border: 1px solid #ccc; border-radius: 4px;"></a>, including <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a> and <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_repo_stars&label=Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black" style="border: 1px solid #ccc; border-radius: 4px;"></a> to my first-author papers. -->
 
@@ -170,17 +170,17 @@ I'm currently a REDstar research intern focusing on foundation agent research at
 
 
 # 💻 Experiences
-- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; margin-left: 0.15em;"> Xiaohongshu, Central Platform Algorithm Team  
-  Research Intern on General AI Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
-  Mentors: Wenxiang Jiao, Yuan Lu
+- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Algorithm Team  
+  - Research Intern on General AI Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
+  - Mentors: Wenxiang Jiao, Yuan Lu
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 
 # 📖 Educations
-- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence  
+- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence  
   Gaoling School of Artificial Intelligence, Renmin University of China
-- 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; margin-left: 0.15em;"> B.Sc. in Intelligence Science and Technology  
+- 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; top: -0.05em; margin-left: 0.15em;"> B.Sc. in Intelligence Science and Technology  
   College of Artificial Intelligence, Nankai University
 <img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/>
 <!-- <img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/> -->
