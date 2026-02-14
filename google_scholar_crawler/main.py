@@ -2,6 +2,7 @@ from scholarly import scholarly, ProxyGenerator
 import jsonpickle
 import json
 from datetime import datetime
+from decimal import Decimal, ROUND_HALF_UP
 import os
 import requests
 import time
@@ -117,6 +118,12 @@ def sum_stars(repos: list, seen: set) -> int:
     return total
 
 
+def format_stars_k(value: int) -> str:
+    # Always show stars in k-unit, rounded to one decimal (half up).
+    k_value = (Decimal(value) / Decimal('1000')).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP)
+    return f"{k_value}k"
+
+
 try:
     headers = {}
     if github_token:
@@ -156,6 +163,7 @@ try:
             total_stars += sum_stars(org_repos, seen_repos)
 
     author['github_stars'] = total_stars
+    author['github_stars_k'] = format_stars_k(total_stars)
     print(f"GitHub total stars (with orgs): {total_stars}")
 
     # GitHub stars for first-author-paper repos (selected)
@@ -179,11 +187,14 @@ try:
         else:
             print(f"Failed to fetch repo {owner}/{repo}: {repo_resp.status_code}")
     author["first_author_repo_stars"] = first_author_repo_stars
+    author["first_author_repo_stars_k"] = format_stars_k(first_author_repo_stars)
     print(f"First-author repos stars (selected): {first_author_repo_stars}")
 except Exception as e:
     print(f"Error fetching GitHub stars: {e}")
     author['github_stars'] = 0
+    author['github_stars_k'] = "0.0k"
     author["first_author_repo_stars"] = 0
+    author["first_author_repo_stars_k"] = "0.0k"
 
 print(json.dumps(author, indent=2))
 os.makedirs('results', exist_ok=True)

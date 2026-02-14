@@ -101,6 +101,9 @@ first_author_ids = [
   "citedby": 1163,                    // 总引用数
   "first_author_citations": 779,      // 一作论文总引用
   "github_stars": 1500,               // GitHub 总星数
+  "github_stars_k": "1.5k",           // GitHub 总星数（k单位，四舍五入保留1位小数）
+  "first_author_repo_stars": 860,     // 一作项目总星数
+  "first_author_repo_stars_k": "0.9k",// 一作项目总星数（k单位，四舍五入保留1位小数）
   "publications": {                   // 各篇论文详情
     "XDljV4YAAAAJ:...": {
       "num_citations": 322,
