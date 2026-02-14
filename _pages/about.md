@@ -62,8 +62,6 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - **Retrieval-Augmented LLMs:** Improving large language models with knowledge retrieval ([RetroLLM](https://aclanthology.org/2025.acl-long.819/), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)).
 
 
-<!-- - Research Focus: Retrieval-Augmented LLM, LLM Reasoning, Deep Research, Autonomous Agent -->
-
 
 <!-- - Research Focus: 
   - <span style="font-size: 0.9em;">Retrieval-Augmented LLM: [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [RetroLLM](https://aclanthology.org/2025.acl-long.819/)</span>
@@ -91,9 +89,6 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 # 📝 Selected Publications
 <!-- \* for corresponding author. -->
 
-<!-- ## As the First Author -->
-
-<!-- ### 2026 -->
 
 - [**DeepAgent: A General Reasoning Agent with Scalable Toolsets**](https://arxiv.org/abs/2510.21618) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, <span class="author-more"><input type="checkbox" id="author-more-1" class="author-toggle"><label for="author-more-1" class="more-label">6 More Authors</label><label for="author-more-1" class="author-rest"> Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></span>\
