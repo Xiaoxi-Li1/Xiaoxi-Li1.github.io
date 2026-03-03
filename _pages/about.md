@@ -74,6 +74,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 🔥 News
 
+- *2026.02*: We release [**OmniGAIA & OmniAtlas**](https://arxiv.org/abs/2602.22897), a comprehensive benchmark and foundation model for native omni-modal agents with complex reasoning and tool use. Check out our [demo](https://github.com/RUC-NLPIR/OmniGAIA)!
 - *2026.01*: [**DeepAgent**](https://arxiv.org/abs/2510.21618) and [**AEPO**](https://arxiv.org/abs/2510.14545) accepted by **WWW 2026**. Looking forward to seeing you in Dubai!
 <!-- - *2025.10*: We release [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets. Check out our [demo](https://github.com/RUC-NLPIR/DeepAgent)! -->
 <!-- - *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced agentic RL method. -->
@@ -89,7 +90,10 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 # 📝 Selected Publications
 <!-- \* for corresponding author. -->
 
-
+- [**OmniGAIA: Towards Native Omni-Modal AI Agents**](https://arxiv.org/abs/2602.22897) \
+<span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, <span class="author-more"><input type="checkbox" id="author-more-0" class="author-toggle"><label for="author-more-0" class="more-label">6 More Authors</label><label for="author-more-0" class="author-rest"> Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></span>\
+<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint </span>\
+<a href="https://github.com/RUC-NLPIR/OmniGAIA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/OmniGAIA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 - [**DeepAgent: A General Reasoning Agent with Scalable Toolsets**](https://arxiv.org/abs/2510.21618) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, <span class="author-more"><input type="checkbox" id="author-more-1" class="author-toggle"><label for="author-more-1" class="more-label">6 More Authors</label><label for="author-more-1" class="author-rest"> Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></span>\
 <span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **WWW 2026**</span>\
