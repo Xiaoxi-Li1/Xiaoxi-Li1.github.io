@@ -74,7 +74,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 🔥 News
 
-- *2026.02*: We release [**OmniGAIA & OmniAtlas**](https://arxiv.org/abs/2602.22897), a comprehensive benchmark and foundation model for native omni-modal agents. Check out our [demo](https://github.com/RUC-NLPIR/OmniGAIA)!
+- *2026.02*: Released [**OmniGAIA**](https://arxiv.org/abs/2602.22897) benchmark and [**OmniAtlas**](https://arxiv.org/abs/2602.22897) model for omni-modal AI agents. See our [demo](https://github.com/RUC-NLPIR/OmniGAIA)!
 - *2026.01*: [**DeepAgent**](https://arxiv.org/abs/2510.21618) and [**AEPO**](https://arxiv.org/abs/2510.14545) accepted by **WWW 2026**. Looking forward to seeing you in Dubai!
 <!-- - *2025.10*: We release [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets. Check out our [demo](https://github.com/RUC-NLPIR/DeepAgent)! -->
 <!-- - *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced agentic RL method. -->
