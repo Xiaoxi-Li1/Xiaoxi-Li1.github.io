@@ -57,6 +57,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 **Project Stars:** <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.github_stars_k&label=Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_repo_stars_k&label=First-author%20Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 
 **Research Interests：**
+- **Omni-Modal Agents:** Building real-world omni-modal AI assistants ([OmniGAIA](https://arxiv.org/abs/2602.22897), [OmniAtlas](https://arxiv.org/abs/2602.22897));
 - **Foundation Agents:** Developing general-purpose agentic LLMs ([DeepAgent](https://arxiv.org/abs/2510.21618), [AEPO](https://arxiv.org/abs/2510.14545), [Tool-Star](https://arxiv.org/abs/2505.16410));
 - **Deep Research:** Enhancing long-horizon reasoning with web information seeking ([WebThinker](https://arxiv.org/abs/2504.21776), [Search-o1](https://arxiv.org/abs/2501.05366), [HiRA](https://arxiv.org/abs/2507.02652));
 - **Retrieval-Augmented LLMs:** Improving large language models with knowledge retrieval ([RetroLLM](https://aclanthology.org/2025.acl-long.819/), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)).
@@ -74,7 +75,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 🔥 News
 
-- *2026.02*: Released [**OmniGAIA**](https://arxiv.org/abs/2602.22897) benchmark and [**OmniAtlas**](https://arxiv.org/abs/2602.22897) model for omni-modal AI agents. See our [demo](https://github.com/RUC-NLPIR/OmniGAIA)!
+- *2026.02*: 🚀 Released [**OmniGAIA**](https://arxiv.org/abs/2602.22897) benchmark and [**OmniAtlas**](https://arxiv.org/abs/2602.22897) model series for native omni-modal AI agents. See our [demo](https://github.com/RUC-NLPIR/OmniGAIA)!
 - *2026.01*: [**DeepAgent**](https://arxiv.org/abs/2510.21618) and [**AEPO**](https://arxiv.org/abs/2510.14545) accepted by **WWW 2026**. Looking forward to seeing you in Dubai!
 <!-- - *2025.10*: We release [DeepAgent](https://arxiv.org/abs/2510.21618), a general reasoning agent with scalable toolsets. Check out our [demo](https://github.com/RUC-NLPIR/DeepAgent)! -->
 <!-- - *2025.10*: We release [AEPO](https://arxiv.org/abs/2510.14545), an entropy-balanced agentic RL method. -->
