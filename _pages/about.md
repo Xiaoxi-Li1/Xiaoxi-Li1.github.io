@@ -204,12 +204,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
   &copy; 2025 Xiaoxi Li<br><br>
 
-  <a href="https://clustrmaps.com/site/1c9ee" title="Visit tracker">
-    <img 
-      src="//clustrmaps.com/map_v2.png?cl=ffffff&w=400&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A"
-      alt="Visitor Map"
-    />
-  </a>
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A'></script>
 </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
