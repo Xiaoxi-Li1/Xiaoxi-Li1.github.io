@@ -197,7 +197,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - Journal Reviewer: Computing Surveys, TOIS
 
 
-<hr style="margin-top: 3em;">
+<hr style="margin-top: 2em;">
 
 <div id="footer" style="text-align: center; font-size: 0.9em; color: #666;">
   <div id="footer-text"></div>
