@@ -202,7 +202,8 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 <div id="footer" style="text-align: center; font-size: 0.9em; color: #666;">
   <div id="footer-text"></div>
 
-  &copy; 2025 Xiaoxi Li<br><br>
+  &copy; 2025 Xiaoxi Li
+  <!-- <br><br> -->
 
   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=0&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A'></script>
 </div>
