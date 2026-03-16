@@ -106,10 +106,6 @@ redirect_from:
   }
   .paper-card__meta,
   .paper-card__venue,
-  .paper-card__highlights {
-    font-size: 0.93em;
-    line-height: 1.7;
-  }
   .paper-card__links {
     font-size: 0.93em;
     line-height: 1.7;
