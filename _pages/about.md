@@ -46,6 +46,62 @@ redirect_from:
   .author-more .author-toggle:checked ~ .author-rest {
     display: inline;
   }
+
+  .paper-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #ececec;
+  }
+  .paper-card:first-of-type {
+    padding-top: 0.5rem;
+  }
+  .paper-card__image {
+    flex: 0 0 min(42%, 380px);
+    max-width: 380px;
+  }
+  .paper-card__image a {
+    display: block;
+  }
+  .paper-card__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .paper-card__content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .paper-card__title {
+    margin: 0 0 0.35rem;
+    font-size: 1.05em;
+    line-height: 1.45;
+  }
+  .paper-card__meta,
+  .paper-card__venue,
+  .paper-card__links {
+    font-size: 0.93em;
+    line-height: 1.7;
+  }
+  .paper-card__links {
+    margin-top: 0.2rem;
+  }
+  @media (max-width: 900px) {
+    .paper-card {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .paper-card__image {
+      flex-basis: auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 </style>
 
 <span class='anchor' id='about-me'></span>
@@ -90,22 +146,62 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 # 📝 Selected Publications
 <!-- \* for corresponding author. -->
 
-- [**OmniGAIA: Towards Native Omni-Modal AI Agents**](https://arxiv.org/abs/2602.22897) \
-<span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, <span class="author-more"><input type="checkbox" id="author-more-0" class="author-toggle"><label for="author-more-0" class="more-label">6 More Authors</label><label for="author-more-0" class="author-rest"> Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint </span>\
-<a href="https://github.com/RUC-NLPIR/OmniGAIA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/OmniGAIA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
-- [**DeepAgent: A General Reasoning Agent with Scalable Toolsets**](https://arxiv.org/abs/2510.21618) \
-<span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, <span class="author-more"><input type="checkbox" id="author-more-1" class="author-toggle"><label for="author-more-1" class="more-label">6 More Authors</label><label for="author-more-1" class="author-rest"> Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **WWW 2026**</span>\
-<a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
-- [**WebThinker: Empowering Large Reasoning Models with Deep Research Capability**](https://arxiv.org/abs/2504.21776) \
-<span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, <span class="author-more"><input type="checkbox" id="author-more-2" class="author-toggle"><label for="author-more-2" class="more-label">3 More Authors</label><label for="author-more-2" class="author-rest"> Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **NeurIPS 2025 <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a>)</span>**</span>\
-<a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2494358555732420670'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ALkGwnXOMwfcC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a>
-- [**Search-o1: Agentic Search-Enhanced Large Reasoning Models**](https://arxiv.org/abs/2501.05366) \
-<span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, <span class="author-more"><input type="checkbox" id="author-more-3" class="author-toggle"><label for="author-more-3" class="more-label">3 More Authors</label><label for="author-more-3" class="author-rest"> Yutao Zhu, Peitian Zhang, and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **EMNLP 2025 Main <span style="color: #c00000;">(Oral)</span> <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=emnlp&year=2025" style="color: #c00000;">Most Influential EMNLP 2025 Papers -- Top 2/3228</a>)</span>**</span>\
-<a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=283590861766656057,11110584847133377481,17334087535406948909,9262350589272652662'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AYsMSGLbcyi4C%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a>
+<div class="paper-card">
+  <div class="paper-card__image">
+    <a href="https://arxiv.org/abs/2602.22897">
+      <img src="./images/paper-images/omnigaia_construction.png" alt="OmniGAIA model figure">
+    </a>
+  </div>
+  <div class="paper-card__content">
+    <p class="paper-card__title"><a href="https://arxiv.org/abs/2602.22897"><strong>OmniGAIA: Towards Native Omni-Modal AI Agents</strong></a></p>
+    <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, <span class="author-more"><input type="checkbox" id="author-more-0" class="author-toggle"><label for="author-more-0" class="more-label">6 More Authors</label><label for="author-more-0" class="author-rest"> Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint</div>
+    <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/OmniGAIA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/OmniGAIA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
+  </div>
+</div>
+
+<div class="paper-card">
+  <div class="paper-card__image">
+    <a href="https://arxiv.org/abs/2510.21618">
+      <img src="./images/paper-images/deepagent_framework.png" alt="DeepAgent model figure">
+    </a>
+  </div>
+  <div class="paper-card__content">
+    <p class="paper-card__title"><a href="https://arxiv.org/abs/2510.21618"><strong>DeepAgent: A General Reasoning Agent with Scalable Toolsets</strong></a></p>
+    <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, <span class="author-more"><input type="checkbox" id="author-more-1" class="author-toggle"><label for="author-more-1" class="more-label">6 More Authors</label><label for="author-more-1" class="author-rest"> Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>WWW 2026</strong></div>
+    <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
+  </div>
+</div>
+
+<div class="paper-card">
+  <div class="paper-card__image">
+    <a href="https://arxiv.org/abs/2504.21776">
+      <img src="./images/paper-images/webthinker_framework.png" alt="WebThinker model figure">
+    </a>
+  </div>
+  <div class="paper-card__content">
+    <p class="paper-card__title"><a href="https://arxiv.org/abs/2504.21776"><strong>WebThinker: Empowering Large Reasoning Models with Deep Research Capability</strong></a></p>
+    <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, <span class="author-more"><input type="checkbox" id="author-more-2" class="author-toggle"><label for="author-more-2" class="more-label">3 More Authors</label><label for="author-more-2" class="author-rest"> Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou.</label></span></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>NeurIPS 2025 <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a>)</span></strong></div>
+    <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2494358555732420670'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ALkGwnXOMwfcC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
+  </div>
+</div>
+
+<div class="paper-card">
+  <div class="paper-card__image">
+    <a href="https://arxiv.org/abs/2501.05366">
+      <img src="./images/paper-images/search-o1.png" alt="Search-o1 model figure">
+    </a>
+  </div>
+  <div class="paper-card__content">
+    <p class="paper-card__title"><a href="https://arxiv.org/abs/2501.05366"><strong>Search-o1: Agentic Search-Enhanced Large Reasoning Models</strong></a></p>
+    <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, <span class="author-more"><input type="checkbox" id="author-more-3" class="author-toggle"><label for="author-more-3" class="more-label">3 More Authors</label><label for="author-more-3" class="author-rest"> Yutao Zhu, Peitian Zhang, and Zhicheng Dou.</label></span></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>EMNLP 2025 Main <span style="color: #c00000;">(Oral)</span> <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=emnlp&year=2025" style="color: #c00000;">Most Influential EMNLP 2025 Papers -- Top 2/3228</a>)</span></strong></div>
+    <div class="paper-card__links"><a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=283590861766656057,11110584847133377481,17334087535406948909,9262350589272652662'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AYsMSGLbcyi4C%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
+  </div>
+</div>
+
 - [**RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation**](https://aclanthology.org/2025.acl-long.819/) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, <span class="author-more"><input type="checkbox" id="author-more-4" class="author-toggle"><label for="author-more-4" class="more-label">2 More Authors</label><label for="author-more-4" class="author-rest"> Qi Ye and Zhicheng Dou.</label></span></span>\
 <span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **ACL 2025 Main**</span>\
