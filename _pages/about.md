@@ -162,10 +162,10 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 🔥 News
 
-- *2026.03*: 🎉 [**DeepAgent**](https://arxiv.org/abs/2510.21618) has reached ⭐️ **1k stars**! A General Reasoning Agent with Scalable Toolsets. [**[Demo]**](https://github.com/RUC-NLPIR/DeepAgent)
-- *2026.02*: 🚀 Released [**OmniGAIA**](https://arxiv.org/abs/2602.22897) and [**OmniAtlas**](https://arxiv.org/abs/2602.22897): A benchmark and model series for native omni-modal AI agents. [**[Demo]**](https://github.com/RUC-NLPIR/OmniGAIA)
+- *2026.03*: 🎉 [**DeepAgent**](https://arxiv.org/abs/2510.21618) has reached ⭐️ **1k stars**! A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
+- *2026.02*: 🚀 Released [**OmniGAIA**](https://arxiv.org/abs/2602.22897) and [**OmniAtlas**](https://arxiv.org/abs/2602.22897): A benchmark and model series for native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
 - *2026.01*: 🎉 **Two papers** ([**DeepAgent**](https://arxiv.org/abs/2510.21618) and [**AEPO**](https://arxiv.org/abs/2510.14545)) accepted by **WWW 2026**! Looking forward to seeing you in Dubai!
-- *2025.09*: 🎉 [**WebThinker**](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**! (⭐️ **1.2k+ stars**, **100+ citations**). A powerful deep research agent that can think, search, and write autonomously. [**[Demo]**](https://github.com/RUC-NLPIR/WebThinker)
+- *2025.09*: 🎉 [**WebThinker**](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**! (⭐️ **1.2k+ stars**, **100+ citations**). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
 - *2025.08*: 🎤 [**Search-o1**](https://arxiv.org/abs/2501.05366) selected for **Oral Presentation** at **EMNLP 2025**! (⭐️ **1k+ stars**, **200+ citations**). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
 - *2025.05*: 🎉 **Four papers** accepted by **ACL 2025**! Looking forward to seeing you in Vienna!
 - *2024.03*: 🎤 [**CorpusLM**](https://arxiv.org/abs/2404.14851) selected for **Oral Presentation** at **SIGIR 2024**! A unified LLM for retrieval and QA.
