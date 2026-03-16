@@ -213,7 +213,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>WWW 2026</strong></div> -->
     <ul class="paper-card__highlights">
       <li>A general reasoning agent that can autonomously discover and use tools, while compressing memory to support long-horizon interactions.</li>
-      <li>Introduces ToolPO, an end-to-end agentic reinforcement learning training strategy that improves overall performance.</li>
+      <li>Introduces ToolPO, an end-to-end agentic RL training strategy that improves overall performance.</li>
     </ul>
     <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
