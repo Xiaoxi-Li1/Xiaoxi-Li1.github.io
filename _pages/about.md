@@ -61,6 +61,9 @@ redirect_from:
     flex: 0 0 min(42%, 380px);
     max-width: 380px;
   }
+  .paper-card__thumb {
+    position: relative;
+  }
   .paper-card__image a {
     display: block;
   }
@@ -72,6 +75,25 @@ redirect_from:
     border-radius: 4px;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .paper-card__badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+    padding: 0.28rem 0.75rem;
+    border-radius: 0;
+    color: #fff;
+    font-size: 0.78em;
+    font-weight: 700;
+    line-height: 1.2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  .paper-card__badge--venue {
+    background: #113fa8;
+  }
+  .paper-card__badge--preprint {
+    background: #666;
   }
   .paper-card__content {
     flex: 1 1 auto;
@@ -90,6 +112,15 @@ redirect_from:
   }
   .paper-card__links {
     margin-top: 0.2rem;
+  }
+  .paper-card__highlights {
+    margin: 0.55rem 0 0;
+    padding-left: 1.2rem;
+    font-size: 0.95em;
+    color: #444;
+  }
+  .paper-card__highlights li {
+    margin-bottom: 0.35rem;
   }
   @media (max-width: 900px) {
     .paper-card {
@@ -148,56 +179,84 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 <div class="paper-card">
   <div class="paper-card__image">
-    <a href="https://arxiv.org/abs/2602.22897">
-      <img src="./images/paper-images/omnigaia_construction.png" alt="OmniGAIA model figure">
-    </a>
+    <div class="paper-card__thumb">
+      <span class="paper-card__badge paper-card__badge--venue">Preprint</span>
+      <a href="https://arxiv.org/abs/2602.22897">
+        <img src="./images/paper-images/omnigaia_construction.png" alt="OmniGAIA model figure">
+      </a>
+    </div>
   </div>
   <div class="paper-card__content">
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2602.22897"><strong>OmniGAIA: Towards Native Omni-Modal AI Agents</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, <span class="author-more"><input type="checkbox" id="author-more-0" class="author-toggle"><label for="author-more-0" class="more-label">6 More Authors</label><label for="author-more-0" class="author-rest"> Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
-    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint</div>
+    <ul class="paper-card__highlights">
+      <li>Introduces OmniGAIA, a comprehensive benchmark for evaluating omni-modal agents on multi-hop reasoning and multi-turn tool use across video, image, and audio inputs.</li>
+      <li>Presents OmniAtlas, a native omni-modal reasoning agent with active perception and integrated tool use.</li>
+    </ul>
+    <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint</div> -->
     <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/OmniGAIA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/OmniGAIA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
 </div>
 
 <div class="paper-card">
   <div class="paper-card__image">
-    <a href="https://arxiv.org/abs/2510.21618">
-      <img src="./images/paper-images/deepagent_framework.png" alt="DeepAgent model figure">
-    </a>
+    <div class="paper-card__thumb">
+      <span class="paper-card__badge paper-card__badge--venue">WWW 2026</span>
+      <a href="https://arxiv.org/abs/2510.21618">
+        <img src="./images/paper-images/deepagent_framework.png" alt="DeepAgent model figure">
+      </a>
+    </div>
   </div>
   <div class="paper-card__content">
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2510.21618"><strong>DeepAgent: A General Reasoning Agent with Scalable Toolsets</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, <span class="author-more"><input type="checkbox" id="author-more-1" class="author-toggle"><label for="author-more-1" class="more-label">6 More Authors</label><label for="author-more-1" class="author-rest"> Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
-    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>WWW 2026</strong></div>
+    <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>WWW 2026</strong></div> -->
+    <ul class="paper-card__highlights">
+      <li>A general reasoning agent that can autonomously discover and use tools, while compressing memory to support long-horizon interactions.</li>
+      <li>Introduces ToolPO, an end-to-end agentic reinforcement learning training strategy that improves overall performance.</li>
+    </ul>
     <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
 </div>
 
 <div class="paper-card">
   <div class="paper-card__image">
-    <a href="https://arxiv.org/abs/2504.21776">
-      <img src="./images/paper-images/webthinker_framework.png" alt="WebThinker model figure">
-    </a>
+    <div class="paper-card__thumb">
+      <span class="paper-card__badge paper-card__badge--venue">NeurIPS 2025</span>
+      <a href="https://arxiv.org/abs/2504.21776">
+        <img src="./images/paper-images/webthinker_framework.png" alt="WebThinker model figure">
+      </a>
+    </div>
   </div>
   <div class="paper-card__content">
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2504.21776"><strong>WebThinker: Empowering Large Reasoning Models with Deep Research Capability</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, <span class="author-more"><input type="checkbox" id="author-more-2" class="author-toggle"><label for="author-more-2" class="more-label">3 More Authors</label><label for="author-more-2" class="author-rest"> Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou.</label></span></div>
-    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>NeurIPS 2025 <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a>)</span></strong></div>
+    <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>NeurIPS 2025 <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a>)</span></strong></div> -->
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong> <span style="color: #c00000;"><a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a></span></strong></div>
+    <ul class="paper-card__highlights">
+      <li>An reasoning agent designed to autonomously search, deeply explore web pages, and draft research reports, all within its thinking process.</li>
+      <li>Moving away from traditional agents that follow a predefined workflow, WebThinker enables the large reasoning model itself to perform actions on its own during thinking, achieving end-to-end task execution in a single generation.</li>
+    </ul>
     <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2494358555732420670'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ALkGwnXOMwfcC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
 </div>
 
 <div class="paper-card">
   <div class="paper-card__image">
-    <a href="https://arxiv.org/abs/2501.05366">
-      <img src="./images/paper-images/search-o1.png" alt="Search-o1 model figure">
-    </a>
+    <div class="paper-card__thumb">
+      <span class="paper-card__badge paper-card__badge--venue">EMNLP 2025 (Oral)</span>
+      <a href="https://arxiv.org/abs/2501.05366">
+        <img src="./images/paper-images/search-o1.png" alt="Search-o1 model figure">
+      </a>
+    </div>
   </div>
   <div class="paper-card__content">
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2501.05366"><strong>Search-o1: Agentic Search-Enhanced Large Reasoning Models</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, <span class="author-more"><input type="checkbox" id="author-more-3" class="author-toggle"><label for="author-more-3" class="more-label">3 More Authors</label><label for="author-more-3" class="author-rest"> Yutao Zhu, Peitian Zhang, and Zhicheng Dou.</label></span></div>
-    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>EMNLP 2025 Main <span style="color: #c00000;">(Oral)</span> <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=emnlp&year=2025" style="color: #c00000;">Most Influential EMNLP 2025 Papers -- Top 2/3228</a>)</span></strong></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong><span style="color: #c00000;"></span> <span style="color: #c00000;"><a href="https://www.paperdigest.org/digest/?topic=emnlp&year=2025" style="color: #c00000;">Most Influential EMNLP 2025 Papers -- Top 2/3228</a></span></strong></div>
+    <ul class="paper-card__highlights">
+      <li>The first framework that enables o1-style reasoning models to actively search for and consult external information when they encounter missing or unfamiliar knowledge.</li>
+    </ul>
     <div class="paper-card__links"><a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=283590861766656057,11110584847133377481,17334087535406948909,9262350589272652662'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AYsMSGLbcyi4C%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
 </div>
