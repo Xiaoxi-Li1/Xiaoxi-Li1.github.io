@@ -104,7 +104,12 @@ redirect_from:
     font-size: 1.05em;
     line-height: 1.45;
   }
-  .paper-card__meta,
+  /* Slightly larger author line for better readability in image cards */
+  .paper-card__meta {
+    font-size: 0.98em;
+    line-height: 1.7;
+  }
+  /* Keep venue + links slightly smaller */
   .paper-card__venue,
   .paper-card__links {
     font-size: 0.93em;
