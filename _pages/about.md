@@ -190,8 +190,8 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2602.22897"><strong>OmniGAIA: Towards Native Omni-Modal AI Agents</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, <span class="author-more"><input type="checkbox" id="author-more-0" class="author-toggle"><label for="author-more-0" class="more-label">6 More Authors</label><label for="author-more-0" class="author-rest"> Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
     <ul class="paper-card__highlights">
-      <li>Introduces OmniGAIA, a comprehensive benchmark for evaluating omni-modal agents on multi-hop reasoning and multi-turn tool use across video, image, and audio inputs.</li>
-      <li>Presents OmniAtlas, a native omni-modal reasoning agent with active perception and integrated tool use.</li>
+      <li>Introduces OmniGAIA, a comprehensive benchmark for evaluating omni-modal agents on complex reasoning and tool-use across video, image, and audio inputs.</li>
+      <li>Presents OmniAtlas, a native omni-modal reasoning agent with active perception and autonomous tool use.</li>
     </ul>
     <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint</div> -->
     <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/OmniGAIA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/OmniGAIA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
@@ -235,7 +235,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong> <span style="color: #c00000;"><a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a></span></strong></div>
     <ul class="paper-card__highlights">
       <li>An reasoning agent designed to autonomously search, deeply explore web pages, and draft research reports, all within its thinking process.</li>
-      <li>Moving away from traditional agents that follow a predefined workflow, WebThinker enables the large reasoning model itself to perform actions on its own during thinking, achieving end-to-end task execution in a single generation.</li>
+      <!-- <li>Moving away from traditional agents that follow a predefined workflow, WebThinker enables the large reasoning model itself to perform actions on its own during thinking, achieving end-to-end task execution in a single generation.</li> -->
     </ul>
     <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2494358555732420670'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3ALkGwnXOMwfcC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
