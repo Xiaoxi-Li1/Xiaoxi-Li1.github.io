@@ -190,7 +190,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2602.22897"><strong>OmniGAIA: Towards Native Omni-Modal AI Agents</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, <span class="author-more"><input type="checkbox" id="author-more-0" class="author-toggle"><label for="author-more-0" class="more-label">6 More Authors</label><label for="author-more-0" class="author-rest"> Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
     <ul class="paper-card__highlights">
-      <li>Introduces OmniGAIA, a comprehensive benchmark for evaluating omni-modal agents on complex reasoning and tool-use across video, image, and audio inputs.</li>
+      <li>Introduces OmniGAIA, a comprehensive benchmark for evaluating omni-modal agents on complex reasoning and tool-use across videos, images, and audios.</li>
       <li>Presents OmniAtlas, a native omni-modal reasoning agent with active perception and autonomous tool use.</li>
     </ul>
     <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint</div> -->
