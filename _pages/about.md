@@ -105,8 +105,9 @@ redirect_from:
     line-height: 1.45;
   }
   .paper-card__meta,
-  .paper-card__venue {
-    font-size: 1em;
+  .paper-card__venue,
+  .paper-card__highlights {
+    font-size: 0.93em;
     line-height: 1.7;
   }
   .paper-card__links {
