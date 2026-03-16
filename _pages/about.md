@@ -109,8 +109,12 @@ redirect_from:
     font-size: 0.98em;
     line-height: 1.7;
   }
-  /* Keep venue + links slightly smaller */
-  .paper-card__venue,
+  /* Slightly larger venue line (e.g., "Most Influential ...") */
+  .paper-card__venue {
+    font-size: 0.98em;
+    line-height: 1.7;
+  }
+  /* Keep links slightly smaller */
   .paper-card__links {
     font-size: 0.93em;
     line-height: 1.7;
