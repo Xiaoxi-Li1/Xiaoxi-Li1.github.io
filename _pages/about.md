@@ -210,7 +210,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 <div class="paper-card">
   <div class="paper-card__image">
     <div class="paper-card__thumb">
-      <span class="paper-card__badge paper-card__badge--venue">WWW 2026</span>
+      <span class="paper-card__badge paper-card__badge--venue">WWW 2026 (Oral)</span>
       <a href="https://arxiv.org/abs/2510.21618">
         <img src="./images/paper-images/deepagent_framework.png" alt="DeepAgent model figure">
       </a>
@@ -224,7 +224,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
       <li>A general reasoning agent that can autonomously discover and use tools, while compressing memory to support long-horizon interactions.</li>
       <li>Introduces ToolPO, an end-to-end agentic RL training strategy that improves overall performance.</li>
     </ul>
-    <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
+    <div class="paper-card__links"><a href="https://github.com/RUC-NLPIR/DeepAgent"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9556768123113297964,10283167132001071953,8927932621284631241,1779187034931952429'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AQIV2ME_5wuYC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a></div>
   </div>
 </div>
 
@@ -295,15 +295,15 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 <span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **ACL 2025 Main**</span>
 - [**Agentic Entropy-Balanced Policy Optimization**](https://arxiv.org/abs/2510.14545) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Guanting Dong, Licheng Bao, Zhongyuan Wang, Kangzhi Zhao, **<u>Xiaoxi Li</u>**, <span class="author-more"><input type="checkbox" id="author-more-8" class="author-toggle"><label for="author-more-8" class="more-label">9 More Authors</label><label for="author-more-8" class="author-rest"> Jiajie Jin, Jinghan Yang, Hangyu Mao, Fuzheng Zhang, Kun Gai, Guorui Zhou, Yutao Zhu, Ji-Rong Wen, and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **WWW 2026**</span>\
+<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **WWW 2026 <span style="color: #c00000;">(Oral)</span>**</span>\
 <a href="https://github.com/dongguanting/ARPO"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/ARPO?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 - [**HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search**](https://arxiv.org/abs/2507.02652) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Jiajie Jin, **<u>Xiaoxi Li</u>**, Guanting Dong, Yuyao Zhang, Yutao Zhu, <span class="author-more"><input type="checkbox" id="author-more-9" class="author-toggle"><label for="author-more-9" class="more-label">3 More Authors</label><label for="author-more-9" class="author-rest"> Yang Zhao, Hongjin Qian, and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
+<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **SIGIR 2026**</span>\
 <a href="https://github.com/ignorejjj/HiRA"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/HiRA?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 - [**Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning**](https://arxiv.org/abs/2505.16410) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> Guanting Dong, Yifei Chen, **<u>Xiaoxi Li</u>**, Jiajie Jin, Hongjin Qian, <span class="author-more"><input type="checkbox" id="author-more-10" class="author-toggle"><label for="author-more-10" class="more-label">5 More Authors</label><label for="author-more-10" class="author-rest"> Yutao Zhu, Hangyu Mao, Guorui Zhou, Zhicheng Dou, and Ji-Rong Wen.</label></span></span>\
-<span style="font-size: 0.93em;"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> Preprint. Under review.</span>\
+<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **SIGIR 2026**</span>\
 <a href="https://github.com/dongguanting/Tool-Star"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dongguanting/Tool-Star?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=zh-CN&cites=11602636321899326654'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AhqOjcs7Dif8C%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 
 
