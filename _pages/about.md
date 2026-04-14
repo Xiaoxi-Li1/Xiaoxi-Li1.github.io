@@ -78,7 +78,7 @@ redirect_from:
   }
   .paper-card__badge {
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: -10px;
     z-index: 1;
     padding: 0.28rem 0.75rem;
