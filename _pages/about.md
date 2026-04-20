@@ -369,20 +369,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 <div id="footer" style="text-align: center; font-size: 0.9em; color: #666;">
   <div id="footer-text"></div>
 
-  &copy; 2025 Xiaoxi Li <span id="visitor-count" style="display:inline-block;min-width:2em;padding:2px 6px;border-radius:4px;background:#007ec6;color:#fff;font-size:0.8em;font-family:Verdana,sans-serif;vertical-align:middle;"></span>
-  <script>
-    (function(){
-      fetch('https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/')
-        .then(function(r){ return r.text(); })
-        .then(function(svg){
-          var matches = svg.match(/>([^<]+)<\/text>/g) || [];
-          var last = matches[matches.length - 1] || '';
-          var num = last.replace(/<[^>]+>/g, '').replace(/[^\d]/g, '');
-          if (num) { document.getElementById('visitor-count').textContent = num; }
-        })
-        .catch(function(){});
-    })();
-  </script>
+  &copy; 2025 Xiaoxi Li
 
   <!-- <br><br> -->
 

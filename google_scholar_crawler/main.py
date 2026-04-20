@@ -66,6 +66,7 @@ first_author_ids = [
     'XDljV4YAAAAJ:IjCSPb-OGe4C',  # CorpusLM
     'XDljV4YAAAAJ:9yKSN-GCB0IC',  # UniGen
     'XDljV4YAAAAJ:QIV2ME_5wuYC',  # DeepAgent
+    'XDljV4YAAAAJ:hFOr9nPyWt4C',  # OmniGAIA
     'XDljV4YAAAAJ:d1gkVwhDpl0C',  # Immersion and invariance-based adaptive control... (quadrotor)
 ]
 
@@ -170,6 +171,7 @@ try:
     first_author_repos = [
         ("RUC-NLPIR", "DeepAgent"),
         ("RUC-NLPIR", "WebThinker"),
+        ("RUC-NLPIR", "OmniGAIA"),
         ("sunnynexus", "Search-o1"),
         ("sunnynexus", "RetroLLM"),
         ("RUC-NLPIR", "GenIR-Survey"),
