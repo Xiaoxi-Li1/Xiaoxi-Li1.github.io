@@ -171,13 +171,14 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 🔥 News
 
-- *2026.03*: [**DeepAgent**](https://arxiv.org/abs/2510.21618) has reached ⭐️ **1k stars**! A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
-- *2026.02*: Released [**OmniGAIA**](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
-- *2026.01*: **Two papers** ([**DeepAgent**](https://arxiv.org/abs/2510.21618) and [**AEPO**](https://arxiv.org/abs/2510.14545)) accepted by **WWW 2026**! Looking forward to seeing you in Dubai!
-- *2025.09*: [**WebThinker**](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**! (⭐️ **1.2k+ stars**, **100+ citations**). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
-- *2025.08*: [**Search-o1**](https://arxiv.org/abs/2501.05366) selected for **Oral Presentation** at **EMNLP 2025**! (⭐️ **1k+ stars**, **200+ citations**). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
-- *2025.05*: **Four papers** accepted by **ACL 2025**! Looking forward to seeing you in Vienna!
-- *2024.03*: [**CorpusLM**](https://arxiv.org/abs/2404.14851) selected for **Oral Presentation** at **SIGIR 2024**! A unified LLM for retrieval and QA.
+- *2026.03*: [DeepAgent](https://arxiv.org/abs/2510.21618) has reached 1k stars! A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
+- *2026.02*: Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
+- *2026.01*: Two papers ([DeepAgent](https://arxiv.org/abs/2510.21618) and [AEPO](https://arxiv.org/abs/2510.14545)) accepted by WWW 2026! Looking forward to seeing you in Dubai!
+- *2025.09*: [WebThinker](https://arxiv.org/abs/2504.21776) accepted by NeurIPS 2025! (1.2k+ stars, 100+ citations). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
+- *2025.08*: [Search-o1](https://arxiv.org/abs/2501.05366) selected for Oral Presentation at EMNLP 2025! (1k+ stars, 200+ citations). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
+- *2025.06*: I joined Xiaohongshu as a RedStar research intern, focusing on foundation agent research.
+- *2025.05*: Four papers accepted by ACL 2025! Looking forward to seeing you in Vienna!
+- *2024.03*: [CorpusLM](https://arxiv.org/abs/2404.14851) selected for Oral Presentation at SIGIR 2024! A unified LLM for retrieval and QA.
 <!-- - *2025.02*: Our survey on Generative Information Retrieval accepted by **ACM TOIS**! See more [details](https://arxiv.org/abs/2404.14851). -->
 <!-- - *2023.12*: Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380). -->
 
@@ -352,6 +353,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited <img src="./images/Infosys.png" style="width: 3em;">. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) -->
 
 # 🎤 Invited Talks
+- *2026.03*: "Reason, Search, and Act: Towards Real-World AI Agents", CCIR PhD Forum.
 - *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community.
 
 
@@ -361,12 +363,27 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - Journal Reviewer: Computing Surveys, TOIS
 
 
+
 <hr style="margin-top: 2em;">
 
 <div id="footer" style="text-align: center; font-size: 0.9em; color: #666;">
   <div id="footer-text"></div>
 
-  &copy; 2025 Xiaoxi Li
+  &copy; 2025 Xiaoxi Li <span id="visitor-count" style="display:inline-block;min-width:2em;padding:2px 6px;border-radius:4px;background:#007ec6;color:#fff;font-size:0.8em;font-family:Verdana,sans-serif;vertical-align:middle;"></span>
+  <script>
+    (function(){
+      fetch('https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/')
+        .then(function(r){ return r.text(); })
+        .then(function(svg){
+          var matches = svg.match(/>([^<]+)<\/text>/g) || [];
+          var last = matches[matches.length - 1] || '';
+          var num = last.replace(/<[^>]+>/g, '').replace(/[^\d]/g, '');
+          if (num) { document.getElementById('visitor-count').textContent = num; }
+        })
+        .catch(function(){});
+    })();
+  </script>
+
   <!-- <br><br> -->
 
   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=0&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A'></script>
