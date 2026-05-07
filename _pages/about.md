@@ -148,7 +148,7 @@ redirect_from:
 # About me
 I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
-I'm currently a RedStar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 10+ papers in top-tier AI conferences and journals (8 first-author papers), including NeurIPS, ICLR, ACL, EMNLP, AAAI, SIGIR, WWW, and TOIS. 
+I'm currently a RedStar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 20+ papers in top-tier AI conferences and journals (8 first-author papers), including NeurIPS, ICML, ICLR, ACL, EMNLP, AAAI, SIGIR, WWW, and TOIS. 
 **Citations:** <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.citedby&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_citations&label=First-author%20Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>; 
 **Project Stars:** <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.github_stars_k&label=Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_repo_stars_k&label=First-author%20Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 
@@ -242,7 +242,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2504.21776"><strong>WebThinker: Empowering Large Reasoning Models with Deep Research Capability</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Jiajie Jin, Guanting Dong, Hongjin Qian, Yutao Zhu, <span class="author-more"><input type="checkbox" id="author-more-2" class="author-toggle"><label for="author-more-2" class="more-label">3 More Authors</label><label for="author-more-2" class="author-rest"> Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou.</label></span></div>
     <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>NeurIPS 2025 <span style="color: #c00000;">(<a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a>)</span></strong></div> -->
-    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong> <span style="color: #c00000;"><a href="https://www.paperdigest.org/digest/?topic=nips&year=2025" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 13/5827</a></span></strong></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong> <span style="color: #c00000;"><a href="https://www.paperdigest.org/2026/03/most-influential-nips-papers-2026-03-version/" style="color: #c00000;">Most Influential NeurIPS 2025 Papers -- Top 11/5827</a></span></strong></div>
     <ul class="paper-card__highlights">
       <li>An reasoning agent designed to autonomously search, deeply explore web pages, and draft research reports, all within its thinking process.</li>
       <!-- <li>Moving away from traditional agents that follow a predefined workflow, WebThinker enables the large reasoning model itself to perform actions on its own during thinking, achieving end-to-end task execution in a single generation.</li> -->
@@ -263,7 +263,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
   <div class="paper-card__content">
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2501.05366"><strong>Search-o1: Agentic Search-Enhanced Large Reasoning Models</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, <span class="author-more"><input type="checkbox" id="author-more-3" class="author-toggle"><label for="author-more-3" class="more-label">3 More Authors</label><label for="author-more-3" class="author-rest"> Yutao Zhu, Peitian Zhang, and Zhicheng Dou.</label></span></div>
-    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong><span style="color: #c00000;"></span> <span style="color: #c00000;"><a href="https://www.paperdigest.org/digest/?topic=emnlp&year=2025" style="color: #c00000;">Most Influential EMNLP 2025 Papers -- Top 2/3228</a></span></strong></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong><span style="color: #c00000;"></span> <span style="color: #c00000;"><a href="https://www.paperdigest.org/2026/03/most-influential-emnlp-papers-2026-03-version/" style="color: #c00000;">Most Influential EMNLP 2025 Papers -- Top 2/3228</a></span></strong></div>
     <ul class="paper-card__highlights">
       <li>The first framework that enables o1-style reasoning models to autonomously search for and consult external information when they encounter missing or unfamiliar knowledge.</li>
     </ul>
@@ -330,7 +330,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 
 # 💻 Experiences
-- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Algorithm Team  
+- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Team  
   Research Intern on Foundation Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
   Mentors: Wenxiang Jiao, Yuan Lu
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
@@ -359,8 +359,8 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 📚 Academic Services
 <!-- - AC/SPC: ACL Rolling Review -->
-- PC Member: ACL Rolling Review, ICML, ICLR, SIGIR, AAAI
-- Journal Reviewer: Computing Surveys, TOIS
+- PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI
+- Journal Reviewer: ACM Computing Surveys, TOIS
 
 
 
