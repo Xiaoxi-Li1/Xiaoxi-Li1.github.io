@@ -132,7 +132,7 @@ redirect_from:
     margin-bottom: 0.35rem;
   }
   .news-scroll {
-    max-height: 15rem;
+    max-height: 17.5rem;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0.75rem;
