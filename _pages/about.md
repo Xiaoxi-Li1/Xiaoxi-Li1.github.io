@@ -171,6 +171,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 # 🔥 News
 
+- *2026.04*: Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence! Check out our demo! [[Demo]](https://agent-tars-world.github.io/-/)
 - *2026.03*: [DeepAgent](https://arxiv.org/abs/2510.21618) has reached 1k stars! A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
 - *2026.02*: Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
 - *2026.01*: Two papers ([DeepAgent](https://arxiv.org/abs/2510.21618) and [AEPO](https://arxiv.org/abs/2510.14545)) accepted by WWW 2026! Looking forward to seeing you in Dubai!
