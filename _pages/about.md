@@ -401,9 +401,9 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv"></span></span>
   </div>
   <br>
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=7b7b7b&w=400&t=tt&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e'></script>
-
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=7b7b7b&w=400&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e&ct=434343'></script>
 </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<br>
