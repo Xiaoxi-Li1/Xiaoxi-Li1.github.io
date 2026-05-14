@@ -384,7 +384,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI (Silver Reviewer Award @ ICML'26)
 - Journal Reviewer: ACM Computing Surveys, TOIS
 
-
+#
 <!-- {% include visitor-map.html %} -->
 
 <!-- <hr style="margin-top: 2em;"> -->
@@ -394,14 +394,14 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
   <!-- &copy; 2025 Xiaoxi Li -->
 
-  <br><br>
+  <br>
   <div class="site-traffic" style="color: #666; font-weight: 600;">
     <span id="busuanzi_container_site_pv">Total Views: <span id="busuanzi_value_site_pv"></span></span>
     <span style="color: #999;"> | </span>
     <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv"></span></span>
   </div>
   <br>
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=575757&w=500&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e&ct=000000'></script>
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=808080&w=400&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e&ct=5a5a5a'></script>
 </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
