@@ -19,8 +19,10 @@
     gap: 8px 10px;
   }
   #visitor-map-section .visitor-count {
-    color: #555;
-    font-weight: 600;
+    display: inline-block;
+    height: 18px;
+    width: auto;
+    vertical-align: text-bottom;
   }
   #map-container {
     position: relative;
@@ -31,7 +33,7 @@
     border: 1px solid #e2e8f0;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     max-width: 640px;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
   #map-container svg {
@@ -119,7 +121,7 @@
 <div id="visitor-map-section">
   <h3>&#127758; Visitor Footprints</h3>
   <p class="map-subtitle">
-    <span><span id="visitor-count" class="visitor-count">...</span> visitors from around the world</span>
+    <span><img class="visitor-count" src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/&left_text=%20" alt="Visitor count" loading="lazy" decoding="async" /> visitors from around the world</span>
   </p>
   <div id="map-container">
     <div id="map-loading">
@@ -137,7 +139,6 @@
 (function () {
   var SUPABASE_URL = '{{ site.visitor_map.supabase_url | default: "" | strip | escape }}';
   var SUPABASE_ANON_KEY = '{{ site.visitor_map.supabase_anon_key | default: "" | strip | escape }}';
-  var VISITOR_BADGE_URL = 'https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/';
   var hasVisitorStorage = SUPABASE_URL && SUPABASE_ANON_KEY;
   var authHeaders = hasVisitorStorage ? {
     'apikey': SUPABASE_ANON_KEY,
@@ -145,55 +146,9 @@
     'Content-Type': 'application/json'
   } : null;
 
-  loadVisitorCount();
-
   loadVisitorRecords().then(function (visitors) {
     geolocateAndRender(visitors);
   });
-
-  function loadVisitorCount() {
-    var countElement = document.getElementById('visitor-count');
-    if (!countElement) {
-      return;
-    }
-
-    fetch(VISITOR_BADGE_URL)
-      .then(function (response) {
-        return response.ok ? response.text() : '';
-      })
-      .then(function (badgeSvg) {
-        var count = extractVisitorCount(badgeSvg);
-        if (count) {
-          countElement.textContent = count;
-        }
-      })
-      .catch(function () {});
-  }
-
-  function extractVisitorCount(badgeSvg) {
-    if (!badgeSvg) {
-      return '';
-    }
-
-    var parsedSvg = new DOMParser().parseFromString(badgeSvg, 'image/svg+xml');
-    var labels = Array.prototype.slice.call(parsedSvg.querySelectorAll('text'))
-      .map(function (node) {
-        return node.textContent.trim();
-      });
-
-    for (var i = labels.length - 1; i >= 0; i -= 1) {
-      if (/^\d[\d,]*$/.test(labels[i])) {
-        return labels[i];
-      }
-    }
-
-    var numericTextNodes = badgeSvg.match(/>\s*([0-9][0-9,]*)\s*</g);
-    if (!numericTextNodes || !numericTextNodes.length) {
-      return '';
-    }
-
-    return numericTextNodes[numericTextNodes.length - 1].replace(/[^\d,]/g, '');
-  }
 
   function loadVisitorRecords() {
     if (!hasVisitorStorage) {
