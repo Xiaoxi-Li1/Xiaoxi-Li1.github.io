@@ -201,11 +201,11 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 
 # 💻 Experiences
-- 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance, Seed Foundation LLM Team  
-  Research Intern on General Agents (<span style="color: #c00000;">**Seed-LLM Talent**</span> Program)  
+- 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1.1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance, Seed Foundation LLM Team  
+  Research Intern on General Agents (<span style="color: #c00000;">Seed-LLM Talent</span> Program)  
   Mentors: Wanjun Zhong, Yujia Qin
 - 2025.06 - 2026.05 | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Agent R&D Team  
-  Research Intern on General Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
+  Research Intern on General Agents (<span style="color: #c00000;">RedStar</span> Program)  
   Mentors: Wenxiang Jiao, Yuan Lu
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
