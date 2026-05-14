@@ -365,8 +365,6 @@ I'm currently a RedStar research intern focusing on foundation agent research at
   Gaoling School of Artificial Intelligence, Renmin University of China
 - 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.13em;"> B.Sc. in Intelligence Science and Technology  
   College of Artificial Intelligence, Nankai University
-<img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/>
-<!-- <img src="https://visitor-badge.laobi.icu/badge?page_id=https://xiaoxi-li1.github.io/" align="bottom" style="opacity: 0;"/> -->
 
 <!-- https://scholar.google.com/citations?user=XDljV4YAAAAJ -->
 <!-- # Experiences
@@ -387,6 +385,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - Journal Reviewer: ACM Computing Surveys, TOIS
 
 
+{% include visitor-map.html %}
 
 <hr style="margin-top: 2em;">
 
@@ -396,9 +395,6 @@ I'm currently a RedStar research intern focusing on foundation agent research at
   &copy; 2025 Xiaoxi Li
 
   <!-- <br><br> -->
-
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=0&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A'></script>
-  <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=100&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=3367a6&cmn=ff9b3d"></script>
 
 </div>
 

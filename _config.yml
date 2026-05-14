@@ -14,6 +14,11 @@ google_scholar_stats_use_cdn : true
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
+# Visitor footprint map. Fill these after creating your own Supabase project.
+visitor_map:
+  supabase_url           : "https://uodnctbyinpvlsvhvhaf.supabase.co"
+  supabase_anon_key      : "sb_publishable_XpOt5l2FbpAbAorIO6Qzyw_OZ6qLf_v"
+
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
