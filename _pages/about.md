@@ -387,12 +387,12 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 <!-- {% include visitor-map.html %} -->
 
-<hr style="margin-top: 2em;">
+<!-- <hr style="margin-top: 2em;"> -->
 
 <div id="footer" style="text-align: center; font-size: 0.9em; color: #666;">
   <div id="footer-text"></div>
 
-  &copy; 2025 Xiaoxi Li
+  <!-- &copy; 2025 Xiaoxi Li -->
 
   <br><br>
   <div class="site-traffic" style="color: #666; font-weight: 600;">
@@ -401,7 +401,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
     <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv"></span></span>
   </div>
   <br>
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=7b7b7b&w=400&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e&ct=434343'></script>
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=575757&w=500&t=m&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e&ct=000000'></script>
 </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
