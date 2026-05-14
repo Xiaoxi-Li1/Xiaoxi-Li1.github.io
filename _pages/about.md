@@ -385,7 +385,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - Journal Reviewer: ACM Computing Surveys, TOIS
 
 
-{% include visitor-map.html %}
+<!-- {% include visitor-map.html %} -->
 
 <hr style="margin-top: 2em;">
 
@@ -395,6 +395,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
   &copy; 2025 Xiaoxi Li
 
   <!-- <br><br> -->
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=7b7b7b&w=100&t=tt&d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&co=ffffff&cmn=ffa44e'></script>
 
 </div>
 
