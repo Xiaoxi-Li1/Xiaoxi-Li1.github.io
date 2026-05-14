@@ -184,13 +184,14 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 <div class="news-scroll" markdown="1">
 
+- *2026.05*: 🎤 Invited talk on "Reason, Search, and Act: Towards Real-World AI Agents" at MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
 - *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence! Check out our demo! [[Demo]](https://agent-tars-world.github.io/-/)
 - *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached 1k stars! A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
 - *2026.02*: 🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
-- *2026.01*: 🎉 Two papers ([DeepAgent](https://arxiv.org/abs/2510.21618) and [AEPO](https://arxiv.org/abs/2510.14545)) accepted by WWW 2026! Looking forward to seeing you in Dubai!
+- *2026.01*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) and [AEPO](https://arxiv.org/abs/2510.14545) selected for Oral Presentation at WWW 2026!
 - *2025.09*: 🎉 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by NeurIPS 2025! (1.2k+ stars, 100+ citations). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
 - *2025.08*: 🎉 [Search-o1](https://arxiv.org/abs/2501.05366) selected for Oral Presentation at EMNLP 2025! (1k+ stars, 200+ citations). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
-- *2025.06*: 💻 I joined Xiaohongshu as a RedStar research intern, focusing on foundation agent research.
+- *2025.06*: 💻 Joined Xiaohongshu as a RedStar research intern, focusing on general agents.
 - *2025.05*: 🎉 Four papers accepted by ACL 2025! Looking forward to seeing you in Vienna!
 - *2024.03*: 🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for Oral Presentation at SIGIR 2024! A unified LLM for retrieval and QA.
 - *2025.02*: 🎉 Our survey on Generative Information Retrieval (GenIR) accepted by **ACM TOIS**! See more [details](https://arxiv.org/abs/2404.14851). 
@@ -198,6 +199,16 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 </div>
 
+
+# 💻 Experiences
+<!-- - 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance, Seed Foundation LLM Team  
+  Research Intern on General Agents (<span style="color: #c00000;">**Seed-LLM Talent**</span> Program)  
+  Mentors: Wanjun Zhong, Yujia Qin -->
+- 2025.06 - 2026.05 | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Agent R&D Team  
+  Research Intern on General Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
+  Mentors: Wenxiang Jiao, Yuan Lu
+<!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
+<!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 
 # 📝 Selected Publications
@@ -348,13 +359,6 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 
 
-# 💻 Experiences
-- 2025.06 - Present | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Team  
-  Research Intern on Foundation Agents (<span style="color: #c00000;">**RedStar**</span> Program)  
-  Mentors: Wenxiang Jiao, Yuan Lu
-<!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
-<!-- <span style="color:#ff2442;">**REDstar**</span> -->
-
 
 # 📖 Educations
 - 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence  
@@ -372,13 +376,14 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited <img src="./images/Infosys.png" style="width: 3em;">. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) -->
 
 # 🎤 Invited Talks
+- *2026.05*: "Reason, Search, and Act: Towards Real-World AI Agents", MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
 - *2026.03*: "Reason, Search, and Act: Towards Real-World AI Agents", CCIR PhD Forum.
-- *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community.
+- *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/18G2XrYtGRMB2SAba02E7w)
 
 
 # 📚 Academic Services
 <!-- - AC/SPC: ACL Rolling Review -->
-- PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI
+- PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI (Silver Reviewer Award @ ICML'26)
 - Journal Reviewer: ACM Computing Surveys, TOIS
 
 
