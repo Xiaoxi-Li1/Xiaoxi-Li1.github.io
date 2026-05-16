@@ -159,7 +159,7 @@ redirect_from:
 # About me
 I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
-I'm currently a RedStar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 20+ papers in top-tier AI conferences and journals (8 first-author papers), including NeurIPS, ICML, ICLR, ACL, EMNLP, AAAI, SIGIR, WWW, and TOIS. 
+I'm currently a RedStar research intern focusing on foundation agent research at Xiaohongshu Inc. I have published 20+ papers in top-tier AI conferences and journals (8 first-author papers), including NeurIPS, ICML, ICLR, ACL, SIGIR, WWW, TOIS, etc. 
 **Citations:** <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.citedby&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_citations&label=First-author%20Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>; 
 **Project Stars:** <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.github_stars_k&label=Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_repo_stars_k&label=First-author%20Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 
@@ -201,9 +201,9 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 
 
 # 💻 Experiences
-<!-- - 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1.1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance, Seed Foundation LLM Team  
+- Incoming | <img src="./images/bytedance.svg" style="width: 1.1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance Seed, Foundation LLM Team  
   Research Intern on General Agents (<span style="color: #c00000;">Seed-LLM Talent</span> Program)  
-  Mentors: Wanjun Zhong, Yujia Qin -->
+  Mentors: Wanjun Zhong, Yujia Qin
 - 2025.06 - 2026.05 | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Agent R&D Team  
   Research Intern on General Agents (<span style="color: #c00000;">RedStar</span> Program)  
   Mentors: Wenxiang Jiao, Yuan Lu
