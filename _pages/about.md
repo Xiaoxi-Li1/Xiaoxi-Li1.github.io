@@ -169,6 +169,8 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 - **Deep Research:** Enhancing long-horizon reasoning with web information seeking ([WebThinker](https://arxiv.org/abs/2504.21776), [Search-o1](https://arxiv.org/abs/2501.05366), [HiRA](https://arxiv.org/abs/2507.02652));
 - **Retrieval-Augmented LLMs:** Improving large language models with knowledge retrieval ([RetroLLM](https://aclanthology.org/2025.acl-long.819/), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)).
 
+I aim to build real-world AI agents that are reliable, capable, and genuinely helpful in everyday life.
+
 
 
 <!-- - Research Focus: 
@@ -211,7 +213,7 @@ I'm currently a RedStar research intern focusing on foundation agent research at
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
 
 
-# 📝 Selected Publications
+# 📝 Selected Work
 <!-- \* for corresponding author. -->
 
 <div class="paper-card">
