@@ -132,7 +132,7 @@ redirect_from:
     margin-bottom: 0.35rem;
   }
   .news-scroll {
-    max-height: 21rem;
+    max-height: 24rem;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 0.75rem;
@@ -187,17 +187,16 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 <div class="news-scroll" markdown="1">
 
 - *2026.05*: 🎤 Invited talk on "Reason, Search, and Act: Towards Real-World AI Agents" at MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
-- *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence! Check out our demo! [[Demo]](https://agent-tars-world.github.io/-/)
-- *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached 1k stars! A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
+- *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. Check out our demo. [[Demo]](https://agent-tars-world.github.io/-/)
+- *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached *1k stars* and selected for *Oral Presentation* at **WWW 2026**. A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
 - *2026.02*: 🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
-- *2026.01*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) and [AEPO](https://arxiv.org/abs/2510.14545) selected for Oral Presentation at WWW 2026!
-- *2025.09*: 🎉 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by NeurIPS 2025! (1.2k+ stars, 100+ citations). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
-- *2025.08*: 🎉 [Search-o1](https://arxiv.org/abs/2501.05366) selected for Oral Presentation at EMNLP 2025! (1k+ stars, 200+ citations). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
-- *2025.06*: 💻 Joined Xiaohongshu as a RedStar research intern, focusing on general agents.
-- *2025.05*: 🎉 Four papers accepted by ACL 2025! Looking forward to seeing you in Vienna!
-- *2024.03*: 🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for Oral Presentation at SIGIR 2024! A unified LLM for retrieval and QA.
+- *2025.09*: 🎉 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**. (*1.2k+ stars*, *100+ citations*). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
+- *2025.08*: 🎉 [Search-o1](https://arxiv.org/abs/2501.05366) selected for *Oral Presentation* at **EMNLP 2025**. (*1k+ stars*, *200+ citations*). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
+- *2025.06*: 💻 Joined Xiaohongshu as a **RedStar** research intern, focusing on general agents.
+- *2025.05*: 🎉 Four papers accepted by **ACL 2025**. Looking forward to seeing you in Vienna!
+- *2024.03*: 🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for *Oral Presentation* at **SIGIR 2024**. A unified LLM for retrieval and QA.
 - *2025.02*: 🎉 Our survey on Generative Information Retrieval (GenIR) accepted by **ACM TOIS**! See more [details](https://arxiv.org/abs/2404.14851). 
-- *2023.12*: 🎉 Our unified generative framework for retrieval and QA has been accepted by AAAI 2024! See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
+- *2023.12*: 🎉 Our unified generative framework for retrieval and QA has been accepted by **AAAI 2024**. See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
 
 </div>
 
