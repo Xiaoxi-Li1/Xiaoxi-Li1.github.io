@@ -188,7 +188,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 <div class="news-scroll" markdown="1">
 
 - *2026.05*: 🎤 Invited talk on "Reason, Search, and Act: Towards Real-World AI Agents" at MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
-- *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. Check out our demo. [[Demo]](https://agent-tars-world.github.io/-/)
+- *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. [[Demo]](https://agent-tars-world.github.io/-/)
 - *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached *1k stars* and selected for *Oral Presentation* at **WWW 2026**. A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
 - *2026.02*: 🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
 - *2025.09*: 🎉 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**. (*1.2k+ stars*, *100+ citations*). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
