@@ -187,7 +187,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 <div class="news-scroll" markdown="1">
 
-- *2026.05*: 🎤 Invited talk on "Reason, Search, and Act: Towards Real-World AI Agents" at MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
+- *2026.06*: 🏆 Selected as a **BAAI InnoVibe 2026 Most Notable Academic Rising Star**, and gave a talk on "Towards Real-World AI Agents: Technical Evolution and Representative Work" at the **BAAI Conference**. [[Link]](https://hub.baai.ac.cn/view/55541)
 - *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. [[Demo]](https://agent-tars-world.github.io/-/)
 - *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached *1k stars* and selected for *Oral Presentation* at **WWW 2026**. A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
 - *2026.02*: 🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
@@ -376,6 +376,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited <img src="./images/Infosys.png" style="width: 3em;">. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) -->
 
 # 🎤 Invited Talks
+- *2026.06*: "Towards Real-World AI Agents: Technical Evolution and Representative Work", BAAI Conference. [[Link]](https://hub.baai.ac.cn/view/55541)
 - *2026.05*: "Reason, Search, and Act: Towards Real-World AI Agents", MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
 - *2026.03*: "Reason, Search, and Act: Towards Real-World AI Agents", CCIR PhD Forum.
 - *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/18G2XrYtGRMB2SAba02E7w)
