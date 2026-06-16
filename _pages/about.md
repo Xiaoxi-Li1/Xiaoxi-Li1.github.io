@@ -202,7 +202,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 </div>
 
 
-# 💻 Work Experiences
+# 💻 Experiences
 - 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1.1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance Seed, General Agent Team  
   Research Intern on Agentic LLM Post-training (<span style="color: #c00000;">Seed-LLM Talent</span> Program)  
   Mentors: Wanjun Zhong, Yujia Qin
