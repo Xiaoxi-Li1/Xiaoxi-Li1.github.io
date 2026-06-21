@@ -306,7 +306,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 <a href="https://github.com/sunnynexus/RetroLLM"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/RetroLLM?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 - [**From Matching to Generation: A Survey on Generative Information Retrieval**](https://dl.acm.org/doi/10.1145/3722552) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, <span class="author-more"><input type="checkbox" id="author-more-5" class="author-toggle"><label for="author-more-5" class="more-label">2 More Authors</label><label for="author-more-5" class="author-rest"> Yutao Zhu and Zhicheng Dou.</label></span></span>\
-<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **TOIS 2025 <span style="color: #c00000;">(JCR Q1, IF=9.1) (<a href="https://www.paperdigest.org/2025/09/most-influential-arxiv-information-retrieval-papers-2025-09-version/" style="color: #c00000;">Most Influential arXiv IR Papers in 2024 -- Top 11/All</a>)</span>**</span>\
+<span style="font-size: 0.93em; "><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> **TOIS 2025 <span style="color: #c00000;">(JCR Q1, IF=11.2) (<a href="https://www.paperdigest.org/2025/09/most-influential-arxiv-information-retrieval-papers-2025-09-version/" style="color: #c00000;">Most Influential arXiv IR Papers in 2024 -- Top 11/All</a>)</span>**</span>\
 <a href="https://github.com/RUC-NLPIR/GenIR-Survey"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/GenIR-Survey?style=flat-square&logo=github&logoColor=black&labelColor=white&color=white&label=Stars&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1433442328918110034'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.publications.%5B%27XDljV4YAAAAJ%3AqjMakFHDy7sC%27%5D.num_citations&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white" style="border: 1px solid #ccc; border-radius: 4px;"></a>
 - [**CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-intensive Tasks**](https://dl.acm.org/doi/abs/10.1145/3626772.3657778) \
 <span style="font-size: 0.93em;"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> **<u>Xiaoxi Li</u>**, Zhicheng Dou, Yujia Zhou, Fangchao Liu.</span>\
@@ -385,7 +385,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 # 📚 Academic Services
 <!-- - AC/SPC: ACL Rolling Review -->
 - PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI (Silver Reviewer Award @ ICML'26)
-- Journal Reviewer: ACM Computing Surveys, TOIS
+- Journal Reviewer: ACM Computing Surveys, TMLR, TOIS
 
 
 <!-- {% include visitor-map.html %} -->
