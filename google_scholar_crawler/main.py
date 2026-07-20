@@ -60,6 +60,7 @@ name = author.get("name", "")
 # List of first-author paper IDs (update this list if needed)
 first_author_ids = [
     'XDljV4YAAAAJ:YsMSGLbcyi4C',  # Search-o1
+    'XDljV4YAAAAJ:fPk4N6BV_jEC',  # Search-o1 (unmerged arXiv duplicate entry)
     'XDljV4YAAAAJ:qjMakFHDy7sC',  # From Matching to Generation
     'XDljV4YAAAAJ:LkGwnXOMwfcC',  # WebThinker
     'XDljV4YAAAAJ:W7OEmFMy1HYC',  # RetroLLM
