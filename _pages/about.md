@@ -188,7 +188,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 <div class="news-scroll" markdown="1">
 
 - *2026.07*: 🏆 Selected for the **CIE-Tencent PhD Research Incentive Program** (中国电子学会-腾讯博士生科研激励计划).
-- *2026.06*: 🏆 Selected as a **BAAI InnoVibe 2026 Most Notable Academic Rising Star** (青源InnoVibe-2026最受瞩目学术新星). [[Link]](https://hub.baai.ac.cn/view/55541)
+- *2026.06*: 🏆 Selected as a **BAAI InnoVibe 2026 Most Notable Academic Rising Star** (青源InnoVibe-2026最受瞩目学术新星) and gave a talk on "Towards Real-World AI Agents" at the **BAAI Conference**. [[Link]](https://hub.baai.ac.cn/view/55541)
 - *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. [[Demo]](https://agent-tars-world.github.io/-/)
 - *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached *1k stars* and selected for *Oral Presentation* at **WWW 2026**. A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
 - *2026.02*: 🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
