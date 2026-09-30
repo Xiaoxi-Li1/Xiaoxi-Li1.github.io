@@ -250,6 +250,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
   <div class="paper-card__content">
     <p class="paper-card__title"><a href="https://arxiv.org/abs/2510.21618"><strong>DeepAgent: A General Reasoning Agent with Scalable Toolsets</strong></a></p>
     <div class="paper-card__meta"><img src="./images/logo-author.png" style="width: 1em; position: relative; top: -0.1em;"> <strong><u>Xiaoxi Li</u></strong>, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, <span class="author-more"><input type="checkbox" id="author-more-1" class="author-toggle"><label for="author-more-1" class="more-label">6 More Authors</label><label for="author-more-1" class="author-rest"> Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, and Zhicheng Dou.</label></span></div>
+    <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong><span style="color: #c00000;"></span> <span style="color: #c00000;"><a href="https://www.paperdigest.org/digest/?topic=www&year=2026" style="color: #c00000;">Most Influential WWW 2026 Papers -- Top 2/950</a></span></strong></div>
     <!-- <div class="paper-card__venue"><img src="./images/logo-venue.png" style="width: 0.975em; position: relative; top: -0.115em; margin-left: 0.005em;"> <strong>WWW 2026</strong></div> -->
     <ul class="paper-card__highlights">
       <li>A general reasoning agent that can autonomously discover and use tools, while compressing memory to support long-horizon interactions.</li>
