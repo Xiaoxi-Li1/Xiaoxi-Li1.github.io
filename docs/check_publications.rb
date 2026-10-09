@@ -9,7 +9,7 @@ require "nokogiri"
 
 class PublicationsAudit
   ROOT = File.expand_path("..", __dir__)
-  GROUP_COUNTS = { "agents" => 13, "retrieval" => 6, "reward-ml" => 5 }.freeze
+  GROUP_COUNTS = { "agents" => 14, "retrieval" => 7, "reward-ml" => 5 }.freeze
   GROUP_NAV_TITLES = { "agents" => "LLM/VLM Agents", "retrieval" => "RAG & LLMs", "reward-ml" => "Reward & ML" }.freeze
   TOTAL = GROUP_COUNTS.values.sum
   SELF_NAME = "Xiaoxi Li"
@@ -31,7 +31,19 @@ class PublicationsAudit
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
   APPROVED_EMPHASIS_MINIMUMS = { "stars_emphasis_min" => 1000, "citations_emphasis_min" => 100 }.freeze
   OMNIGAIA_LEADERBOARD_URL = "https://huggingface.co/spaces/RUC-NLPIR/OmniGAIA-Leaderboard"
-  MEDIA_LABELS = ["REDtech", "RUC", "\u673a\u5668\u4e4b\u5fc3", "\u91cf\u5b50\u4f4d", "\u65b0\u667a\u5143"].freeze
+  ORAL_VENUES = {
+    "deepagent" => "WWW 2026 (Oral)", "search-o1" => "EMNLP 2025 (Oral)",
+    "aepo" => "WWW 2026 (Oral)", "longrefiner" => "ACL 2025 (Oral)",
+    "corpuslm" => "SIGIR 2024 (Oral)"
+  }.freeze
+  X_POSTS = {
+    "omnigaia" => "https://x.com/XiaoxiLi0111/status/2027285816947753209",
+    "deepagent" => "https://x.com/XiaoxiLi0111/status/1982649697467859438"
+  }.freeze
+  PAPER_PAGE_OVERRIDES = {
+    "long-horizon-survey" => "https://www.preprints.org/manuscript/202607.1328"
+  }.freeze
+  MEDIA_LABELS = ["REDtech", "RUC", "\u673a\u5668\u4e4b\u5fc3", "\u91cf\u5b50\u4f4d", "\u65b0\u667a\u5143", "\u5c0f\u7ea2\u4e66"].freeze
   APPROVED_MEDIA_LINKS = {
     "deepagent" => [
       ["REDtech", "https://mp.weixin.qq.com/s/ooU--PPm1dEUWSeJYBhrDA"],
@@ -45,7 +57,11 @@ class PublicationsAudit
     "agent-world" => [["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/Tn2_cNiVIKDl2MU-AFTG-A"]],
     "aepo" => [["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/mL3CTNonZVoLWnQVfK7KAw"]],
     "hypothesis-tree" => [["\u91cf\u5b50\u4f4d", "https://mp.weixin.qq.com/s/51ojDAqmFrRG08P2IhcXSA"]],
-    "genir-survey" => [["RUC", "https://mp.weixin.qq.com/s/iFilKVctb-fiMhYe_Gjuzw"]]
+    "genir-survey" => [["RUC", "https://mp.weixin.qq.com/s/iFilKVctb-fiMhYe_Gjuzw"]],
+    "long-horizon-survey" => [
+      ["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/r9YJYlVAyBZtfMXvAOh5ig"],
+      ["\u5c0f\u7ea2\u4e66", "https://xhslink.cn/o/9zD9theXcAs"]
+    ]
   }.freeze
   CCF_RANKS = {
     "deepagent" => "A", "webthinker" => "A", "search-o1" => "B",
@@ -128,7 +144,7 @@ class PublicationsAudit
 
   def report(out: $stdout, err: $stderr)
     if errors.empty?
-      out.puts "PASS: #{checks} checks across #{TOTAL} publications (13/6/5)."
+      out.puts "PASS: #{checks} checks across #{TOTAL} publications (#{GROUP_COUNTS.values.join('/')})."
       out.puts "HTML: #{html_path}"
     else
       err.puts "FAIL: #{errors.length} of #{checks} checks failed."
@@ -229,11 +245,14 @@ class PublicationsAudit
     check(grouped.tally == ids.tally, "Every publication must be grouped exactly once; missing, repeated, or unknown IDs found")
     check(grouped.uniq.length == grouped.length, "A paper is listed in more than one group or repeated within a group")
     check_adjacent("agents", "agent-world", "hypothesis-tree")
-    check_adjacent("agents", "hypothesis-tree", "verigraph")
+    check_adjacent("agents", "hypothesis-tree", "long-horizon-survey")
+    check_adjacent("agents", "long-horizon-survey", "verigraph")
     check_adjacent("agents", "verigraph", "aepo")
     check_adjacent("agents", "aepo", "tool-star")
     check_adjacent("retrieval", "retrollm", "corpuslm")
     check_adjacent("retrieval", "corpuslm", "unigen")
+    check_adjacent("retrieval", "unigen", "trustworthy-rag-survey")
+    check_adjacent("retrieval", "trustworthy-rag-survey", "longrefiner")
     check_adjacent("retrieval", "longrefiner", "rag-critic")
     check_adjacent("reward-ml", "implicit-rm", "distdf")
     retrieval = @groups.find { |group| group["id"] == "retrieval" }
@@ -243,6 +262,15 @@ class PublicationsAudit
     check(reward_ml && reward_ml["papers"].is_a?(Array) && reward_ml["papers"].first == "time-series-survey", "Reward/ML group must begin with the TPAMI time-series survey")
     check(@by_id.dig("hira", "code_url") == "https://github.com/RUC-NLPIR/HiRA", "hira: use the topology-confirmed RUC-NLPIR/HiRA upstream, not the legacy fork")
     check(@by_id.dig("omnigaia", "leaderboard_url") == OMNIGAIA_LEADERBOARD_URL, "omnigaia: retain the official Leaderboard URL from the project README")
+    {
+      "long-horizon-survey" => ["Towards Long-Horizon Agents: A Survey", 2026, "https://www.preprints.org/manuscript/202607.1328", 20],
+      "trustworthy-rag-survey" => ["Trustworthiness in Retrieval-Augmented Generation Systems: A Survey", 2024, "https://arxiv.org/abs/2409.10102", 13]
+    }.each do |id, (title, year, source, count)|
+      paper = @by_id[id] || {}
+      check(paper.values_at("title", "year", "publication_url") == [title, year, source], "#{id}: retain the verified survey identity and user-selected source")
+      check(paper["venue"] == "Preprint" && !paper["ccf_rank"] && paper["featured"] == false && !paper["highlighted"], "#{id}: retain plain preprint styling without an unverified venue or blue background")
+      check(paper["authors"].is_a?(Array) && paper["authors"].length == count, "#{id}: retain the complete verified author list")
+    end
 
     overrides = @papers.select { |paper| paper.key?("display_authors") }.map { |paper| paper["id"] }
     check(overrides.sort == TEAM_AUTHORS.keys.sort, "Only Seed2.1 may override display_authors; Agent-World must use its verified named authors")
@@ -266,6 +294,12 @@ class PublicationsAudit
 
   def check_paper_data(paper)
     id = paper["id"]
+    check(paper["x_url"] == X_POSTS[id], "#{id}: X link must match the user-provided post or stay absent")
+    check(paper["paper_url"] == PAPER_PAGE_OVERRIDES[id], "#{id}: only the requested survey may override the Paper button's PDF destination")
+    check(paper["venue"] == ORAL_VENUES[id], "#{id}: oral venues must use the approved parenthesized (Oral) format") if ORAL_VENUES.key?(id)
+    if paper["venue"].to_s.match?(/neurips/i)
+      check(paper["venue"].start_with?("NeurIPS "), "#{id}: retain the mixed-case NeurIPS spelling")
+    end
     check([true, false].include?(paper["featured"]), "#{id}: featured must be a boolean")
     check(paper.fetch("highlighted", false) == HIGHLIGHT_ONLY_IDS.include?(id), "#{id}: background-only highlighting must match the four approved retrieval papers")
     if CCF_RANKS.key?(id)
@@ -717,16 +751,19 @@ class PublicationsAudit
       check(%w[width height].all? { |key| image[key].to_s.match?(/\A[1-9]\d*\z/) }, "#{id}: every publication image needs positive width and height")
       check(image["loading"] == "lazy", "#{id}: every publication thumbnail or badge must use loading=lazy")
     end
-    check(text(card.at_css(".venue-name")) == paper["venue"], "#{id}: rendered venue differs from data")
+    venue_name = card.at_css(".venue-name")
+    check(text(venue_name) == paper["venue"], "#{id}: rendered venue differs from data")
+    mixed_case = paper["venue"].include?("NeurIPS") || paper["venue"].include?("(Oral)")
+    check(venue_name && venue_name["class"].to_s.split.include?("venue-name--mixed-case") == mixed_case, "#{id}: NeurIPS and (Oral) need mixed-case rendering without changing other venue labels")
     check_ccf_rank_html(paper, card)
     if paper["venue_note"]
       check(text(card.at_css(".venue-note")) == paper["venue_note"], "#{id}: rendered journal note differs from data")
     end
     paper_links = card.css(".publication__links a[href]").map { |link| link["href"] }
-    %w[pdf_url code_url project_url arxiv_url leaderboard_url].each do |key|
+    %w[code_url project_url arxiv_url leaderboard_url x_url].each do |key|
       check(paper_links.include?(paper[key]), "#{id}: rendered links omit #{key}") if paper[key]
     end
-    { "Paper" => paper["pdf_url"], "Code" => paper["code_url"], "Leaderboard" => paper["leaderboard_url"] }.each do |label, url|
+    { "Paper" => paper["paper_url"] || paper["pdf_url"], "Code" => paper["code_url"], "Leaderboard" => paper["leaderboard_url"] }.each do |label, url|
       next unless url
 
       links = card.css(".publication__links a[href]").select { |link| text(link) == label && link["href"] == url }
@@ -736,6 +773,13 @@ class PublicationsAudit
         link = links.first
         check(link.parent == card.at_css(".publication__links") && link["target"] == "_blank" && %w[noopener noreferrer].all? { |value| link["rel"].to_s.split.include?(value) }, "#{id}: Leaderboard must be a direct resource link with safe new-tab attributes")
       end
+    end
+    posts = card.css("[data-x-link]")
+    expected_posts = paper["x_url"] ? [paper["x_url"]] : []
+    check(posts.map { |post| post["href"] } == expected_posts, "#{id}: render only the approved X post")
+    posts.each do |post|
+      check(post.name == "a" && post.parent == card.at_css(".publication__links") && text(post) == "X (Twitter)" && statically_visible?(post), "#{id}: X must be a visible plain resource link")
+      check(post["target"] == "_blank" && %w[noopener noreferrer].all? { |value| post["rel"].to_s.split.include?(value) }, "#{id}: X needs safe new-tab attributes")
     end
     check_media_html(paper, card)
     check_metrics(paper, card)
@@ -776,7 +820,12 @@ class PublicationsAudit
       check(link.keys.sort == %w[label url], "#{id}: media links must contain only label and url")
       check(MEDIA_LABELS.include?(link["label"]), "#{id}: media label must use an approved publisher name")
       parsed = uri(link["url"])
-      check(https?(link["url"]) && parsed.host == "mp.weixin.qq.com" && parsed.path.match?(%r{\A/s/[A-Za-z0-9_-]+\z}) && parsed.query.nil? && parsed.fragment.nil?, "#{id}: media URL must be a canonical HTTPS WeChat article")
+      allowed_source = parsed && if link["label"] == "\u5c0f\u7ea2\u4e66"
+                                  parsed.host == "xhslink.cn" && parsed.path.match?(%r{\A/o/[A-Za-z0-9]+\z})
+                                else
+                                  parsed.host == "mp.weixin.qq.com" && parsed.path.match?(%r{\A/s/[A-Za-z0-9_-]+\z})
+                                end
+      check(https?(link["url"]) && allowed_source && parsed.query.nil? && parsed.fragment.nil?, "#{id}: media URL must match its approved HTTPS WeChat or Xiaohongshu source")
     end
     pairs = links.select { |link| link.is_a?(Hash) }.map { |link| [link["label"], link["url"]] }
     check(pairs.map(&:last).uniq.length == pairs.length, "#{id}: media URLs must not repeat")
@@ -809,7 +858,7 @@ class PublicationsAudit
       end
     end
     expected_order = []
-    { "Project Page" => "project_url", "Paper" => "pdf_url", "arXiv" => "arxiv_url", "Code" => "code_url", "Leaderboard" => "leaderboard_url" }.each do |label, key|
+    { "Project Page" => "project_url", "Paper" => "pdf_url", "arXiv" => "arxiv_url", "Code" => "code_url", "Leaderboard" => "leaderboard_url", "X (Twitter)" => "x_url" }.each do |label, key|
       expected_order << label if paper[key]
     end
     expected_order.concat(Array.new(expected.length, "media"))

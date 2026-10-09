@@ -5,15 +5,15 @@ The selected-work section is data-driven. Keep factual updates separate from lay
 ## Data and Ordering
 
 - `_data/publications.json` stores each paper's stable `id`, complete ordered `authors`, title, venue, links, figure metadata, and optional presentation fields.
-- `_data/publication_groups.yml` controls section and paper order. Every ID must appear exactly once. The approved selection is 24 papers: Agents 13, Retrieval 6, and Reward/ML 5.
+- `_data/publication_groups.yml` controls section and paper order. Every ID must appear exactly once. The approved selection is 26 papers: Agents 14, Retrieval 7, and Reward/ML 5.
 - The retrieval section title is exactly `Retrieval-Augmented LLMs`.
 - The compact Selected Work navigation reads `LLM/VLM Agents`, `RAG & LLMs`, and `Reward & ML`; its group anchors remain unchanged.
-- In Agents, keep the consecutive sequence `agent-world`, `hypothesis-tree`, `verigraph`, `aepo`, `tool-star`.
-- Retrieval begins with `genir-survey`, followed by `retrollm`, `corpuslm`, `unigen`, `longrefiner`, and `rag-critic`.
+- In Agents, keep the consecutive sequence `agent-world`, `hypothesis-tree`, `long-horizon-survey`, `verigraph`, `aepo`, `tool-star`.
+- Retrieval begins with `genir-survey`, followed by `retrollm`, `corpuslm`, `unigen`, `trustworthy-rag-survey`, `longrefiner`, and `rag-critic`.
 - Reward/ML begins with `time-series-survey`, followed by `implicit-rm`, `distdf`, `causal-rm`, and `rubrics-on-trial`. The survey's approved title is `Deep Time-Series Forecasting in 10 Years: A Survey`, with `IEEE TPAMI 2026` and `JCR Q1, IF=20.4`.
 - Changing the approved selection, team wording, or journal facts requires confirmation and a corresponding intentional update to the expectations in `docs/check_publications.rb`. Do not relax assertions merely to obtain a passing result.
 
-`featured` retains its existing blue-card treatment and visible summary. The first four retrieval works (`genir-survey`, `retrollm`, `corpuslm`, `unigen`) instead use `highlighted: true` for the same pale-blue background and left rule without adding summary text or changing typography. Keep the two remaining retrieval cards unhighlighted.
+`featured` retains its existing blue-card treatment and visible summary. The first four retrieval works (`genir-survey`, `retrollm`, `corpuslm`, `unigen`) instead use `highlighted: true` for the same pale-blue background and left rule without adding summary text or changing typography. Keep the three remaining retrieval cards unhighlighted. Both newly added surveys remain ordinary white cards without summary text or unverified conference/CCF claims.
 
 The approved About me paragraph describes the Seed internship as `focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs`. Only `RL scaling for general agents` is bold in that paragraph; the surrounding text and aggregate metrics retain normal weight. The introduction uses `(the first RedStar program)` and states `30+ papers (8 as first author)` alongside the approved publication venues. The Seed experience uses the single line `Research Intern on RL Scaling for General Agents (Seed-LLM Talent Program)`, preserving the program's red styling, dates, and mentors; do not repeat the old role or responsibilities line.
 
@@ -28,6 +28,8 @@ Selected Awards is one flat list of the four user-provided 2026 honors, in order
 CCF labels use the March 2026 seventh edition of the [CCF catalog](https://www.ccf.org.cn/Academic_Evaluation/By_category/), not the ranking at each paper's publication date. The 16 accepted papers have `ccf_rank`: 15 are `A`, and `search-o1` (EMNLP) is `B`; omit the field entirely on preprints and technical reports. ICLR is newly listed as A in this edition. The official site returned a WAF challenge during verification, so the grades were checked against matching formal-catalog PDFs hosted by [Lishui University](https://kyc.lsu.edu.cn/_upload/article/files/20/77/2cbaa3754eb9aff9ed74cafed8ff/23a8de02-594c-445f-b084-69b0193c05b3.pdf) and [Zhejiang Gongshang University](https://lib.zjgsu.edu.cn/_upload/article/files/f5/b1/f4f7201343b88c0f10564f590ebe/854a3c68-36a6-4698-a359-5184d5e30a0c.pdf). WWW means the A-rated Web Conference, not the B-rated journal with the same abbreviation.
 
 Present CCF labels as plain gray text (`#626d7b`), without a border or background.
+
+Use parenthesized `(Oral)` for the five existing oral papers. The `venue-name--mixed-case` modifier preserves the visible `NeurIPS` and `(Oral)` casing; other venue labels retain their established uppercase styling, including PREPRINT and TECHNICAL REPORT. Do not alter font sizes when normalizing these names.
 
 ## Authors and Figures
 
@@ -51,11 +53,17 @@ For PDF figures, preserve `pdf_url`, one-based `figure_page`, `figure_label`, th
 
 The original PDFs, extraction scripts, contact sheets, and additional provenance for this revision are in `/opt/tiger/homepage-review-20261009/`; these large review artifacts are not runtime dependencies and should not be added to the site repository. Paper, code, project, and other external links must use HTTPS. When an image has an `image_version`, keep that exact query on both the thumbnail and full-size link, including under a nonempty Jekyll `baseurl`.
 
+The Long-Horizon Agents survey uses the user-selected Preprints landing page for its title and Paper button. Its `paper_url` overrides that button only; `pdf_url` remains the verified official repository PDF used for Figure 1 on PDF page 4. The PDF's 20 authors match Crossref and the official project; it is not asserted byte-identical to the Preprints v1 download. The official repository is a reading list/resource collection. Do not add an unverified arXiv counterpart or conference venue.
+
+The trustworthy-RAG survey uses arXiv 2409.10102v2 for its PDF and Figure 2 on page 6. Keep the current 13-author list from the arXiv metadata/PDF, not the older 10-author repository BibTeX. Its initial publication year is 2024, and no accepted venue was verified; the ACM header contains placeholders, not evidence of a 2018 conference paper.
+
 ## Metric Updates
 
 `leaderboard_url` is an optional resource link after Code and before media or metrics. OmniGAIA uses the official project README's `https://huggingface.co/spaces/RUC-NLPIR/OmniGAIA-Leaderboard`; do not invent a GitHub Pages leaderboard URL. Render it with the same styling, visibility, and safe new-tab attributes as Paper and Code.
 
-Optional `media_links` arrays contain ordered `{label, url}` objects. Render them as plain direct anchors after Project Page/Paper/arXiv/Code/Leaderboard and before Stars/Citations, inheriting the existing resource-link typography, underlines, separators, and wrapping. Media links remain visible independently of metric thresholds; do not add badges, icons, or metric hooks. The nine user-supplied articles belong to DeepAgent (REDtech, RUC), WebThinker (Jiqizhixin), Search-o1 (QbitAI, Xinzhiyuan), Agent-World (Jiqizhixin), AEPO (Jiqizhixin), Arbor/hypothesis-tree (QbitAI), and the GenIR survey (RUC). Publisher display labels use the user's original Chinese names where applicable, with the short labels `REDtech` and `RUC`. The user supplied article titles and publishers because WeChat requests in the review environment triggered verification; Arbor's RUC/Microsoft affiliation and research framework were also checked against the official project and paper. Preserve these exact article URLs and mappings in the checker.
+Optional `x_url` values render as `X (Twitter)` after the ordinary resource links and before media links. Only OmniGAIA and DeepAgent currently have user-provided posts. Use direct text anchors with the same styling and safe new-tab attributes as Paper; do not introduce icons or metric hooks.
+
+Optional `media_links` arrays contain ordered `{label, url}` objects. Render them as plain direct anchors after Project Page/Paper/arXiv/Code/Leaderboard/X and before Stars/Citations, inheriting the existing resource-link typography, underlines, separators, and wrapping. Media links remain visible independently of metric thresholds; do not add badges, icons, or metric hooks. The eleven user-supplied links belong to DeepAgent (REDtech, RUC), WebThinker (Jiqizhixin), Search-o1 (QbitAI, Xinzhiyuan), Agent-World (Jiqizhixin), AEPO (Jiqizhixin), Arbor/hypothesis-tree (QbitAI), the GenIR survey (RUC), and the Long-Horizon Agents survey (Jiqizhixin, Xiaohongshu, in that order). Publisher display labels use the user's original Chinese names where applicable, with the short labels `REDtech` and `RUC`. The Xiaohongshu item retains its user-provided xhslink.cn short URL; the other publishers retain their WeChat URLs. The user supplied article titles and publishers because WeChat requests in the review environment triggered verification; Arbor's RUC/Microsoft affiliation and research framework were also checked against the official project and paper. Preserve these exact article URLs and mappings in the checker.
 
 Selected Work renders Stars before Citations when both exist, including metrics that are initially hidden and may appear after an automatic update. About me retains citations before GitHub stars.
 
