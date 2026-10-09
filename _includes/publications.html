@@ -40,8 +40,8 @@
             <a href="{{ paper.pdf_url | escape }}" target="_blank" rel="noopener noreferrer">Paper</a>
             {% if paper.arxiv_url %}<a href="{{ paper.arxiv_url | escape }}" target="_blank" rel="noopener noreferrer">arXiv</a>{% endif %}
             {% if paper.code_url %}<a href="{{ paper.code_url | escape }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
-            {% if paper.scholar_id %}<a class="publication__metric" href="{{ paper.citation_url | escape }}" target="_blank" rel="noopener noreferrer" data-citation-metric data-citation-threshold="{{ citations_over }}"{% unless paper.citations > citations_over %} hidden{% endunless %}>Citations <span data-scholar-id="{{ paper.scholar_id | escape }}">{{ paper.citations }}</span></a>{% endif %}
             {% if paper.stars_url %}<a class="publication__metric publication__stars" href="{{ paper.code_url | escape }}" target="_blank" rel="noopener noreferrer" data-star-metric data-star-source="{{ paper.stars_url | escape }}" data-star-threshold="{{ stars_over }}"{% unless star_count > stars_over %} hidden{% endunless %}><i class="fab fa-github" aria-hidden="true"></i> Stars <span data-github-stars>{{ paper.stars_label | escape }}</span></a>{% endif %}
+            {% if paper.scholar_id %}<a class="publication__metric" href="{{ paper.citation_url | escape }}" target="_blank" rel="noopener noreferrer" data-citation-metric data-citation-threshold="{{ citations_over }}"{% unless paper.citations > citations_over %} hidden{% endunless %}>Citations <span data-scholar-id="{{ paper.scholar_id | escape }}">{{ paper.citations }}</span></a>{% endif %}
           </div>
         </div>
       </article>

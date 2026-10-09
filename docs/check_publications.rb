@@ -729,6 +729,9 @@ class PublicationsAudit
 
   def check_metrics(paper, card)
     id = paper["id"]
+    order = card.css(".publication__links > [data-star-metric], .publication__links > [data-citation-metric]").map { |metric| metric.key?("data-star-metric") ? "stars" : "citations" }
+    expected_order = paper["stars_url"] ? %w[stars citations] : %w[citations]
+    check(order == expected_order, "#{id}: Selected Work must render Stars before Citations, including initially hidden metrics")
     citations = card.css("[data-citation-metric]")
     if check(citations.length == 1, "#{id}: keep one citation metric in the DOM, even when low or unknown")
       metric = citations.first

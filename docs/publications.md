@@ -49,6 +49,8 @@ The original PDFs, extraction scripts, contact sheets, and additional provenance
 
 ## Metric Updates
 
+Selected Work renders Stars before Citations when both exist, including metrics that are initially hidden and may appear after an automatic update. About me retains citations before GitHub stars.
+
 `_config.yml` controls the independent thresholds under `publication_metrics`: `stars_over: 50` and `citations_over: 20`. Both comparisons are **strictly greater than**: exactly 50 stars or 20 citations stays hidden, as does an unknown value. When intentionally changing approved thresholds, update the config and the checker's approved expectations together. Keep low/unknown metric elements in the DOM with `hidden`, so runtime updates can show them later or hide a formerly high count. Never suppress a paper's metric permanently by ID, and never hide its Code or Paper links because of a low count.
 
 Citation counts in `_data/publications.json` are build-time fallback snapshots. The existing crawler workflow runs on `page_build` and a daily `0 0 * * *` schedule (00:00 UTC / 08:00 Beijing), then writes JSON to the `google-scholar-stats` branch, not back into the main publication data. A page load fetches that JSON once and replaces valid per-paper counts; failure, timeout, or a missing record preserves the rendered snapshot. This is not continuous polling. The crawler can fall back to old Scholar data while still advancing its `updated` field, so neither that field nor a successful workflow alone guarantees fresh Scholar results.
