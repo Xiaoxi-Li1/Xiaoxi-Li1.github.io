@@ -64,6 +64,16 @@
     "publication_url": "https://arxiv.org/abs/2510.21618",
     "pdf_url": "https://arxiv.org/pdf/2510.21618",
     "code_url": "https://github.com/RUC-NLPIR/DeepAgent",
+    "media_links": [
+      {
+        "label": "REDtech",
+        "url": "https://mp.weixin.qq.com/s/ooU--PPm1dEUWSeJYBhrDA"
+      },
+      {
+        "label": "RUC",
+        "url": "https://mp.weixin.qq.com/s/e4dwMY6S8WpbQk9IUEPtHw"
+      }
+    ],
     "image": "/images/publications/deepagent.webp",
     "image_full": "/images/publications/deepagent-full.webp",
     "image_width": 600,
@@ -105,6 +115,12 @@
     "publication_url": "https://arxiv.org/abs/2504.21776",
     "pdf_url": "https://arxiv.org/pdf/2504.21776",
     "code_url": "https://github.com/RUC-NLPIR/WebThinker",
+    "media_links": [
+      {
+        "label": "\u673a\u5668\u4e4b\u5fc3",
+        "url": "https://mp.weixin.qq.com/s/B-X0WTAiV-FNbt0nm2O1Lw"
+      }
+    ],
     "image": "/images/publications/webthinker.webp",
     "image_full": "/images/publications/webthinker-full.webp",
     "image_width": 600,
@@ -146,6 +162,16 @@
     "publication_url": "https://arxiv.org/abs/2501.05366",
     "pdf_url": "https://arxiv.org/pdf/2501.05366",
     "code_url": "https://github.com/sunnynexus/Search-o1",
+    "media_links": [
+      {
+        "label": "\u91cf\u5b50\u4f4d",
+        "url": "https://mp.weixin.qq.com/s/J_n5cn_Zp4lRs8ESqFEFmg"
+      },
+      {
+        "label": "\u65b0\u667a\u5143",
+        "url": "https://mp.weixin.qq.com/s/ytAqw5TNF2JD7UXS-S17gg"
+      }
+    ],
     "image": "/images/publications/search-o1.webp",
     "image_full": "/images/publications/search-o1-full.webp",
     "image_width": 600,
@@ -391,6 +417,12 @@
     "source_pdf_sha256": "3b13bde858765865a243a6bf10d5884a820e00dfcf91209dd5f64cb2860eb2ae",
     "summary": "Entropy-balanced rollout and policy optimization stabilize reinforcement learning for long-horizon, tool-using web agents.",
     "code_url": "https://github.com/dongguanting/ARPO",
+    "media_links": [
+      {
+        "label": "\u673a\u5668\u4e4b\u5fc3",
+        "url": "https://mp.weixin.qq.com/s/mL3CTNonZVoLWnQVfK7KAw"
+      }
+    ],
     "venue_source": "https://github.com/dongguanting/ARPO#-latest-news",
     "featured": false,
     "scholar_id": "XDljV4YAAAAJ:Tiz5es2fbqcC",
@@ -496,6 +528,12 @@
     "source_pdf_sha256": "c80931a404f5f0e0adc90d689fbedcc947fa986e4cfe9fa869238c85a7deb276",
     "summary": "Arbor coordinates autonomous research through a persistent hypothesis tree that accumulates experiments, evidence, and reusable insights.",
     "code_url": "https://github.com/RUC-NLPIR/Arbor",
+    "media_links": [
+      {
+        "label": "\u91cf\u5b50\u4f4d",
+        "url": "https://mp.weixin.qq.com/s/51ojDAqmFrRG08P2IhcXSA"
+      }
+    ],
     "featured": false,
     "scholar_id": "XDljV4YAAAAJ:2P1L_qKh6hAC",
     "citations": 13,
@@ -784,6 +822,12 @@
     "figure_caption": "Fig. 1. Exploring IR Evolution: From Traditional to Generative Methods - This diagram illustrates the shift from traditional similarity-based document matching (a) to GenIR techniques. Current GenIR methods can be categorized into two types: generative retrieval (b), which retrieves documents by directly generating relevant DocIDs constrained by a DocID prefix tree; and response generation (c), which directly generates reliable and user-centric answers.",
     "summary": "Surveys generative document retrieval and reliable response generation, organizing their methods, evaluation, challenges, and future directions.",
     "code_url": "https://github.com/RUC-NLPIR/GenIR-Survey",
+    "media_links": [
+      {
+        "label": "RUC",
+        "url": "https://mp.weixin.qq.com/s/iFilKVctb-fiMhYe_Gjuzw"
+      }
+    ],
     "featured": false,
     "honor": "Most Influential arXiv IR Papers in 2024 -- Top 11/All",
     "honor_url": "https://www.paperdigest.org/2025/09/most-influential-arxiv-information-retrieval-papers-2025-09-version/",

@@ -30,6 +30,21 @@ class PublicationsAudit
   TPAMI_NOTE = "JCR Q1, IF=20.4"
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
   APPROVED_EMPHASIS_MINIMUMS = { "stars_emphasis_min" => 1000, "citations_emphasis_min" => 100 }.freeze
+  MEDIA_LABELS = ["REDtech", "RUC", "\u673a\u5668\u4e4b\u5fc3", "\u91cf\u5b50\u4f4d", "\u65b0\u667a\u5143"].freeze
+  APPROVED_MEDIA_LINKS = {
+    "deepagent" => [
+      ["REDtech", "https://mp.weixin.qq.com/s/ooU--PPm1dEUWSeJYBhrDA"],
+      ["RUC", "https://mp.weixin.qq.com/s/e4dwMY6S8WpbQk9IUEPtHw"]
+    ],
+    "webthinker" => [["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/B-X0WTAiV-FNbt0nm2O1Lw"]],
+    "search-o1" => [
+      ["\u91cf\u5b50\u4f4d", "https://mp.weixin.qq.com/s/J_n5cn_Zp4lRs8ESqFEFmg"],
+      ["\u65b0\u667a\u5143", "https://mp.weixin.qq.com/s/ytAqw5TNF2JD7UXS-S17gg"]
+    ],
+    "aepo" => [["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/mL3CTNonZVoLWnQVfK7KAw"]],
+    "hypothesis-tree" => [["\u91cf\u5b50\u4f4d", "https://mp.weixin.qq.com/s/51ojDAqmFrRG08P2IhcXSA"]],
+    "genir-survey" => [["RUC", "https://mp.weixin.qq.com/s/iFilKVctb-fiMhYe_Gjuzw"]]
+  }.freeze
   CCF_RANKS = {
     "deepagent" => "A", "webthinker" => "A", "search-o1" => "B",
     "hira" => "A", "tool-star" => "A", "verigraph" => "A", "aepo" => "A",
@@ -270,6 +285,7 @@ class PublicationsAudit
 
       check(https?(value), "#{id}: #{key} must be an absolute HTTPS URL")
     end
+    check_media_data(paper)
     pdf = uri(paper["pdf_url"])
     check(pdf && (pdf.path.downcase.end_with?(".pdf") || pdf.path.match?(%r{/(?:pdf|epdf)/})), "#{id}: pdf_url must point to a PDF resource, not an abstract page")
     check_figure_data(paper)
@@ -707,6 +723,7 @@ class PublicationsAudit
       visible = links.length == 1 && !links.first.key?("hidden") && links.first.ancestors.none? { |node| node.key?("hidden") }
       check(visible, "#{id}: #{label} must remain present and visible regardless of metric thresholds")
     end
+    check_media_html(paper, card)
     check_metrics(paper, card)
     check_authors(paper, card.at_css(".publication__authors"))
   end
@@ -732,6 +749,59 @@ class PublicationsAudit
     venue = card.at_css(".publication__venue")
     check(venue && rank.ancestors.include?(venue), "#{id}: CCF label must belong to its publication venue")
     check(!rank.key?("hidden") && rank.ancestors.none? { |node| node.key?("hidden") }, "#{id}: CCF label must remain visible")
+  end
+
+  def check_media_data(paper)
+    id = paper["id"]
+    links = paper.fetch("media_links", [])
+    return unless check(links.is_a?(Array), "#{id}: media_links must be an array when present")
+
+    links.each do |link|
+      next unless check(link.is_a?(Hash), "#{id}: each media link must be an object")
+
+      check(link.keys.sort == %w[label url], "#{id}: media links must contain only label and url")
+      check(MEDIA_LABELS.include?(link["label"]), "#{id}: media label must use an approved publisher name")
+      parsed = uri(link["url"])
+      check(https?(link["url"]) && parsed.host == "mp.weixin.qq.com" && parsed.path.match?(%r{\A/s/[A-Za-z0-9_-]+\z}) && parsed.query.nil? && parsed.fragment.nil?, "#{id}: media URL must be a canonical HTTPS WeChat article")
+    end
+    pairs = links.select { |link| link.is_a?(Hash) }.map { |link| [link["label"], link["url"]] }
+    check(pairs.map(&:last).uniq.length == pairs.length, "#{id}: media URLs must not repeat")
+    check(pairs == APPROVED_MEDIA_LINKS.fetch(id, []), "#{id}: media links must retain the user-provided paper, publisher, URL, and order")
+  end
+
+  def check_media_html(paper, card)
+    id = paper["id"]
+    row = card.at_css(".publication__links")
+    return unless check(row, "#{id}: publication link row is missing")
+
+    links = card.css("[data-media-link]")
+    expected = APPROVED_MEDIA_LINKS.fetch(id, [])
+    check(links.map { |link| [text(link), link["href"]] } == expected, "#{id}: rendered media labels and destinations must match the approved articles")
+    links.each do |link|
+      check(link.name == "a" && link.parent == row, "#{id}: media links must be direct anchors, matching Paper and Code styling")
+      check(statically_visible?(link), "#{id}: media links must remain visible regardless of metric counts")
+      check(link["target"] == "_blank" && %w[noopener noreferrer].all? { |value| link["rel"].to_s.split.include?(value) }, "#{id}: media links need safe new-tab attributes")
+      check(link.element_children.empty? && !link["class"].to_s.split.include?("publication__metric") && link.attribute_nodes.none? { |attribute| attribute.name.match?(/\Adata-(?:star|citation|emphasis)/) }, "#{id}: media links must stay plain text, without icons, badges, or metric hooks")
+    end
+    order = row.element_children.map do |link|
+      if link.key?("data-media-link")
+        "media"
+      elsif link.key?("data-star-metric")
+        "stars"
+      elsif link.key?("data-citation-metric")
+        "citations"
+      else
+        text(link)
+      end
+    end
+    expected_order = []
+    { "Project Page" => "project_url", "Paper" => "pdf_url", "arXiv" => "arxiv_url", "Code" => "code_url" }.each do |label, key|
+      expected_order << label if paper[key]
+    end
+    expected_order.concat(Array.new(expected.length, "media"))
+    expected_order << "stars" if paper["stars_url"]
+    expected_order << "citations"
+    check(order == expected_order, "#{id}: media must follow resource links and precede Stars/Citations, including hidden metrics")
   end
 
   def check_metrics(paper, card)
