@@ -101,6 +101,10 @@
     margin-top: 0.2em;
     object-fit: contain;
     transform: translateX(-2px);
+
+    &.profile-history__logo--bytedance {
+      transform: translateX(-2px) scale(1.1);
+    }
   }
 
   .profile-history__mentors {

@@ -597,6 +597,7 @@ class PublicationsAudit
       logo = logos.first
       check(title && logo.parent == title && title.element_children.first == logo && logo["class"].to_s.split.include?("profile-history__logo"), "#{label}: the logo must be the title's first decorative image")
       check(logo["src"] == "./images/#{expected['logo']}" && logo["alt"] == "" && logo["width"] == "18" && logo["height"] == "18", "#{label}: preserve the correct logo with empty alt and 18x18 dimensions")
+      check(logo["class"].to_s.split.include?("profile-history__logo--bytedance") == (expected["logo"] == "bytedance.svg"), "#{label}: only the ByteDance logo may use the slightly enlarged visual scale")
     end
     return unless expected["program"]
 

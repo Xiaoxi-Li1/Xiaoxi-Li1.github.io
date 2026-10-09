@@ -95,7 +95,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
   <li class="profile-history__item">
     <span class="profile-history__date"><time datetime="2026-05">2026.05</time> <span class="profile-history__date-end">- Present</span></span>
     <div class="profile-history__body">
-      <p class="profile-history__title"><img class="profile-history__logo" src="./images/bytedance.svg" alt="" width="18" height="18"> ByteDance Seed, General Agent Team</p>
+      <p class="profile-history__title"><img class="profile-history__logo profile-history__logo--bytedance" src="./images/bytedance.svg" alt="" width="18" height="18"> ByteDance Seed, General Agent Team</p>
       <p>Research Intern on RL Scaling for General Agents (<span style="color: #c00000;">Seed-LLM Talent</span> Program)</p>
       <p class="profile-history__mentors">Mentors: Wanjun Zhong, Yujia Qin</p>
     </div>
