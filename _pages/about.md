@@ -28,12 +28,11 @@ redirect_from:
 </style>
 
 # About me
+{: .homepage-section-title}
+
 I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
-I'm currently a research intern focusing on agentic LLM post-training at [ByteDance Seed](https://seed.bytedance.com/), and was previously a RedStar research intern at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar). I have published 20+ papers in top-tier AI conferences and journals (8 first-author papers), including NeurIPS, ICML, ICLR, ACL, EMNLP, AAAI, SIGIR, WWW, and TOIS. 
-
-**Citations:** <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.citedby&label=Citations&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://scholar.google.com/citations?user=XDljV4YAAAAJ'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_citations&label=First-Author&color=white&logo=Google%20Scholar&style=flat-square&labelColor=white&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>; 
-**Project Stars:** <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.github_stars_k&label=Project%20Stars&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a> <a href='https://github.com/sunnynexus'><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FXiaoxi-Li1%2FXiaoxi-Li1.github.io%2Fgoogle-scholar-stats%2Fgs_data.json&query=%24.first_author_repo_stars_k&label=First-Author&color=white&logo=GitHub&style=flat-square&labelColor=white&logoColor=black&cacheSeconds=10" style="border: 1px solid #ccc; border-radius: 4px;"></a>
+I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), working on RL Scaling for General Agents, with a focus on co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
 
 **Research Interests：**
 - **Omni-Modal Agents:** Building real-world omni-modal AI assistants ([OmniGAIA](https://arxiv.org/abs/2602.22897));
@@ -54,7 +53,8 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 
 
-# 🔥 News
+# News
+{: id="-news" .homepage-section-title}
 
 <div class="news-scroll" markdown="1">
 
@@ -74,9 +74,20 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 </div>
 
 
-# 💻 Experiences
+# Educations
+{: id="-educations" .homepage-section-title}
+
+- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence<br>
+  Gaoling School of Artificial Intelligence, Renmin University of China
+- 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.13em;"> B.Sc. in Intelligence Science and Technology<br>
+  College of Artificial Intelligence, Nankai University
+
+
+# Research Experiences
+{: id="-experiences" .homepage-section-title}
+
 - 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1.1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance Seed, General Agent Team  
-  Research Intern on Agentic LLM Post-training (<span style="color: #c00000;">Seed-LLM Talent</span> Program)  
+  Research Intern on RL Scaling for General Agents (<span style="color: #c00000;">Seed-LLM Talent</span> Program)<br>
   Mentors: Wanjun Zhong, Yujia Qin
 - 2025.06 - 2026.05 | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Team  
   Research Intern on General Agents (<span style="color: #c00000;">RedStar</span> Program)  
@@ -90,12 +101,6 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 
 
-# 📖 Educations
-- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence  
-  Gaoling School of Artificial Intelligence, Renmin University of China
-- 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.13em;"> B.Sc. in Intelligence Science and Technology  
-  College of Artificial Intelligence, Nankai University
-
 <!-- https://scholar.google.com/citations?user=XDljV4YAAAAJ -->
 <!-- # Experiences
 - *2021.12 - 2022.12*, Research Intern, Poisson Lab, Huawei <img src="./images/huawei.png" style="width: 4em;">. Supervised by [Xinyu Zhang](https://scholar.google.com/citations?user=W_WZEQEAAAAJ)
@@ -103,14 +108,27 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 - *2016.9 - 2019.6*, Research Assistant, Beijing Key Lab of Big Data Management and Analysis Methods. Supervised by [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ)
 - *2016.6 - 2016.9*, Software Engineer, Infosys Technology Limited <img src="./images/Infosys.png" style="width: 3em;">. Supervised by [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) -->
 
-# 🎤 Invited Talks
+# Selected Awards
+{: .homepage-section-title}
+
+- 2026: **BAAI InnoVibe Most Notable Academic Rising Star** (青源InnoVibe最受瞩目学术新星，全球25人).
+- 2026: **CIE-Tencent Hunyuan PhD Research Incentive Program** (中国电子学会-腾讯混元博士生科研激励计划，10w/人).
+- 2026: **Young Talent Development Program for Doctoral Students, CAST** (中国科协青年人才培育工程博士生专项).
+- 2026: **National Scholarship for Ph.D. Students**, Renmin University of China (中国人民大学博士生国家奖学金; Top 1%).
+
+
+# Invited Talks
+{: id="-invited-talks" .homepage-section-title}
+
 - *2026.06*: "Towards Real-World AI Agents: Technical Evolution and Representative Work", BAAI Conference. [[Link]](https://hub.baai.ac.cn/view/55541)
 - *2026.05*: "Reason, Search, and Act: Towards Real-World AI Agents", MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/NTh5Op-g9_m_tgSTrHbzzA)
 - *2026.03*: "Reason, Search, and Act: Towards Real-World AI Agents", CCIR PhD Forum.
 - *2025.04*: "WebThinker: Empowering Large Reasoning Models with Deep Research Capability", MLNLP Community. [[Link]](https://mp.weixin.qq.com/s/18G2XrYtGRMB2SAba02E7w)
 
 
-# 📚 Academic Services
+# Academic Services
+{: id="-academic-services" .homepage-section-title}
+
 <!-- - AC/SPC: ACL Rolling Review -->
 - PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI (Silver Reviewer Award @ ICML'26)
 - Journal Reviewer: ACM Computing Surveys, TMLR, TOIS
@@ -118,22 +136,18 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 <!-- {% include visitor-map.html %} -->
 
-<!-- <hr style="margin-top: 2em;"> -->
-
-<div id="footer" data-site-origin="{{ site.visitor_statistics_origin | escape }}" hidden style="text-align: center; font-size: 0.9em; color: #666;">
-  <div id="footer-text"></div>
-
-  <!-- &copy; 2025 Xiaoxi Li -->
-
-  <br>
-  <div class="site-traffic" hidden style="color: #666; font-weight: 600;">
-    <span id="busuanzi_container_site_pv">Total Visitors: <span id="busuanzi_value_site_pv" data-traffic-value></span></span>
+<footer id="footer" class="homepage-footer" data-site-origin="{{ site.visitor_statistics_origin | escape }}">
+  <div class="homepage-footer__meta">
+    <span>&copy; {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}" target="_self">Xiaoxi Li</a></span>
+    <span class="homepage-footer__updated">Last updated <time datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%b. %Y' }}</time></span>
+  </div>
+  <div class="visitor-badge" hidden>
+    <img data-visitor-badge data-badge-source="https://visitor-badge.laobi.icu/badge?page_id=https%3A%2F%2Fxiaoxi-li1.github.io%2F&amp;left_text=Total%20Visitors&amp;left_color=%23000000&amp;right_color=%23000000" alt="Total Visitors (live visitor count)" height="18" decoding="async">
+  </div>
+  <div class="site-traffic" hidden aria-hidden="true">
+    <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv" data-traffic-value></span></span>
     <!-- <span id="busuanzi_container_site_uv">Unique Visitors: <span id="busuanzi_value_site_uv" data-traffic-value></span></span> -->
   </div>
-  <br>
-  <div data-visitor-map data-map-source="https://cdn.clustrmaps.com/map_v2.js?cl=808080&amp;w=400&amp;t=m&amp;d=jb32gKOvN2D_KtQxr8tDG9K_TxMJ3WoBGbSkT1RoI5A&amp;co=ffffff&amp;cmn=ffa44e&amp;ct=5a5a5a"></div>
-</div>
+</footer>
 
-<script src="{{ '/assets/js/site-traffic.js' | relative_url }}" defer></script>
-
-<br>
+<script src="{{ '/assets/js/site-traffic.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

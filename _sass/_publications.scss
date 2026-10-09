@@ -7,6 +7,52 @@
        url("../fonts/outfit/Outfit-Variable.ttf") format("truetype");
 }
 
+.page__content .homepage-section-title,
+.page__content #about-me.homepage-section-title {
+  margin: 32px 0 12px;
+  padding: 0;
+  border: 0;
+  color: #232830;
+  font-family: "Outfit", "Trebuchet MS", sans-serif;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  scroll-margin-top: 88px;
+
+  &::before {
+    display: none;
+    content: none;
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 26px;
+    font-size: 26px;
+  }
+}
+
+.page__content #about-me.homepage-section-title,
+.publications .publications__intro .homepage-section-title {
+  margin-top: 0;
+}
+
+.page__content .profile-metrics > a {
+  white-space: nowrap;
+
+  &:focus-visible {
+    outline: 3px solid #2a64bd;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+}
+
+.profile-metrics__scholar-icon {
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: -0.15em;
+  fill: #2058ad;
+}
+
 /* Keep the publication refresh independent of the existing page and sidebar. */
 .publications {
   --publication-ink: #232830;
@@ -47,21 +93,6 @@
 
   .publications__intro {
     margin-bottom: 26px;
-
-    h1 {
-      margin: 0 0 12px;
-      padding: 0;
-      border: 0;
-      font-size: 29px;
-      font-weight: 600;
-      line-height: 1.25;
-      letter-spacing: -0.035em;
-
-      &::before {
-        display: none;
-        content: none;
-      }
-    }
   }
 
   .publications__nav {
@@ -292,6 +323,14 @@
       color: var(--publication-muted);
       font-weight: 500;
     }
+
+    .venue-rank {
+      margin-left: 6px;
+      color: #626d7b;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
   }
 
   .publication__honor {
@@ -350,23 +389,38 @@
       }
     }
 
-    > .publication__metric {
-      color: var(--publication-muted);
-      font-weight: 400;
-      font-variant-numeric: tabular-nums;
-
-      [data-scholar-id], [data-github-stars] {
-        margin-left: 4px;
-      }
-    }
-
     > a[hidden] {
       display: none;
     }
+  }
+}
 
-    .publication__stars .fab {
-      margin-right: 4px;
-    }
+.page__content .profile-metrics > a,
+.publications .publication__links > .publication__metric {
+  color: #000;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 4px;
+
+  &:hover, &:focus, &:visited {
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  [data-scholar-id], [data-github-stars] {
+    margin-left: 4px;
+    font-weight: 700;
+  }
+
+  [data-profile-value] {
+    font-weight: 700;
+  }
+
+  .fab {
+    margin-right: 4px;
   }
 }
 
@@ -468,10 +522,6 @@ body.figure-open {
 
     .publications__intro {
       margin-bottom: 20px;
-
-      h1 {
-        font-size: 26px;
-      }
     }
 
     .publications__nav {

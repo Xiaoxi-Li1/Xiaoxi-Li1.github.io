@@ -8,8 +8,19 @@
       return response.json();
     })
     .then(function (data) {
+      if (!data || typeof data !== 'object' || Array.isArray(data)) return;
       var total = document.getElementById('total_cit');
       if (total && Number.isFinite(data.citedby)) total.textContent = data.citedby;
+      document.querySelectorAll('[data-profile-metric]').forEach(function (metric) {
+        var value = data[metric.dataset.profileMetric];
+        if (!Number.isSafeInteger(value) || value < 0) return;
+        var text = String(value);
+        if (metric.hasAttribute('data-compact-count') && value >= 1000) {
+          var tenths = Math.floor(value / 100) + (value % 100 >= 50 ? 1 : 0);
+          text = (tenths / 10).toFixed(1) + 'k';
+        }
+        metric.querySelector('[data-profile-value]').textContent = text;
+      });
       document.querySelectorAll('[data-scholar-id], .show_paper_citations').forEach(function (element) {
         var id = element.dataset.scholarId || element.getAttribute('data');
         var paper = (data.publications || {})[id];

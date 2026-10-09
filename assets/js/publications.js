@@ -12,7 +12,9 @@
       trigger = link;
       dialog.querySelector('#figure-title').textContent = link.dataset.figureTitle;
       dialog.querySelector('#figure-caption').textContent = link.dataset.figureCaption;
-      dialog.querySelector('#figure-source').href = link.dataset.figureSource;
+      var source = dialog.querySelector('#figure-source');
+      source.href = link.dataset.figureSource;
+      source.textContent = link.dataset.figureSourceLabel + ' \u2197';
       var image = dialog.querySelector('.figure-dialog__image');
       image.src = link.href;
       image.alt = link.querySelector('img').alt;

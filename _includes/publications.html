@@ -4,7 +4,7 @@
   <span id="-publications" class="publication-anchor" aria-hidden="true"></span>
   <span id="-selected-work" class="publication-anchor" aria-hidden="true"></span>
   <header class="publications__intro">
-    <h1 id="publications-heading">Selected Work</h1>
+    <h1 id="publications-heading" class="homepage-section-title">Selected Work</h1>
     <nav class="publications__nav" aria-label="Research areas">
       {% for group in site.data.publication_groups %}<a href="#{{ group.id }}" target="_self">{{ group.short_title | escape }}</a>{% endfor %}
       <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">All publications &nearr;</a>
@@ -21,13 +21,18 @@
       {% assign paper = site.data.publications | where: 'id', paper_id | first %}
       {% assign star_count = paper.stars_count | default: 0 %}
       <article class="publication{% if paper.featured %} publication--featured{% endif %}" id="paper-{{ paper.id }}" aria-labelledby="title-{{ paper.id }}">
-        <a class="publication__figure" href="{{ paper.image_full | relative_url }}" target="_blank" rel="noopener noreferrer" data-figure-title="{{ paper.title | escape }}" data-figure-caption="{{ paper.figure_label | escape }} &middot; PDF page {{ paper.figure_page }}" data-figure-source="{{ paper.pdf_url | escape }}#page={{ paper.figure_page }}" aria-label="Enlarge figure: {{ paper.title | escape }}">
-          <img src="{{ paper.image | relative_url }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" alt="{{ paper.figure_alt | escape }}" loading="lazy" decoding="async">
+        <a class="publication__figure" href="{{ paper.image_full | relative_url }}{% if paper.image_version %}?v={{ paper.image_version | escape }}{% endif %}" target="_blank" rel="noopener noreferrer"
+          data-figure-title="{{ paper.title | escape }}"
+          data-figure-caption="{{ paper.figure_label | escape }} &middot; {% if paper.figure_source_type == 'project-banner' %}Project page{% else %}PDF page {{ paper.figure_page }}{% endif %}"
+          data-figure-source="{% if paper.figure_source_type == 'project-banner' %}{{ paper.figure_source_url | escape }}{% else %}{{ paper.pdf_url | escape }}#page={{ paper.figure_page }}{% endif %}"
+          data-figure-source-label="{% if paper.figure_source_type == 'project-banner' %}View project page{% else %}View this figure in the paper{% endif %}"
+          aria-label="Enlarge figure: {{ paper.title | escape }}">
+          <img src="{{ paper.image | relative_url }}{% if paper.image_version %}?v={{ paper.image_version | escape }}{% endif %}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" alt="{{ paper.figure_alt | escape }}" loading="lazy" decoding="async">
         </a>
         <div class="publication__body">
           <h3 class="publication__title" id="title-{{ paper.id }}"><a href="{{ paper.publication_url | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.title | escape }}</a></h3>
           <div class="publication__authors">{% include publication-authors.html paper=paper %}</div>
-          <p class="publication__venue"><span class="venue-name">{{ paper.venue | escape }}</span>{% if paper.venue_note %} <span class="venue-note">{{ paper.venue_note | escape }}</span>{% endif %}</p>
+          <p class="publication__venue"><span class="venue-name">{{ paper.venue | escape }}</span>{% if paper.ccf_rank %} <span class="venue-rank" data-ccf-rank="{{ paper.ccf_rank | escape }}">CCF {{ paper.ccf_rank | escape }}</span>{% endif %}{% if paper.venue_note %} <span class="venue-note">{{ paper.venue_note | escape }}</span>{% endif %}</p>
           {% if paper.honor %}<p class="publication__honor"><a href="{{ paper.honor_url | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.honor | escape }}</a></p>{% endif %}
           {% if paper.featured %}<p class="publication__summary">{{ paper.summary | escape }}</p>{% endif %}
           <div class="publication__links">
