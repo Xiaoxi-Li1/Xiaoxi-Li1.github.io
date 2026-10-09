@@ -13,7 +13,7 @@ class PublicationsAudit
   GROUP_NAV_TITLES = { "agents" => "LLM/VLM Agents", "retrieval" => "RAG & LLMs", "reward-ml" => "Reward & ML" }.freeze
   TOTAL = GROUP_COUNTS.values.sum
   SELF_NAME = "Xiaoxi Li"
-  ABOUT_RESEARCH_COPY = "I'm currently a research intern at ByteDance Seed, working on RL Scaling for General Agents, with a focus on co-work agent RL and Seed agent RL big runs. " \
+  ABOUT_RESEARCH_COPY = "I'm currently a research intern at ByteDance Seed, focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs. " \
                         "I previously interned at Xiaohongshu Inc (the first RedStar program). " \
                         "I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc."
   SELECTED_AWARDS = [
@@ -337,6 +337,7 @@ class PublicationsAudit
     check_research_experiences
     check_section_headings
     check_selected_awards
+    check_news
     section = @document.at_css("section#publications.publications")
     return unless check(section, "Rendered HTML is missing section#publications.publications")
 
@@ -477,6 +478,26 @@ class PublicationsAudit
 
     check(list.xpath("./li").map { |item| text(item) } == SELECTED_AWARDS, "Selected Awards must retain the four approved 2026 bilingual entries and their exact distinctions")
     check(list.css("ul, ol, h2, h3").empty?, "Selected Awards must not introduce award subcategories or nested lists")
+  end
+
+  def check_news
+    regions = @document.css(".news-scroll")
+    return unless check(regions.length == 1, "Homepage must retain one scrollable News region")
+
+    region = regions.first
+    check(region["role"] == "region" && region["aria-labelledby"] == "-news" && region["tabindex"] == "0", "News scrolling region must be named and keyboard focusable")
+    items = region.css("ul > li.news-item")
+    dates = %w[2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2024-03 2025-02 2023-12]
+    check(items.length == dates.length, "News must retain all twelve existing entries")
+    check(items.map { |item| item.at_css("time")&.[]("datetime") } == dates, "News dates and ordering must remain unchanged")
+    items.each do |item|
+      time = item.at_css("time[datetime]")
+      check(time && text(time) == time["datetime"].tr("-", "."), "News date labels must match their machine-readable dates")
+      check(item.element_children.map(&:name) == %w[time p], "News cards must separate the date and paragraph into two grid children")
+      body = item.at_css("p > .news-item__text")
+      check(body && nonempty?(text(body)), "Each News card must retain its event text")
+      item.css("a[href]").each { |link| check(https?(link["href"]), "News links must retain HTTPS destinations") }
+    end
   end
 
   def check_footer

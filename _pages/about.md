@@ -16,15 +16,6 @@ redirect_from:
   .page__content a:visited {
     text-decoration: none;
   }
-  .news-scroll {
-    max-height: 24rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-right: 0.75rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 10px 12px -14px rgba(0, 0, 0, 0.35);
-  }
-  .news-scroll ul { margin-bottom: 0; }
 </style>
 
 # About me
@@ -32,7 +23,7 @@ redirect_from:
 
 I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
-I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), working on RL Scaling for General Agents, with a focus on co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
+I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
 
 **Research Interests：**
 - **Omni-Modal Agents:** Building real-world omni-modal AI assistants ([OmniGAIA](https://arxiv.org/abs/2602.22897));
@@ -56,20 +47,20 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 # News
 {: id="-news" .homepage-section-title}
 
-<div class="news-scroll" markdown="1">
+<div class="news-scroll" role="region" aria-labelledby="-news" tabindex="0" markdown="1">
 
-- *2026.07*: 🏆 Selected for the **CIE-Tencent PhD Research Incentive Program** (中国电子学会-腾讯博士生科研激励计划).
-- *2026.06*: 🏆 Selected as a **BAAI InnoVibe 2026 Most Notable Academic Rising Star** (青源InnoVibe-2026最受瞩目学术新星), and gave a talk on "Towards Real-World AI Agents" at the **BAAI Conference**. [[Link]](https://hub.baai.ac.cn/view/55541)
-- *2026.04*: 🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. [[Demo]](https://agent-tars-world.github.io/-/)
-- *2026.03*: 🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached *1k stars* and selected for *Oral Presentation* at **WWW 2026**. A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)
-- *2026.02*: 🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)
-- *2025.09*: 🎉 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**. (*1.2k+ stars*, *100+ citations*). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)
-- *2025.08*: 🎉 [Search-o1](https://arxiv.org/abs/2501.05366) selected for *Oral Presentation* at **EMNLP 2025**. (*1k+ stars*, *200+ citations*). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.
-- *2025.06*: 💻 Joined Xiaohongshu as a **RedStar** research intern, focusing on general agents.
-- *2025.05*: 🎉 Four papers accepted by **ACL 2025**. Looking forward to seeing you in Vienna!
-- *2024.03*: 🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for *Oral Presentation* at **SIGIR 2024**. A unified LLM for retrieval and QA.
-- *2025.02*: 🎉 Our survey on Generative Information Retrieval (GenIR) accepted by **ACM TOIS**! See more [details](https://arxiv.org/abs/2404.14851). 
-- *2023.12*: 🎉 Our unified generative framework for retrieval and QA has been accepted by **AAAI 2024**. See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).
+- {:.news-item} <time datetime="2026-07">2026.07</time> <span class="news-item__text" markdown="span">🏆 Selected for the **CIE-Tencent PhD Research Incentive Program** (中国电子学会-腾讯博士生科研激励计划).</span>
+- {:.news-item} <time datetime="2026-06">2026.06</time> <span class="news-item__text" markdown="span">🏆 Selected as a **BAAI InnoVibe 2026 Most Notable Academic Rising Star** (青源InnoVibe-2026最受瞩目学术新星), and gave a talk on "Towards Real-World AI Agents" at the **BAAI Conference**. [[Link]](https://hub.baai.ac.cn/view/55541)</span>
+- {:.news-item} <time datetime="2026-04">2026.04</time> <span class="news-item__text" markdown="span">🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. [[Demo]](https://agent-tars-world.github.io/-/)</span>
+- {:.news-item} <time datetime="2026-03">2026.03</time> <span class="news-item__text" markdown="span">🎉 [DeepAgent](https://arxiv.org/abs/2510.21618) has reached *1k stars* and selected for *Oral Presentation* at **WWW 2026**. A General Reasoning Agent with Scalable Toolsets. [[Demo]](https://github.com/RUC-NLPIR/DeepAgent)</span>
+- {:.news-item} <time datetime="2026-02">2026.02</time> <span class="news-item__text" markdown="span">🚀 Released [OmniGAIA](https://arxiv.org/abs/2602.22897): Towards native omni-modal AI agents. [[Demo]](https://github.com/RUC-NLPIR/OmniGAIA)</span>
+- {:.news-item} <time datetime="2025-09">2025.09</time> <span class="news-item__text" markdown="span">🎉 [WebThinker](https://arxiv.org/abs/2504.21776) accepted by **NeurIPS 2025**. (*1.2k+ stars*, *100+ citations*). A powerful deep research agent that can think, search, and write autonomously. [[Demo]](https://github.com/RUC-NLPIR/WebThinker)</span>
+- {:.news-item} <time datetime="2025-08">2025.08</time> <span class="news-item__text" markdown="span">🎉 [Search-o1](https://arxiv.org/abs/2501.05366) selected for *Oral Presentation* at **EMNLP 2025**. (*1k+ stars*, *200+ citations*). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.</span>
+- {:.news-item} <time datetime="2025-06">2025.06</time> <span class="news-item__text" markdown="span">💻 Joined Xiaohongshu as a **RedStar** research intern, focusing on general agents.</span>
+- {:.news-item} <time datetime="2025-05">2025.05</time> <span class="news-item__text" markdown="span">🎉 Four papers accepted by **ACL 2025**. Looking forward to seeing you in Vienna!</span>
+- {:.news-item} <time datetime="2024-03">2024.03</time> <span class="news-item__text" markdown="span">🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for *Oral Presentation* at **SIGIR 2024**. A unified LLM for retrieval and QA.</span>
+- {:.news-item} <time datetime="2025-02">2025.02</time> <span class="news-item__text" markdown="span">🎉 Our survey on Generative Information Retrieval (GenIR) accepted by **ACM TOIS**! See more [details](https://arxiv.org/abs/2404.14851).</span>
+- {:.news-item} <time datetime="2023-12">2023.12</time> <span class="news-item__text" markdown="span">🎉 Our unified generative framework for retrieval and QA has been accepted by **AAAI 2024**. See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).</span>
 
 </div>
 

@@ -38,6 +38,7 @@
 
 .page__content .profile-metrics > a {
   white-space: nowrap;
+  font-weight: 400;
 
   &:focus-visible {
     outline: 3px solid #2a64bd;
@@ -398,7 +399,6 @@
 .page__content .profile-metrics > a,
 .publications .publication__links > .publication__metric {
   color: #000;
-  font-weight: 600;
   font-variant-numeric: tabular-nums;
   text-decoration: underline;
   text-decoration-color: currentColor;
@@ -416,12 +416,16 @@
   }
 
   [data-profile-value] {
-    font-weight: 700;
+    font-weight: inherit;
   }
 
   .fab {
     margin-right: 4px;
   }
+}
+
+.publications .publication__links > .publication__metric {
+  font-weight: 600;
 }
 
 body.figure-open {
