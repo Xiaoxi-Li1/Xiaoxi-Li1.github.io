@@ -406,6 +406,7 @@ class PublicationsAudit
     paragraph_text = text(paragraph).tr("\u2019", "'")
     expected_sentence = "My research and open-source projects have received #{@profile_metrics['citedby']} citations and #{@profile_metrics['github_stars_k']} GitHub stars."
     check(paragraph.name == "p" && paragraph_text == "#{ABOUT_RESEARCH_COPY} #{expected_sentence}", "About me must retain the approved Seed RL role, first RedStar program, publication count, venues, and inline totals")
+    check(paragraph.css("strong").map { |node| text(node) } == ["RL scaling for general agents"], "About me must bold only the requested RL scaling phrase, not the surrounding text or aggregate metrics")
     check(text(wrapper) == expected_sentence && paragraph_text.end_with?(expected_sentence), "Profile totals must form the approved sentence at the end of the existing About me paragraph")
     check(wrapper.css("br, hr, div, p").empty?, "Profile sentence must not force a separate line or block")
     links = wrapper.css("a")
