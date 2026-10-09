@@ -47,8 +47,10 @@
   }
 }
 
-.profile-metrics__scholar-icon {
+.profile-metrics__scholar-icon,
+.publication__scholar-icon {
   display: inline-block;
+  flex-shrink: 0;
   margin-right: 4px;
   vertical-align: -0.15em;
   fill: #2058ad;
@@ -404,14 +406,11 @@
 .publications .publication__links > .publication__metric {
   color: #000;
   font-variant-numeric: tabular-nums;
-  text-decoration: underline;
-  text-decoration-color: currentColor;
-  text-underline-offset: 4px;
+  text-decoration: none;
 
   &:hover, &:focus, &:visited {
     color: #000;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
+    text-decoration: none;
   }
 
   [data-scholar-id], [data-github-stars] {

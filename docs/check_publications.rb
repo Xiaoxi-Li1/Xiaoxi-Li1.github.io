@@ -882,6 +882,15 @@ class PublicationsAudit
       check_metric_emphasis(metric, paper["citations"], "citations_emphasis_min", "#{id}: citations")
       values = metric.css("span[data-scholar-id]")
       check(values.length == 1 && values.first["data-scholar-id"] == paper["scholar_id"] && text(values.first) == paper["citations"].to_s, "#{id}: citation counter must retain its data ID and snapshot")
+      scholar_icons = metric.css("svg")
+      if check(scholar_icons.length == 1, "#{id}: citations must contain one inline Google Scholar SVG, including hidden metrics")
+        icon = scholar_icons.first
+        check(icon["class"].to_s.split.include?("publication__scholar-icon") && icon["aria-hidden"] == "true" && icon["focusable"] == "false", "#{id}: Google Scholar SVG must use its approved class and decorative accessibility attributes")
+        profile_icon = @document.at_css(".profile-metrics__scholar-icon")
+        check((icon["viewBox"] || icon["viewbox"]) == "0 0 24 24" && icon["width"] == "1em" && icon["height"] == "1em", "#{id}: Google Scholar SVG must retain its viewBox and font-relative dimensions")
+        check(profile_icon && !icon.css("path[d]").empty? && icon.css("path[d]").map { |path| path["d"] } == profile_icon.css("path[d]").map { |path| path["d"] }, "#{id}: Google Scholar icon must match the About me cap")
+        check(metric.children.reject { |node| node.text? && node.text.strip.empty? }.first == icon && icon.text.strip.empty?, "#{id}: decorative Google Scholar SVG must precede the Citations text without adding an accessible label")
+      end
       check(metric["href"] == paper["citation_url"], "#{id}: citation metric link differs from data")
     end
     stars = card.css("[data-star-metric]")
