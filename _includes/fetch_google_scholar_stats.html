@@ -30,6 +30,8 @@
         if (metric) {
           var threshold = Number(metric.dataset.citationThreshold);
           metric.hidden = paper.num_citations <= (Number.isFinite(threshold) ? threshold : 0);
+          var emphasisThreshold = Number(metric.dataset.emphasisThreshold);
+          metric.classList.toggle('publication__metric--emphasized', paper.num_citations >= (Number.isFinite(emphasisThreshold) ? emphasisThreshold : 100));
         }
       });
     })

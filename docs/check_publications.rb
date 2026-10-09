@@ -29,6 +29,7 @@ class PublicationsAudit
   TPAMI_TITLE = "Deep Time-Series Forecasting in 10 Years: A Survey"
   TPAMI_NOTE = "JCR Q1, IF=20.4"
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
+  APPROVED_EMPHASIS_MINIMUMS = { "stars_emphasis_min" => 1000, "citations_emphasis_min" => 100 }.freeze
   CCF_RANKS = {
     "deepagent" => "A", "webthinker" => "A", "search-o1" => "B",
     "hira" => "A", "tool-star" => "A", "verigraph" => "A", "aepo" => "A",
@@ -86,6 +87,11 @@ class PublicationsAudit
       value = @thresholds[key]
       check(value.is_a?(Integer) && value >= 0, "publication_metrics.#{key} must be a nonnegative integer")
       check(value == expected, "publication_metrics.#{key} must retain the approved strict > #{expected} threshold")
+    end
+    APPROVED_EMPHASIS_MINIMUMS.each do |key, expected|
+      value = @thresholds[key]
+      check(value.is_a?(Integer) && value > 0, "publication_metrics.#{key} must be a positive integer")
+      check(value == expected, "publication_metrics.#{key} must retain the approved >= #{expected} emphasis minimum")
     end
     origin = @config["visitor_statistics_origin"]
     parsed_origin = uri(origin)
@@ -740,6 +746,7 @@ class PublicationsAudit
       check(metric["data-citation-threshold"] == threshold.to_s, "#{id}: rendered citation threshold differs from _config.yml")
       visible = valid_count?(paper["citations"]) && paper["citations"] > threshold
       check(metric.key?("hidden") == !visible, "#{id}: citation snapshot must be visible only when strictly > #{threshold}; unknown stays hidden")
+      check_metric_emphasis(metric, paper["citations"], "citations_emphasis_min", "#{id}: citations")
       values = metric.css("span[data-scholar-id]")
       check(values.length == 1 && values.first["data-scholar-id"] == paper["scholar_id"] && text(values.first) == paper["citations"].to_s, "#{id}: citation counter must retain its data ID and snapshot")
       check(metric["href"] == paper["citation_url"], "#{id}: citation metric link differs from data")
@@ -757,10 +764,18 @@ class PublicationsAudit
     check(metric["data-star-threshold"] == threshold.to_s, "#{id}: rendered Stars threshold differs from _config.yml")
     visible = valid_count?(paper["stars_count"]) && paper["stars_count"] > threshold
     check(metric.key?("hidden") == !visible, "#{id}: Stars snapshot must be visible only when strictly > #{threshold}; unknown stays hidden")
+    check_metric_emphasis(metric, paper["stars_count"], "stars_emphasis_min", "#{id}: stars")
     values = metric.xpath("./span[@data-github-stars]")
     check(values.length == 1 && text(values.first) == paper["stars_label"].to_s, "#{id}: Stars must preserve the original compact snapshot label")
     check(metric.css("img").empty?, "#{id}: Stars must be text, not an unreadable badge image")
     check(metric["href"] == paper["code_url"], "#{id}: Stars metric must link to its Code repository")
+  end
+
+  def check_metric_emphasis(metric, count, key, description)
+    minimum = @thresholds[key]
+    check(metric["data-emphasis-threshold"] == minimum.to_s, "#{description}: emphasis minimum must match _config.yml")
+    emphasized = valid_count?(count) && count >= minimum
+    check(metric["class"].to_s.split.include?("publication__metric--emphasized") == emphasized, "#{description}: bold emphasis must apply only at or above #{minimum}")
   end
 
   def check_authors(paper, wrapper)

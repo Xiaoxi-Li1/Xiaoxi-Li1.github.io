@@ -24,6 +24,8 @@
         metric.querySelector('[data-github-stars]').textContent = data.message;
         var threshold = Number(metric.dataset.starThreshold);
         metric.hidden = count <= (Number.isFinite(threshold) ? threshold : 0);
+        var emphasisThreshold = Number(metric.dataset.emphasisThreshold);
+        metric.classList.toggle('publication__metric--emphasized', count >= (Number.isFinite(emphasisThreshold) ? emphasisThreshold : 1000));
       })
       .catch(function () { /* Keep the last valid rendered snapshot, not a false zero. */ })
       .finally(function () { clearTimeout(timeout); });

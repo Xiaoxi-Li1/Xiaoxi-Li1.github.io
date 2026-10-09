@@ -13,10 +13,12 @@ description              : ""
 repository               : "xiaoxi-li1/xiaoxi-li1.github.io"
 google_scholar_stats_use_cdn : true
 
-# Counts must be strictly greater than these values to be displayed.
+# Publication metric visibility and emphasis thresholds.
 publication_metrics:
   stars_over              : 50
   citations_over          : 20
+  stars_emphasis_min      : 1000
+  citations_emphasis_min  : 100
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/

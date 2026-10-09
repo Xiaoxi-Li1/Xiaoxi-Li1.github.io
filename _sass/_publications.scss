@@ -412,7 +412,7 @@
 
   [data-scholar-id], [data-github-stars] {
     margin-left: 4px;
-    font-weight: 700;
+    font-weight: inherit;
   }
 
   [data-profile-value] {
@@ -425,7 +425,15 @@
 }
 
 .publications .publication__links > .publication__metric {
-  font-weight: 600;
+  font-weight: 400;
+
+  &.publication__metric--emphasized {
+    font-weight: 600;
+
+    [data-scholar-id], [data-github-stars] {
+      font-weight: 700;
+    }
+  }
 }
 
 body.figure-open {
