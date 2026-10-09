@@ -40,6 +40,15 @@
       {% if author.twitter %}
         <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
       {% endif %}
+      {% if author.xiaohongshu %}
+        <li><a href="{{ author.xiaohongshu | escape }}" target="_blank" rel="noopener noreferrer" data-xiaohongshu><img class="author__social-icon" src="{{ '/images/xiaohongshu.png' | relative_url }}" alt=""> Xiaohongshu</a></li>
+      {% endif %}
+      {% if author.wechat %}
+        <li class="author__wechat" data-wechat-contact>
+          <button class="author__copy" type="button" data-copy-wechat="{{ author.wechat | escape }}" aria-label="Copy WeChat ID {{ author.wechat | escape }}" title="Click to copy WeChat ID: {{ author.wechat | escape }}"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</button>
+          <span class="author__copy-status" data-copy-status role="status" aria-live="polite" aria-atomic="true"></span>
+        </li>
+      {% endif %}
       {% if author.facebook %}
         <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
       {% endif %}
@@ -134,6 +143,15 @@
       {% endif %}
       {% if author.twitter %}
         <a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.xiaohongshu %}
+        <a href="{{ author.xiaohongshu | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Xiaohongshu" title="Xiaohongshu" data-xiaohongshu><img class="author__social-icon" src="{{ '/images/xiaohongshu.png' | relative_url }}" alt=""></a>
+      {% endif %}
+      {% if author.wechat %}
+        <span class="author__wechat" data-wechat-contact>
+          <button class="author__copy" type="button" data-copy-wechat="{{ author.wechat | escape }}" aria-label="Copy WeChat ID {{ author.wechat | escape }}" title="Click to copy WeChat ID: {{ author.wechat | escape }}"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></button>
+          <span class="author__copy-status" data-copy-status role="status" aria-live="polite" aria-atomic="true"></span>
+        </span>
       {% endif %}
       {% if author.facebook %}
         <a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i></a>

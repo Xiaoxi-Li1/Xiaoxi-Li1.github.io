@@ -165,7 +165,7 @@
     display: block;
   }
 
-  button {
+  > button {
     margin-bottom: 0;
     width: 120px;
     padding: 0.5em;
@@ -237,7 +237,7 @@
     white-space: nowrap;
   }
 
-  a {
+  a, .author__copy {
     display: block;
     margin-bottom: 5px;
     padding-right: 5px;
@@ -266,5 +266,95 @@
   }
   @include breakpoint($large) {
     display: none;
+  }
+}
+
+.author__urls-wrapper .author__social-icon {
+  width: 1.25em;
+  height: 1em;
+  margin: 0;
+  object-fit: contain;
+  vertical-align: -0.15em;
+}
+
+.author__copy {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #2058ad;
+    outline-offset: 3px;
+  }
+
+  .fa-weixin {
+    color: #07a64a;
+  }
+}
+
+.author__wechat {
+  position: relative;
+}
+
+.author__copy-status {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 20;
+  width: max-content;
+  max-width: 230px;
+  padding: 6px 9px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: $text-color;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: text;
+  user-select: text;
+
+  &:empty {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  @include breakpoint($large) {
+    right: auto;
+    left: 0;
+  }
+}
+
+.author__copy-status .author__copy-value {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  margin: 4px 0 0;
+  padding: 3px 5px;
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 1;
+  cursor: text;
+
+  &:focus-visible {
+    outline: 2px solid #2058ad;
+    outline-offset: 2px;
   }
 }

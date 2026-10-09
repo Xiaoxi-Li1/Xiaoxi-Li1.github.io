@@ -1,4 +1,7 @@
 <script src="{{ '/assets/js/main.min.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+{% if page.author_profile or layout.author_profile %}
+<script src="{{ '/assets/js/author-contact.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+{% endif %}
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}

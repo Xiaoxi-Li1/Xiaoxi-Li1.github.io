@@ -54,6 +54,7 @@ class PublicationsAudit
   ASSET_ENTRYPOINTS = {
     "/assets/css/main.css" => ["link[rel='stylesheet'][href]", "href", nil],
     "/assets/js/main.min.js" => ["script[src]", "src", false],
+    "/assets/js/author-contact.js" => ["script[src]", "src", true],
     "/assets/js/publication-metrics.js" => ["script[src]", "src", true],
     "/assets/js/publications.js" => ["script[src]", "src", true],
     "/assets/js/site-traffic.js" => ["script[src]", "src", true]
@@ -334,6 +335,7 @@ class PublicationsAudit
     check(duplicates.empty?, "Rendered HTML contains duplicate DOM IDs: #{duplicates.join(', ')}")
     check_footer
     check_profile_metrics_html
+    check_author_contacts
     check_research_experiences
     check_section_headings
     check_selected_awards
@@ -480,6 +482,36 @@ class PublicationsAudit
     check(list.css("ul, ol, h2, h3").empty?, "Selected Awards must not introduce award subcategories or nested lists")
   end
 
+  def check_author_contacts
+    expected_url = "https://www.xiaohongshu.com/user/profile/5f266ae1000000000100a9cb"
+    expected_wechat = "Xixi010111"
+    author = @config["author"]
+    check(author["xiaohongshu"] == expected_url, "Sidebar Xiaohongshu URL must be the user's canonical profile without temporary query parameters")
+    check(author["wechat"] == expected_wechat, "Sidebar WeChat ID must match the user's supplied ID")
+    %w[.author__urls .author__urls_sm].each do |selector|
+      container = @document.at_css(selector)
+      next unless check(container, "Missing author contact container #{selector}")
+
+      links = container.css("a[data-xiaohongshu]")
+      if check(links.length == 1, "#{selector}: expected one Xiaohongshu link")
+        link = links.first
+        check(link["href"] == expected_url, "#{selector}: Xiaohongshu link must not contain transient tokens")
+        check(link["target"] == "_blank" && %w[noopener noreferrer].all? { |value| link["rel"].to_s.split.include?(value) }, "#{selector}: external social link needs safe new-tab attributes")
+        check(text(link).include?("Xiaohongshu") || link["aria-label"] == "Xiaohongshu", "#{selector}: Xiaohongshu link needs an accessible name")
+        check(link.at_css("img.author__social-icon[alt='']"), "#{selector}: use the existing decorative Xiaohongshu logo")
+      end
+      buttons = container.css("button[data-copy-wechat]")
+      if check(buttons.length == 1, "#{selector}: expected one native WeChat copy button")
+        button = buttons.first
+        check(button["type"] == "button" && button["data-copy-wechat"] == expected_wechat, "#{selector}: WeChat button must copy the exact ID without submitting or navigating")
+        check(button["aria-label"] == "Copy WeChat ID #{expected_wechat}" && button["title"].to_s.include?(expected_wechat), "#{selector}: copy action and account must be accessible")
+        check(button.at_css("i.fa-weixin[aria-hidden='true']"), "#{selector}: WeChat needs its decorative brand icon")
+      end
+      statuses = container.css("[data-wechat-contact] [data-copy-status]")
+      check(statuses.length == 1 && statuses.first["role"] == "status" && statuses.first["aria-live"] == "polite" && statuses.first["aria-atomic"] == "true" && text(statuses.first).empty?, "#{selector}: copy feedback must start empty and be announced accessibly")
+    end
+  end
+
   def check_news
     regions = @document.css(".news-scroll")
     return unless check(regions.length == 1, "Homepage must retain one scrollable News region")
@@ -590,7 +622,7 @@ class PublicationsAudit
       check(node.key?("defer") == deferred, "Asset #{path}: preserve its #{deferred ? 'deferred' : 'synchronous'} loading behavior")
       check(!node.key?("async"), "Asset #{path}: do not introduce unordered async loading")
     end
-    check(versions.length == ASSET_ENTRYPOINTS.length && versions.uniq.length == 1, "Main CSS and all four local JS entrypoints must share the same build version")
+    check(versions.length == ASSET_ENTRYPOINTS.length && versions.uniq.length == 1, "Main CSS and all local JS entrypoints must share the same build version")
   end
 
   def check_anchor(link, allowed_ids, description)
