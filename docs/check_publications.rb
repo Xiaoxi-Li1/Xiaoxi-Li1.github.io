@@ -577,7 +577,7 @@ class PublicationsAudit
     if check(logos.length == 1, "#{label}: retain exactly one original institution logo")
       logo = logos.first
       check(title && logo.parent == title && title.element_children.first == logo && logo["class"].to_s.split.include?("profile-history__logo"), "#{label}: the logo must be the title's first decorative image")
-      check(logo["src"] == "./images/#{expected['logo']}" && logo["alt"] == "" && logo["width"] == "16" && logo["height"] == "16", "#{label}: preserve the correct logo with empty alt and 16x16 dimensions")
+      check(logo["src"] == "./images/#{expected['logo']}" && logo["alt"] == "" && logo["width"] == "18" && logo["height"] == "18", "#{label}: preserve the correct logo with empty alt and 18x18 dimensions")
     end
     return unless expected["program"]
 

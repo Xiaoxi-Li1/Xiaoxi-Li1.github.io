@@ -59,7 +59,7 @@
 
     p + p {
       margin-top: 2px;
-      padding-left: 22px;
+      padding-left: 24px;
     }
   }
 
@@ -72,10 +72,11 @@
 
   .profile-history__logo {
     flex-shrink: 0;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-top: 0.2em;
     object-fit: contain;
+    transform: translateX(-2px);
   }
 
   .profile-history__mentors {
