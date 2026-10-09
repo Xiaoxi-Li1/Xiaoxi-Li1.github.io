@@ -362,8 +362,13 @@
     "source_pdf_sha256": "d9d803ef67a329f0c8028a3dd2446660f4c6794c137a0a5fae55c6dd385fca63",
     "summary": "A self-evolving training arena that scales realistic tool environments and continuously improves general-purpose agents.",
     "code_url": "https://github.com/RUC-NLPIR/Agent-World",
+    "media_links": [
+      {
+        "label": "\u673a\u5668\u4e4b\u5fc3",
+        "url": "https://mp.weixin.qq.com/s/Tn2_cNiVIKDl2MU-AFTG-A"
+      }
+    ],
     "project_url": "https://agent-tars-world.github.io/-/",
-    "display_authors": "ByteDance Seed Team (core contributors including Xiaoxi Li).",
     "featured": false,
     "scholar_id": "XDljV4YAAAAJ:TFP_iSt0sucC",
     "citations": 40,
@@ -628,6 +633,7 @@
   },
   {
     "id": "retrollm",
+    "highlighted": true,
     "title": "RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation",
     "year": 2025,
     "venue": "ACL 2025",
@@ -740,6 +746,7 @@
   },
   {
     "id": "corpuslm",
+    "highlighted": true,
     "title": "CorpusLM: Towards a Unified Language Model on Corpus for Knowledge-Intensive Tasks",
     "year": 2024,
     "venue": "SIGIR 2024 (Oral)",
@@ -770,6 +777,7 @@
   },
   {
     "id": "unigen",
+    "highlighted": true,
     "title": "UniGen: A Unified Generative Framework for Retrieval and Question Answering with Large Language Models",
     "year": 2024,
     "venue": "AAAI 2024",
@@ -799,6 +807,7 @@
   },
   {
     "id": "genir-survey",
+    "highlighted": true,
     "title": "From Matching to Generation: A Survey on Generative Information Retrieval",
     "year": 2025,
     "venue": "ACM TOIS 2025",

@@ -22,7 +22,7 @@
       {% for paper_id in group.papers %}
       {% assign paper = site.data.publications | where: 'id', paper_id | first %}
       {% assign star_count = paper.stars_count | default: 0 %}
-      <article class="publication{% if paper.featured %} publication--featured{% endif %}" id="paper-{{ paper.id }}" aria-labelledby="title-{{ paper.id }}">
+      <article class="publication{% if paper.featured or paper.highlighted %} publication--featured{% endif %}" id="paper-{{ paper.id }}" aria-labelledby="title-{{ paper.id }}">
         <a class="publication__figure" href="{{ paper.image_full | relative_url }}{% if paper.image_version %}?v={{ paper.image_version | escape }}{% endif %}" target="_blank" rel="noopener noreferrer"
           data-figure-title="{{ paper.title | escape }}"
           data-figure-caption="{{ paper.figure_label | escape }} &middot; {% if paper.figure_source_type == 'project-banner' %}Project page{% else %}PDF page {{ paper.figure_page }}{% endif %}"

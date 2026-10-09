@@ -13,6 +13,8 @@ The selected-work section is data-driven. Keep factual updates separate from lay
 - Reward/ML begins with `time-series-survey`, followed by `implicit-rm`, `distdf`, `causal-rm`, and `rubrics-on-trial`. The survey's approved title is `Deep Time-Series Forecasting in 10 Years: A Survey`, with `IEEE TPAMI 2026` and `JCR Q1, IF=20.4`.
 - Changing the approved selection, team wording, or journal facts requires confirmation and a corresponding intentional update to the expectations in `docs/check_publications.rb`. Do not relax assertions merely to obtain a passing result.
 
+`featured` retains its existing blue-card treatment and visible summary. The first four retrieval works (`genir-survey`, `retrollm`, `corpuslm`, `unigen`) instead use `highlighted: true` for the same pale-blue background and left rule without adding summary text or changing typography. Keep the two remaining retrieval cards unhighlighted.
+
 The approved About me paragraph describes the Seed internship as `focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs`. Only `RL scaling for general agents` is bold in that paragraph; the surrounding text and aggregate metrics retain normal weight. The introduction uses `(the first RedStar program)` and states `30+ papers (8 as first author)` alongside the approved publication venues. The Seed experience uses the single line `Research Intern on RL Scaling for General Agents (Seed-LLM Talent Program)`, preserving the program's red styling, dates, and mentors; do not repeat the old role or responsibilities line.
 
 All eight main section headings share `homepage-section-title`: Outfit, weight 600, 29px on desktop and 26px at widths up to 640px, matching Selected Work. Their order is About me, News, Educations, Research Experiences, Selected Work, Selected Awards, Invited Talks, and Academic Services. Main section titles are plain text, without emoji or icon elements; retain body typography, sidebar icons, entry-level logos, and publication subheadings. Use `scroll-margin-top: 88px` instead of the theme's heading pseudo-element offsets. Preserve existing navigation anchors when removing title emoji; Kramdown requires explicit `id="-news"`, for example, rather than the shorthand `#-news` for an ID beginning with a hyphen.
@@ -31,13 +33,15 @@ Present CCF labels as plain gray text (`#626d7b`), without a border or backgroun
 
 Store the full author list in publication order, without ellipses. `_includes/publication-authors.html` renders native `details`/`summary` for long lists. A collapsed summary always highlights Xiaoxi Li; when his zero-based author index exceeds 2, it begins `..., Xiaoxi Li` and retains the final authors. The expanded list must exactly match the data. Short lists remain fully visible.
 
-Only `seed2-1` and `agent-world` use `display_authors`, with this exact approved wording:
+Only `seed2-1` uses `display_authors`, with this exact approved wording:
 
 ```text
 ByteDance Seed Team (core contributors including Xiaoxi Li).
 ```
 
-The override controls presentation only; retain the underlying source authors. These two cards intentionally show the team wording instead of an individual-author toggle.
+Agent-World uses the standard named-author renderer, not `display_authors`. Preserve its verified 20-person list and order from the paper's Contributions/Authors section and official metadata. Xiaoxi Li is tenth, so the collapsed row reads `..., Xiaoxi Li, ..., Ji-Rong Wen, Zhicheng Dou`; the full list remains expandable.
+
+The override controls presentation only; retain the underlying source authors. The Seed2.1 card intentionally shows the team wording instead of an individual-author toggle.
 
 Except for the approved Seed2.1 project banner below, use a real figure from the paper's PDF, not an AI-generated substitute or a screenshot of an entire text page. Inspect the crop and both exports, preserve complete diagram boundaries and aspect ratio, and save white-background WebP files as `images/publications/<id>.webp` (about 600px wide) and `<id>-full.webp` (about 1800px wide). Record the thumbnail's actual `image_width` and `image_height`.
 
@@ -51,7 +55,7 @@ The original PDFs, extraction scripts, contact sheets, and additional provenance
 
 `leaderboard_url` is an optional resource link after Code and before media or metrics. OmniGAIA uses the official project README's `https://huggingface.co/spaces/RUC-NLPIR/OmniGAIA-Leaderboard`; do not invent a GitHub Pages leaderboard URL. Render it with the same styling, visibility, and safe new-tab attributes as Paper and Code.
 
-Optional `media_links` arrays contain ordered `{label, url}` objects. Render them as plain direct anchors after Project Page/Paper/arXiv/Code/Leaderboard and before Stars/Citations, inheriting the existing resource-link typography, underlines, separators, and wrapping. Media links remain visible independently of metric thresholds; do not add badges, icons, or metric hooks. The eight user-supplied articles belong to DeepAgent (REDtech, RUC), WebThinker (Jiqizhixin), Search-o1 (QbitAI, Xinzhiyuan), AEPO (Jiqizhixin), Arbor/hypothesis-tree (QbitAI), and the GenIR survey (RUC). Publisher display labels use the user's original Chinese names where applicable, with the short labels `REDtech` and `RUC`. The user supplied article titles and publishers because WeChat requests in the review environment triggered verification; Arbor's RUC/Microsoft affiliation and research framework were also checked against the official project and paper. Preserve these exact article URLs and mappings in the checker.
+Optional `media_links` arrays contain ordered `{label, url}` objects. Render them as plain direct anchors after Project Page/Paper/arXiv/Code/Leaderboard and before Stars/Citations, inheriting the existing resource-link typography, underlines, separators, and wrapping. Media links remain visible independently of metric thresholds; do not add badges, icons, or metric hooks. The nine user-supplied articles belong to DeepAgent (REDtech, RUC), WebThinker (Jiqizhixin), Search-o1 (QbitAI, Xinzhiyuan), Agent-World (Jiqizhixin), AEPO (Jiqizhixin), Arbor/hypothesis-tree (QbitAI), and the GenIR survey (RUC). Publisher display labels use the user's original Chinese names where applicable, with the short labels `REDtech` and `RUC`. The user supplied article titles and publishers because WeChat requests in the review environment triggered verification; Arbor's RUC/Microsoft affiliation and research framework were also checked against the official project and paper. Preserve these exact article URLs and mappings in the checker.
 
 Selected Work renders Stars before Citations when both exist, including metrics that are initially hidden and may appear after an automatic update. About me retains citations before GitHub stars.
 

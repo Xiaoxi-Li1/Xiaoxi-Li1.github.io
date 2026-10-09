@@ -13,6 +13,7 @@ class PublicationsAudit
   GROUP_NAV_TITLES = { "agents" => "LLM/VLM Agents", "retrieval" => "RAG & LLMs", "reward-ml" => "Reward & ML" }.freeze
   TOTAL = GROUP_COUNTS.values.sum
   SELF_NAME = "Xiaoxi Li"
+  HIGHLIGHT_ONLY_IDS = %w[genir-survey retrollm corpuslm unigen].freeze
   ABOUT_RESEARCH_COPY = "I'm currently a research intern at ByteDance Seed, focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs. " \
                         "I previously interned at Xiaohongshu Inc (the first RedStar program). " \
                         "I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc."
@@ -23,8 +24,7 @@ class PublicationsAudit
     "2026: National Scholarship for Ph.D. Students, Renmin University of China (\u4e2d\u56fd\u4eba\u6c11\u5927\u5b66\u535a\u58eb\u751f\u56fd\u5bb6\u5956\u5b66\u91d1; Top 1%)."
   ].freeze
   TEAM_AUTHORS = {
-    "seed2-1" => "ByteDance Seed Team (core contributors including Xiaoxi Li).",
-    "agent-world" => "ByteDance Seed Team (core contributors including Xiaoxi Li)."
+    "seed2-1" => "ByteDance Seed Team (core contributors including Xiaoxi Li)."
   }.freeze
   TPAMI_TITLE = "Deep Time-Series Forecasting in 10 Years: A Survey"
   TPAMI_NOTE = "JCR Q1, IF=20.4"
@@ -42,6 +42,7 @@ class PublicationsAudit
       ["\u91cf\u5b50\u4f4d", "https://mp.weixin.qq.com/s/J_n5cn_Zp4lRs8ESqFEFmg"],
       ["\u65b0\u667a\u5143", "https://mp.weixin.qq.com/s/ytAqw5TNF2JD7UXS-S17gg"]
     ],
+    "agent-world" => [["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/Tn2_cNiVIKDl2MU-AFTG-A"]],
     "aepo" => [["\u673a\u5668\u4e4b\u5fc3", "https://mp.weixin.qq.com/s/mL3CTNonZVoLWnQVfK7KAw"]],
     "hypothesis-tree" => [["\u91cf\u5b50\u4f4d", "https://mp.weixin.qq.com/s/51ojDAqmFrRG08P2IhcXSA"]],
     "genir-survey" => [["RUC", "https://mp.weixin.qq.com/s/iFilKVctb-fiMhYe_Gjuzw"]]
@@ -244,7 +245,7 @@ class PublicationsAudit
     check(@by_id.dig("omnigaia", "leaderboard_url") == OMNIGAIA_LEADERBOARD_URL, "omnigaia: retain the official Leaderboard URL from the project README")
 
     overrides = @papers.select { |paper| paper.key?("display_authors") }.map { |paper| paper["id"] }
-    check(overrides.sort == TEAM_AUTHORS.keys.sort, "Only Seed2.1 and Agent-World may override display_authors")
+    check(overrides.sort == TEAM_AUTHORS.keys.sort, "Only Seed2.1 may override display_authors; Agent-World must use its verified named authors")
     TEAM_AUTHORS.each do |id, expected|
       check(@by_id.dig(id, "display_authors") == expected, "#{id}: display_authors must exactly equal #{expected.inspect}")
     end
@@ -265,6 +266,8 @@ class PublicationsAudit
 
   def check_paper_data(paper)
     id = paper["id"]
+    check([true, false].include?(paper["featured"]), "#{id}: featured must be a boolean")
+    check(paper.fetch("highlighted", false) == HIGHLIGHT_ONLY_IDS.include?(id), "#{id}: background-only highlighting must match the four approved retrieval papers")
     if CCF_RANKS.key?(id)
       check(paper["ccf_rank"] == CCF_RANKS[id], "#{id}: ccf_rank must be #{CCF_RANKS[id]} under the approved 2026 CCF catalog")
     else
@@ -678,6 +681,11 @@ class PublicationsAudit
     id = paper["id"]
     check(card.name == "article", "#{id}: publication card must be an article")
     check(card["aria-labelledby"] == "title-#{id}", "#{id}: card must reference its own title")
+    highlighted = paper["featured"] || paper.fetch("highlighted", false)
+    check(card["class"].to_s.split.include?("publication--featured") == highlighted, "#{id}: the blue card style must follow featured or highlighted")
+    summaries = card.css(".publication__summary")
+    check(summaries.length == (paper["featured"] ? 1 : 0), "#{id}: background-only highlighting must not add or remove summary text")
+    check(text(summaries.first) == paper["summary"], "#{id}: summary text must match the approved data") if paper["featured"]
     title = card.at_css("h3.publication__title#title-#{id} a")
     check(text(title) == paper["title"] && title&.[]("href") == paper["publication_url"], "#{id}: rendered title or publication link differs from data")
     figure = card.at_css("a.publication__figure")
