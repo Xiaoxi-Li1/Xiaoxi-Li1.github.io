@@ -27,10 +27,11 @@ class PublicationsAudit
     "-educations" => {
       "title" => "Educations",
       "entries" => [
-        { "start" => "2023-09", "end" => "Present", "logo" => "ruc_logo.png",
-          "paragraphs" => ["Ph.D. in Artificial Intelligence", "Gaoling School of Artificial Intelligence, Renmin University of China"] },
-        { "start" => "2019-09", "end" => "2023-06", "logo" => "nku_logo.png",
-          "paragraphs" => ["B.Sc. in Intelligence Science and Technology", "College of Artificial Intelligence, Nankai University"] }
+        { "start" => "2023-09", "end" => "Present", "logo" => "ruc_logo.png", "note" => true,
+          "links" => { "NLPIR Lab" => "https://ruc-nlpir.github.io/", "Zhicheng Dou" => "https://playbigdata.ruc.edu.cn/dou/" },
+          "paragraphs" => ["Renmin University of China", "Gaoling School of Artificial Intelligence", "Ph.D. student in Artificial Intelligence at the NLPIR Lab, mentored by Prof. Zhicheng Dou."] },
+        { "start" => "2019-09", "end" => "2023-06", "logo" => "nku_logo.png", "note" => true,
+          "paragraphs" => ["Nankai University", "College of Artificial Intelligence", "B.Eng. in Intelligence Science and Technology (Elite Class)."] }
       ]
     },
     "-experiences" => {
@@ -417,6 +418,7 @@ class PublicationsAudit
     check_footer
     check_profile_metrics_html
     check_author_contacts
+    check_research_interests
     check_profile_history
     check_research_experiences
     check_section_headings
@@ -525,6 +527,15 @@ class PublicationsAudit
     end
   end
 
+  def check_research_interests
+    items = @document.css(".page__content > ul > li").select { |item| text(item.at_css("strong")) == "Omni-Modal Agents:" }
+    return unless check(items.length == 1, "Research Interests must retain one Omni-Modal Agents entry")
+
+    item = items.first
+    check(text(item) == "Omni-Modal Agents: Building AI agents that can see, listen, reason, and act (OmniGAIA, Seed2.1);", "Omni-Modal Agents must use the approved capability description and both works")
+    check(item.css("a").map { |link| [text(link), link["href"]] } == [["OmniGAIA", "https://arxiv.org/abs/2602.22897"], ["Seed2.1", "https://seed.bytedance.com/en/seed2_1"]], "Omni-Modal Agents must link OmniGAIA and the official Seed2.1 page in order")
+  end
+
   def check_profile_history
     lists = @document.css(".profile-history")
     check(lists.length == PROFILE_HISTORY.length, "Education and experience history must use exactly two profile-history lists")
@@ -572,6 +583,14 @@ class PublicationsAudit
     mentors = body.css(".profile-history__mentors")
     expected_mentors = expected["program"] ? [expected["paragraphs"].last] : []
     check(mentors.map { |node| text(node) } == expected_mentors, "#{label}: preserve the dedicated mentor paragraph only for research experiences")
+    notes = body.css("p.profile-history__note")
+    expected_notes = expected["note"] ? [expected["paragraphs"].last] : []
+    check(notes.map { |node| text(node) } == expected_notes, "#{label}: retain the approved education note without adding it to research experiences")
+    links = body.css("a[href]")
+    check(links.map { |link| [text(link), link["href"]] } == expected.fetch("links", {}).to_a, "#{label}: retain the approved lab and mentor link labels and destinations")
+    links.each do |link|
+      check(notes.include?(link.parent) && https?(link["href"]) && link["target"] == "_blank" && %w[noopener noreferrer].all? { |value| link["rel"].to_s.split.include?(value) }, "#{label}: education links must use safe HTTPS new-tab links inside the note")
+    end
 
     logos = entry.css("img")
     if check(logos.length == 1, "#{label}: retain exactly one original institution logo")

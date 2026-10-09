@@ -61,6 +61,30 @@
       margin-top: 2px;
       padding-left: 24px;
     }
+
+    .profile-history__note {
+      color: #69717d;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.5;
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: #bdc6d4;
+        text-underline-offset: 3px;
+
+        &:hover {
+          color: #2058ad;
+          text-decoration-color: currentColor;
+        }
+
+        &:focus-visible {
+          outline: 2px solid #2058ad;
+          outline-offset: 3px;
+        }
+      }
+    }
   }
 
   .profile-history__title {

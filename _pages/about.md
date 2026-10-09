@@ -26,7 +26,7 @@ I am currently a 4th year PhD student at the [Gaoling School of Artificial Intel
 I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), focusing on **RL scaling for general agents**, particularly co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
 
 **Research Interests：**
-- **Omni-Modal Agents:** Building real-world omni-modal AI assistants ([OmniGAIA](https://arxiv.org/abs/2602.22897));
+- **Omni-Modal Agents:** Building AI agents that can see, listen, reason, and act ([OmniGAIA](https://arxiv.org/abs/2602.22897), [Seed2.1](https://seed.bytedance.com/en/seed2_1));
 - **Language Agents:** Developing general-purpose agentic LLMs ([DeepAgent](https://arxiv.org/abs/2510.21618), [Agent-World](https://arxiv.org/abs/2604.18292), [AEPO](https://arxiv.org/abs/2510.14545), [Tool-Star](https://arxiv.org/abs/2505.16410));
 - **Deep Research:** Enhancing long-horizon reasoning with web information seeking ([WebThinker](https://arxiv.org/abs/2504.21776), [Search-o1](https://arxiv.org/abs/2501.05366), [HiRA](https://arxiv.org/abs/2507.02652));
 - **Retrieval-Augmented LLMs:** Improving large language models with knowledge retrieval ([RetroLLM](https://aclanthology.org/2025.acl-long.819/), [CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778), [UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)).
@@ -72,15 +72,17 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
   <li class="profile-history__item">
     <span class="profile-history__date"><time datetime="2023-09">2023.09</time> <span class="profile-history__date-end">- Present</span></span>
     <div class="profile-history__body">
-      <p class="profile-history__title"><img class="profile-history__logo" src="./images/ruc_logo.png" alt="" width="18" height="18"> Ph.D. in Artificial Intelligence</p>
-      <p>Gaoling School of Artificial Intelligence, Renmin University of China</p>
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/ruc_logo.png" alt="" width="18" height="18"> Renmin University of China</p>
+      <p>Gaoling School of Artificial Intelligence</p>
+      <p class="profile-history__note">Ph.D. student in Artificial Intelligence at the <a href="https://ruc-nlpir.github.io/" target="_blank" rel="noopener noreferrer">NLPIR Lab</a>, mentored by Prof. <a href="https://playbigdata.ruc.edu.cn/dou/" target="_blank" rel="noopener noreferrer">Zhicheng Dou</a>.</p>
     </div>
   </li>
   <li class="profile-history__item">
     <span class="profile-history__date"><time datetime="2019-09">2019.09</time> <span class="profile-history__date-end">- <time datetime="2023-06">2023.06</time></span></span>
     <div class="profile-history__body">
-      <p class="profile-history__title"><img class="profile-history__logo" src="./images/nku_logo.png" alt="" width="18" height="18"> B.Sc. in Intelligence Science and Technology</p>
-      <p>College of Artificial Intelligence, Nankai University</p>
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/nku_logo.png" alt="" width="18" height="18"> Nankai University</p>
+      <p>College of Artificial Intelligence</p>
+      <p class="profile-history__note">B.Eng. in Intelligence Science and Technology (Elite Class).</p>
     </div>
   </li>
 </ul>
