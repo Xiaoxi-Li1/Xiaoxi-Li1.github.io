@@ -21,7 +21,7 @@ redirect_from:
 # About me
 {: .homepage-section-title}
 
-I am currently a 3rd year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
+I am currently a 4th year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
 I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), focusing on **RL scaling for general agents**, particularly co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
 
