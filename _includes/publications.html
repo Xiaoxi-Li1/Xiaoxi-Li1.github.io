@@ -34,7 +34,7 @@
         <div class="publication__body">
           <h3 class="publication__title" id="title-{{ paper.id }}"><a href="{{ paper.publication_url | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.title | escape }}</a></h3>
           <div class="publication__authors">{% include publication-authors.html paper=paper %}</div>
-          <p class="publication__venue"><span class="venue-name{% if paper.venue contains 'NeurIPS' or paper.venue contains '(Oral)' %} venue-name--mixed-case{% endif %}">{{ paper.venue | escape }}</span>{% if paper.ccf_rank %} <span class="venue-rank" data-ccf-rank="{{ paper.ccf_rank | escape }}">CCF {{ paper.ccf_rank | escape }}</span>{% endif %}{% if paper.venue_note %} <span class="venue-note">{{ paper.venue_note | escape }}</span>{% endif %}</p>
+          <p class="publication__venue"><span class="venue-name{% if paper.venue contains 'NeurIPS' or paper.venue contains '(Oral)' or paper.venue == 'Preprint, Under Review' or paper.venue == 'Technical Report' %} venue-name--mixed-case{% endif %}">{{ paper.venue | escape }}</span>{% if paper.ccf_rank %} <span class="venue-rank" data-ccf-rank="{{ paper.ccf_rank | escape }}">CCF {{ paper.ccf_rank | escape }}</span>{% endif %}{% if paper.venue_note %} <span class="venue-note">{{ paper.venue_note | escape }}</span>{% endif %}</p>
           {% if paper.honor %}<p class="publication__honor"><a href="{{ paper.honor_url | escape }}" target="_blank" rel="noopener noreferrer">{{ paper.honor | escape }}</a></p>{% endif %}
           {% if paper.featured %}<p class="publication__summary">{{ paper.summary | escape }}</p>{% endif %}
           <div class="publication__links">

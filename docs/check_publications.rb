@@ -268,7 +268,7 @@ class PublicationsAudit
     }.each do |id, (title, year, source, count)|
       paper = @by_id[id] || {}
       check(paper.values_at("title", "year", "publication_url") == [title, year, source], "#{id}: retain the verified survey identity and user-selected source")
-      check(paper["venue"] == "Preprint" && !paper["ccf_rank"] && paper["featured"] == false && !paper["highlighted"], "#{id}: retain plain preprint styling without an unverified venue or blue background")
+      check(paper["venue"] == "Preprint, Under Review" && !paper["ccf_rank"] && paper["featured"] == false && !paper["highlighted"], "#{id}: retain the approved preprint status without an unverified venue or blue background")
       check(paper["authors"].is_a?(Array) && paper["authors"].length == count, "#{id}: retain the complete verified author list")
     end
 
@@ -753,8 +753,9 @@ class PublicationsAudit
     end
     venue_name = card.at_css(".venue-name")
     check(text(venue_name) == paper["venue"], "#{id}: rendered venue differs from data")
-    mixed_case = paper["venue"].include?("NeurIPS") || paper["venue"].include?("(Oral)")
-    check(venue_name && venue_name["class"].to_s.split.include?("venue-name--mixed-case") == mixed_case, "#{id}: NeurIPS and (Oral) need mixed-case rendering without changing other venue labels")
+    mixed_case = paper["venue"].include?("NeurIPS") || paper["venue"].include?("(Oral)") || ["Preprint, Under Review", "Technical Report"].include?(paper["venue"])
+    check(!["Preprint", "PREPRINT", "TECHNICAL REPORT"].include?(paper["venue"]), "#{id}: use the approved Preprint, Under Review or Technical Report wording")
+    check(venue_name && venue_name["class"].to_s.split.include?("venue-name--mixed-case") == mixed_case, "#{id}: preserve NeurIPS, (Oral), Preprint, Under Review, and Technical Report casing")
     check_ccf_rank_html(paper, card)
     if paper["venue_note"]
       check(text(card.at_css(".venue-note")) == paper["venue_note"], "#{id}: rendered journal note differs from data")

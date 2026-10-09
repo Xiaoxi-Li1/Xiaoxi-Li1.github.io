@@ -29,7 +29,7 @@ CCF labels use the March 2026 seventh edition of the [CCF catalog](https://www.c
 
 Present CCF labels as plain gray text (`#626d7b`), without a border or background.
 
-Use parenthesized `(Oral)` for the five existing oral papers. The `venue-name--mixed-case` modifier preserves the visible `NeurIPS` and `(Oral)` casing; other venue labels retain their established uppercase styling, including PREPRINT and TECHNICAL REPORT. Do not alter font sizes when normalizing these names.
+Use parenthesized `(Oral)` for the five existing oral papers. The nine preprints display the user-approved status `Preprint, Under Review`, and Seed2.1 displays `Technical Report`. The `venue-name--mixed-case` modifier preserves these labels together with `NeurIPS` and `(Oral)`; other venue labels retain their established uppercase styling. Do not alter font sizes or add CCF ranks when normalizing these names.
 
 ## Authors and Figures
 
