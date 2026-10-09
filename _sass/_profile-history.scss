@@ -1,0 +1,105 @@
+.page__content [id="-educations"].homepage-section-title,
+.page__content [id="-experiences"].homepage-section-title {
+  margin-bottom: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dfe7f4;
+}
+
+.profile-history {
+  margin: 0 0 1.5rem;
+  padding: 0 0.75rem 0 0;
+  color: #232830;
+  font-family: "Outfit", "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  list-style: none;
+
+  .profile-history__item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    gap: 18px;
+    margin: 0;
+    padding: 9px 16px;
+    border-bottom: 1px solid #dfe7f4;
+    font-size: inherit;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .profile-history__date {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    justify-self: end;
+    padding-top: 2px;
+    color: #2058ad;
+    font-size: 13px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .profile-history__date-end {
+    display: inline;
+  }
+
+  .profile-history__body {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+
+    p {
+      margin: 0;
+      font-size: inherit;
+    }
+
+    p + p {
+      margin-top: 2px;
+      padding-left: 22px;
+    }
+  }
+
+  .profile-history__title {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-weight: 600;
+  }
+
+  .profile-history__logo {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 0.2em;
+    object-fit: contain;
+  }
+
+  .profile-history__mentors {
+    color: #69717d;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-history {
+    font-size: 14px;
+
+    .profile-history__item {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 5px;
+      padding: 9px 12px;
+    }
+
+    .profile-history__date {
+      grid-column: 1;
+      padding-top: 0;
+    }
+
+    .profile-history__body {
+      grid-row: 2;
+    }
+  }
+}

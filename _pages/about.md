@@ -68,21 +68,45 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 # Educations
 {: id="-educations" .homepage-section-title}
 
-- 2023.09 - Present | <img src="./images/ruc_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Ph.D. in Artificial Intelligence<br>
-  Gaoling School of Artificial Intelligence, Renmin University of China
-- 2019.09 - 2023.06 | <img src="./images/nku_logo.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.13em;"> B.Sc. in Intelligence Science and Technology<br>
-  College of Artificial Intelligence, Nankai University
+<ul class="profile-history">
+  <li class="profile-history__item">
+    <span class="profile-history__date"><time datetime="2023-09">2023.09</time> <span class="profile-history__date-end">- Present</span></span>
+    <div class="profile-history__body">
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/ruc_logo.png" alt="" width="16" height="16"> Ph.D. in Artificial Intelligence</p>
+      <p>Gaoling School of Artificial Intelligence, Renmin University of China</p>
+    </div>
+  </li>
+  <li class="profile-history__item">
+    <span class="profile-history__date"><time datetime="2019-09">2019.09</time> <span class="profile-history__date-end">- <time datetime="2023-06">2023.06</time></span></span>
+    <div class="profile-history__body">
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/nku_logo.png" alt="" width="16" height="16"> B.Sc. in Intelligence Science and Technology</p>
+      <p>College of Artificial Intelligence, Nankai University</p>
+    </div>
+  </li>
+</ul>
 
 
 # Research Experiences
 {: id="-experiences" .homepage-section-title}
 
-- 2026.05 - Present | <img src="./images/bytedance.svg" style="width: 1.1em; position: relative; top: -0.1em; margin-left: 0.15em;"> ByteDance Seed, General Agent Team  
-  Research Intern on RL Scaling for General Agents (<span style="color: #c00000;">Seed-LLM Talent</span> Program)<br>
-  Mentors: Wanjun Zhong, Yujia Qin
-- 2025.06 - 2026.05 | <img src="./images/xiaohongshu.png" style="width: 1em; position: relative; top: -0.1em; margin-left: 0.15em;"> Xiaohongshu, Central Platform Team  
-  Research Intern on General Agents (<span style="color: #c00000;">RedStar</span> Program)  
-  Mentors: Wenxiang Jiao, Yuan Lu
+<ul class="profile-history">
+  <li class="profile-history__item">
+    <span class="profile-history__date"><time datetime="2026-05">2026.05</time> <span class="profile-history__date-end">- Present</span></span>
+    <div class="profile-history__body">
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/bytedance.svg" alt="" width="16" height="16"> ByteDance Seed, General Agent Team</p>
+      <p>Research Intern on RL Scaling for General Agents (<span style="color: #c00000;">Seed-LLM Talent</span> Program)</p>
+      <p class="profile-history__mentors">Mentors: Wanjun Zhong, Yujia Qin</p>
+    </div>
+  </li>
+  <li class="profile-history__item">
+    <span class="profile-history__date"><time datetime="2025-06">2025.06</time> <span class="profile-history__date-end">- <time datetime="2026-05">2026.05</time></span></span>
+    <div class="profile-history__body">
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/xiaohongshu.png" alt="" width="16" height="16"> Xiaohongshu, Central Platform Team</p>
+      <p>Research Intern on General Agents (<span style="color: #c00000;">RedStar</span> Program)</p>
+      <p class="profile-history__mentors">Mentors: Wenxiang Jiao, Yuan Lu</p>
+    </div>
+  </li>
+</ul>
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
 

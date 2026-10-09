@@ -23,6 +23,26 @@ class PublicationsAudit
     "2026: Young Talent Development Program for Doctoral Students, CAST (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
     "2026: National Scholarship for Ph.D. Students, Renmin University of China (\u4e2d\u56fd\u4eba\u6c11\u5927\u5b66\u535a\u58eb\u751f\u56fd\u5bb6\u5956\u5b66\u91d1; Top 1%)."
   ].freeze
+  PROFILE_HISTORY = {
+    "-educations" => {
+      "title" => "Educations",
+      "entries" => [
+        { "start" => "2023-09", "end" => "Present", "logo" => "ruc_logo.png",
+          "paragraphs" => ["Ph.D. in Artificial Intelligence", "Gaoling School of Artificial Intelligence, Renmin University of China"] },
+        { "start" => "2019-09", "end" => "2023-06", "logo" => "nku_logo.png",
+          "paragraphs" => ["B.Sc. in Intelligence Science and Technology", "College of Artificial Intelligence, Nankai University"] }
+      ]
+    },
+    "-experiences" => {
+      "title" => "Research Experiences",
+      "entries" => [
+        { "start" => "2026-05", "end" => "Present", "logo" => "bytedance.svg", "program" => "Seed-LLM Talent",
+          "paragraphs" => ["ByteDance Seed, General Agent Team", "Research Intern on RL Scaling for General Agents (Seed-LLM Talent Program)", "Mentors: Wanjun Zhong, Yujia Qin"] },
+        { "start" => "2025-06", "end" => "2026-05", "logo" => "xiaohongshu.png", "program" => "RedStar",
+          "paragraphs" => ["Xiaohongshu, Central Platform Team", "Research Intern on General Agents (RedStar Program)", "Mentors: Wenxiang Jiao, Yuan Lu"] }
+      ]
+    }
+  }.freeze
   TEAM_AUTHORS = {
     "seed2-1" => "ByteDance Seed Team (core contributors including Xiaoxi Li)."
   }.freeze
@@ -397,6 +417,7 @@ class PublicationsAudit
     check_footer
     check_profile_metrics_html
     check_author_contacts
+    check_profile_history
     check_research_experiences
     check_section_headings
     check_selected_awards
@@ -501,6 +522,69 @@ class PublicationsAudit
         check((icon["viewBox"] || icon["viewbox"]) == "0 0 24 24" && icon.css("path[d]").any? { |path| nonempty?(path["d"]) }, "Google Scholar SVG must retain its 24x24 viewBox and inline path")
         check(link.element_children.first == icon, "Google Scholar SVG must precede the citation value inside its link")
       end
+    end
+  end
+
+  def check_profile_history
+    lists = @document.css(".profile-history")
+    check(lists.length == PROFILE_HISTORY.length, "Education and experience history must use exactly two profile-history lists")
+    PROFILE_HISTORY.each do |id, expected|
+      heading = @document.at_css("h1[id='#{id}'].homepage-section-title")
+      next unless check(heading && text(heading) == expected["title"], "#{id}: retain the history section's title and anchor")
+
+      list = heading.next_element
+      next unless check(list && list.name == "ul" && lists.include?(list), "#{id}: the heading must be followed directly by ul.profile-history")
+
+      entries = list.element_children
+      check(entries.length == expected["entries"].length, "#{id}: retain both history entries exactly once")
+      entries.each_with_index do |entry, index|
+        copy = expected["entries"][index]
+        next unless copy
+
+        check_profile_history_entry(entry, copy, "#{id} entry #{index + 1}")
+      end
+    end
+  end
+
+  def check_profile_history_entry(entry, expected, label)
+    check(entry.name == "li" && entry["class"].to_s.split.include?("profile-history__item"), "#{label}: use a semantic li.profile-history__item")
+    check(statically_visible?(entry) && entry.css("*").all? { |node| statically_visible?(node) }, "#{label}: all dates, text, program names, and logos must remain visible")
+    columns = entry.element_children
+    date, body = columns
+    valid_columns = columns.length == 2 && date.name == "span" && date["class"].to_s.split.include?("profile-history__date") &&
+                    body.name == "div" && body["class"].to_s.split.include?("profile-history__body")
+    return unless check(valid_columns, "#{label}: retain exactly the date span and content div as direct grid children")
+
+    date_parts = date.element_children
+    check(date_parts.map(&:name) == %w[time span] && date_parts.last["class"].to_s.split.include?("profile-history__date-end"), "#{label}: keep the start time and separate date-end span")
+    dates = [expected["start"], expected["end"]].reject { |value| value == "Present" }
+    check(date.css("time").map { |node| [node["datetime"], text(node)] } == dates.map { |value| [value, value.tr("-", ".")] }, "#{label}: machine-readable dates and their visible labels must retain the original range")
+    date_text = "#{expected['start'].tr('-', '.')} - #{expected['end'].tr('-', '.')}"
+    check(text(date) == date_text, "#{label}: retain the full date range, separator, and Present label")
+    check(text(date_parts.last) == "- #{expected['end'].tr('-', '.')}", "#{label}: the date-end span must contain the original end date or Present")
+
+    paragraphs = body.element_children
+    check(paragraphs.map(&:name) == Array.new(expected["paragraphs"].length, "p"), "#{label}: retain separate title, detail, and optional mentor paragraphs")
+    check(paragraphs.map { |node| text(node) } == expected["paragraphs"], "#{label}: school, role, institution, program, and mentor text must remain complete and in order")
+    check(text(entry) == ([date_text] + expected["paragraphs"]).join(" "), "#{label}: the history entry must not drop, duplicate, or add content")
+    title = paragraphs.first
+    check(title && title["class"].to_s.split.include?("profile-history__title"), "#{label}: keep the first paragraph as the profile-history__title")
+    mentors = body.css(".profile-history__mentors")
+    expected_mentors = expected["program"] ? [expected["paragraphs"].last] : []
+    check(mentors.map { |node| text(node) } == expected_mentors, "#{label}: preserve the dedicated mentor paragraph only for research experiences")
+
+    logos = entry.css("img")
+    if check(logos.length == 1, "#{label}: retain exactly one original institution logo")
+      logo = logos.first
+      check(title && logo.parent == title && title.element_children.first == logo && logo["class"].to_s.split.include?("profile-history__logo"), "#{label}: the logo must be the title's first decorative image")
+      check(logo["src"] == "./images/#{expected['logo']}" && logo["alt"] == "" && logo["width"] == "16" && logo["height"] == "16", "#{label}: preserve the correct logo with empty alt and 16x16 dimensions")
+    end
+    return unless expected["program"]
+
+    programs = paragraphs[1] ? paragraphs[1].css("span").select { |node| text(node) == expected["program"] } : []
+    if check(programs.length == 1, "#{label}: retain the original research program label exactly once")
+      colors = programs.first["style"].to_s.scan(/(?:\A|;)\s*color\s*:\s*([^;]+)/i).flatten
+      check(colors.last.to_s.strip.downcase == "#c00000", "#{label}: retain the program label's original red #c00000")
     end
   end
 
