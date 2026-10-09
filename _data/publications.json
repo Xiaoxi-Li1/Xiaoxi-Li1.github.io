@@ -22,6 +22,7 @@
     "publication_url": "https://arxiv.org/abs/2602.22897",
     "pdf_url": "https://arxiv.org/pdf/2602.22897",
     "code_url": "https://github.com/RUC-NLPIR/OmniGAIA",
+    "leaderboard_url": "https://huggingface.co/spaces/RUC-NLPIR/OmniGAIA-Leaderboard",
     "image": "/images/publications/omnigaia.webp",
     "image_full": "/images/publications/omnigaia-full.webp",
     "image_width": 600,

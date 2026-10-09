@@ -425,7 +425,27 @@
 }
 
 .publications .publication__links > .publication__metric {
+  position: relative;
   font-weight: 400;
+  text-decoration: none;
+
+  &:hover, &:focus, &:visited {
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+    left: 10px;
+    border-bottom: 1px solid currentColor;
+    pointer-events: none;
+  }
+
+  &:first-child::after {
+    left: 0;
+  }
 
   &.publication__metric--emphasized {
     font-weight: 600;
@@ -608,6 +628,11 @@ body.figure-open {
       min-height: 28px;
       padding-right: 8px;
       padding-left: 8px;
+    }
+
+    .publication__links > .publication__metric::after {
+      right: 8px;
+      left: 8px;
     }
   }
 

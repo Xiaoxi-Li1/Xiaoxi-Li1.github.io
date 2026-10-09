@@ -30,6 +30,7 @@ class PublicationsAudit
   TPAMI_NOTE = "JCR Q1, IF=20.4"
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
   APPROVED_EMPHASIS_MINIMUMS = { "stars_emphasis_min" => 1000, "citations_emphasis_min" => 100 }.freeze
+  OMNIGAIA_LEADERBOARD_URL = "https://huggingface.co/spaces/RUC-NLPIR/OmniGAIA-Leaderboard"
   MEDIA_LABELS = ["REDtech", "RUC", "\u673a\u5668\u4e4b\u5fc3", "\u91cf\u5b50\u4f4d", "\u65b0\u667a\u5143"].freeze
   APPROVED_MEDIA_LINKS = {
     "deepagent" => [
@@ -240,6 +241,7 @@ class PublicationsAudit
     reward_ml = @groups.find { |group| group["id"] == "reward-ml" }
     check(reward_ml && reward_ml["papers"].is_a?(Array) && reward_ml["papers"].first == "time-series-survey", "Reward/ML group must begin with the TPAMI time-series survey")
     check(@by_id.dig("hira", "code_url") == "https://github.com/RUC-NLPIR/HiRA", "hira: use the topology-confirmed RUC-NLPIR/HiRA upstream, not the legacy fork")
+    check(@by_id.dig("omnigaia", "leaderboard_url") == OMNIGAIA_LEADERBOARD_URL, "omnigaia: retain the official Leaderboard URL from the project README")
 
     overrides = @papers.select { |paper| paper.key?("display_authors") }.map { |paper| paper["id"] }
     check(overrides.sort == TEAM_AUTHORS.keys.sort, "Only Seed2.1 and Agent-World may override display_authors")
@@ -713,15 +715,19 @@ class PublicationsAudit
       check(text(card.at_css(".venue-note")) == paper["venue_note"], "#{id}: rendered journal note differs from data")
     end
     paper_links = card.css(".publication__links a[href]").map { |link| link["href"] }
-    %w[pdf_url code_url project_url arxiv_url].each do |key|
+    %w[pdf_url code_url project_url arxiv_url leaderboard_url].each do |key|
       check(paper_links.include?(paper[key]), "#{id}: rendered links omit #{key}") if paper[key]
     end
-    { "Paper" => paper["pdf_url"], "Code" => paper["code_url"] }.each do |label, url|
+    { "Paper" => paper["pdf_url"], "Code" => paper["code_url"], "Leaderboard" => paper["leaderboard_url"] }.each do |label, url|
       next unless url
 
       links = card.css(".publication__links a[href]").select { |link| text(link) == label && link["href"] == url }
       visible = links.length == 1 && !links.first.key?("hidden") && links.first.ancestors.none? { |node| node.key?("hidden") }
       check(visible, "#{id}: #{label} must remain present and visible regardless of metric thresholds")
+      if label == "Leaderboard" && visible
+        link = links.first
+        check(link.parent == card.at_css(".publication__links") && link["target"] == "_blank" && %w[noopener noreferrer].all? { |value| link["rel"].to_s.split.include?(value) }, "#{id}: Leaderboard must be a direct resource link with safe new-tab attributes")
+      end
     end
     check_media_html(paper, card)
     check_metrics(paper, card)
@@ -795,7 +801,7 @@ class PublicationsAudit
       end
     end
     expected_order = []
-    { "Project Page" => "project_url", "Paper" => "pdf_url", "arXiv" => "arxiv_url", "Code" => "code_url" }.each do |label, key|
+    { "Project Page" => "project_url", "Paper" => "pdf_url", "arXiv" => "arxiv_url", "Code" => "code_url", "Leaderboard" => "leaderboard_url" }.each do |label, key|
       expected_order << label if paper[key]
     end
     expected_order.concat(Array.new(expected.length, "media"))
