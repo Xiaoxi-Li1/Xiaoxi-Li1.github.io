@@ -1,0 +1,39 @@
+- id: agents
+  title: LLM/VLM Agents
+  short_title: Agents
+  eyebrow: Reason, Search, and Act
+  papers:
+    - omnigaia
+    - deepagent
+    - webthinker
+    - search-o1
+    - seed2-1
+    - agent-world
+    - hira
+    - hypothesis-tree
+    - multimodal-deep-research
+    - agentfugue
+    - tool-star
+    - aepo
+    - verigraph
+- id: retrieval
+  title: Retrieval-Augmented LLMs
+  short_title: Retrieval & RAG
+  eyebrow: Retrieve and Generate
+  papers:
+    - retrollm
+    - longrefiner
+    - rag-critic
+    - corpuslm
+    - unigen
+    - genir-survey
+- id: reward-ml
+  title: Reward Modeling and Machine Learning
+  short_title: Reward & ML
+  eyebrow: Learn and Align
+  papers:
+    - implicit-rm
+    - causal-rm
+    - time-series-survey
+    - rubrics-on-trial
+    - distdf

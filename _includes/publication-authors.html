@@ -1,0 +1,46 @@
+{%- assign authors = include.paper.authors -%}
+{%- assign author_count = authors | size -%}
+{%- if include.paper.display_authors -%}
+  <p class="team-authors">{{ include.paper.display_authors | escape | replace: 'Xiaoxi Li', '<strong>Xiaoxi Li</strong>' }}</p>
+{%- elsif author_count > 5 -%}
+  {%- assign self_index = -1 -%}
+  {%- for author in authors -%}
+    {%- if author == 'Xiaoxi Li' -%}{%- assign self_index = forloop.index0 -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign tail_start = author_count | minus: 2 -%}
+  <details class="author-details">
+    <summary>
+      <span class="author-preview">
+        {%- if self_index > 2 -%}
+          ..., <strong>Xiaoxi Li</strong>
+          {%- assign next_index = self_index | plus: 1 -%}
+          {%- if next_index < tail_start -%}, ...{%- endif -%}
+          {%- if next_index > tail_start -%}{%- assign tail_start = next_index -%}{%- endif -%}
+          {%- for author in authors offset: tail_start -%}
+            {%- unless author == 'Xiaoxi Li' -%}, {{ author | escape }}{%- endunless -%}
+          {%- endfor -%}
+        {%- else -%}
+          {%- for author in authors limit: 3 -%}
+            {%- unless forloop.first -%}, {% endunless -%}
+            {%- if author == 'Xiaoxi Li' -%}<strong>{{ author }}</strong>{%- else -%}{{ author | escape }}{%- endif -%}
+          {%- endfor -%}, ...
+          {%- for author in authors offset: tail_start -%}, {{ author | escape }}{%- endfor -%}
+        {%- endif -%}
+      </span>
+      <span class="author-toggle-label">Detailed author list</span>
+    </summary>
+    <p class="author-full">
+      {%- for author in authors -%}
+        {%- unless forloop.first -%}, {% endunless -%}
+        {%- if author == 'Xiaoxi Li' -%}<strong>{{ author }}</strong>{%- else -%}{{ author | escape }}{%- endif -%}
+      {%- endfor -%}
+    </p>
+  </details>
+{%- else -%}
+  <p class="team-authors">
+    {%- for author in authors -%}
+      {%- unless forloop.first -%}, {% endunless -%}
+      {%- if author == 'Xiaoxi Li' -%}<strong>{{ author }}</strong>{%- else -%}{{ author | escape }}{%- endif -%}
+    {%- endfor -%}
+  </p>
+{%- endif -%}

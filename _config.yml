@@ -7,12 +7,22 @@
 
 # Site Settings
 title                    : "Xiaoxi Li"
+url                      : "https://xiaoxi-li1.github.io"
+baseurl                  : ""
 description              : ""
-repository               : "xiaoxi-li1.github.io"
+repository               : "xiaoxi-li1/xiaoxi-li1.github.io"
 google_scholar_stats_use_cdn : true
+
+# Counts must be strictly greater than these values to be displayed.
+publication_metrics:
+  stars_over              : 50
+  citations_over          : 20
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+
+# Jekyll serve rewrites site.url; keep analytics tied to the live HTTPS origin.
+visitor_statistics_origin : "https://xiaoxi-li1.github.io"
 
 # Visitor footprint map. Fill these after creating your own Supabase project.
 visitor_map:

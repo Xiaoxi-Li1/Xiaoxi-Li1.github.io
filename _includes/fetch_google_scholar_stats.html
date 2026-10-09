@@ -1,19 +1,28 @@
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
-            });
-        });
+(function () {
+  var controller = new AbortController();
+  var timeout = setTimeout(function () { controller.abort(); }, 8000);
+  fetch('https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json', { signal: controller.signal })
+    .then(function (response) {
+      if (!response.ok) throw new Error('Scholar statistics unavailable');
+      return response.json();
     })
+    .then(function (data) {
+      var total = document.getElementById('total_cit');
+      if (total && Number.isFinite(data.citedby)) total.textContent = data.citedby;
+      document.querySelectorAll('[data-scholar-id], .show_paper_citations').forEach(function (element) {
+        var id = element.dataset.scholarId || element.getAttribute('data');
+        var paper = (data.publications || {})[id];
+        if (!paper || !Number.isInteger(paper.num_citations) || paper.num_citations < 0) return;
+        element.textContent = element.dataset.scholarId ? paper.num_citations : '| Citations: ' + paper.num_citations;
+        var metric = element.closest('[data-citation-metric]');
+        if (metric) {
+          var threshold = Number(metric.dataset.citationThreshold);
+          metric.hidden = paper.num_citations <= (Number.isFinite(threshold) ? threshold : 0);
+        }
+      });
+    })
+    .catch(function () { /* The rendered citation snapshot remains usable offline. */ })
+    .finally(function () { clearTimeout(timeout); });
+})();
 </script>
