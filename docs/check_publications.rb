@@ -29,7 +29,7 @@ class PublicationsAudit
       "entries" => [
         { "start" => "2023-09", "end" => "Present", "logo" => "ruc_logo.png", "note" => true,
           "links" => { "NLPIR Lab" => "https://ruc-nlpir.github.io/", "Zhicheng Dou" => "https://playbigdata.ruc.edu.cn/dou/" },
-          "paragraphs" => ["Renmin University of China", "Gaoling School of Artificial Intelligence", "Ph.D. student in Artificial Intelligence at the NLPIR Lab, mentored by Prof. Zhicheng Dou."] },
+          "paragraphs" => ["Renmin University of China", "Gaoling School of Artificial Intelligence", "Ph.D. student at the NLPIR Lab, mentored by Prof. Zhicheng Dou."] },
         { "start" => "2019-09", "end" => "2023-06", "logo" => "nku_logo.png", "note" => true,
           "paragraphs" => ["Nankai University", "College of Artificial Intelligence", "B.Eng. in Intelligence Science and Technology (Elite Class)."] }
       ]

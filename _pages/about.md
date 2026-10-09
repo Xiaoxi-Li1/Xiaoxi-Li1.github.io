@@ -74,7 +74,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
     <div class="profile-history__body">
       <p class="profile-history__title"><img class="profile-history__logo" src="./images/ruc_logo.png" alt="" width="18" height="18"> Renmin University of China</p>
       <p>Gaoling School of Artificial Intelligence</p>
-      <p class="profile-history__note">Ph.D. student in Artificial Intelligence at the <a href="https://ruc-nlpir.github.io/" target="_blank" rel="noopener noreferrer">NLPIR Lab</a>, mentored by Prof. <a href="https://playbigdata.ruc.edu.cn/dou/" target="_blank" rel="noopener noreferrer">Zhicheng Dou</a>.</p>
+      <p class="profile-history__note">Ph.D. student at the <a href="https://ruc-nlpir.github.io/" target="_blank" rel="noopener noreferrer">NLPIR Lab</a>, mentored by Prof. <a href="https://playbigdata.ruc.edu.cn/dou/" target="_blank" rel="noopener noreferrer">Zhicheng Dou</a>.</p>
     </div>
   </li>
   <li class="profile-history__item">
