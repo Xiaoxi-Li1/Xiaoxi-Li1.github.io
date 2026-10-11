@@ -58,8 +58,8 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 - {:.news-item} <time datetime="2025-08">2025.08</time> <span class="news-item__text" markdown="span">🎉 [Search-o1](https://arxiv.org/abs/2501.05366) selected for *Oral Presentation* at **EMNLP 2025**. (*1k+ stars*, *200+ citations*). The first framework that performs interleaved reasoning and web-search for o1-like reasoning models.</span>
 - {:.news-item} <time datetime="2025-06">2025.06</time> <span class="news-item__text" markdown="span">💻 Joined Xiaohongshu as a **RedStar** research intern, focusing on general agents.</span>
 - {:.news-item} <time datetime="2025-05">2025.05</time> <span class="news-item__text" markdown="span">🎉 Four papers accepted by **ACL 2025**. Looking forward to seeing you in Vienna!</span>
-- {:.news-item} <time datetime="2024-03">2024.03</time> <span class="news-item__text" markdown="span">🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for *Oral Presentation* at **SIGIR 2024**. A unified LLM for retrieval and QA.</span>
 - {:.news-item} <time datetime="2025-02">2025.02</time> <span class="news-item__text" markdown="span">🎉 Our survey on Generative Information Retrieval (GenIR) accepted by **ACM TOIS**! See more [details](https://arxiv.org/abs/2404.14851).</span>
+- {:.news-item} <time datetime="2024-03">2024.03</time> <span class="news-item__text" markdown="span">🎉 [CorpusLM](https://arxiv.org/abs/2404.14851) selected for *Oral Presentation* at **SIGIR 2024**. A unified LLM for retrieval and QA.</span>
 - {:.news-item} <time datetime="2023-12">2023.12</time> <span class="news-item__text" markdown="span">🎉 Our unified generative framework for retrieval and QA has been accepted by **AAAI 2024**. See more [details](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380).</span>
 
 </div>
