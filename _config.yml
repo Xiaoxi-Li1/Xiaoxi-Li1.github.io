@@ -27,8 +27,13 @@ google_analytics_id      :  # get google_analytics_id from https://analytics.goo
 visitor_statistics_origin : "https://xiaoxi-li1.github.io"
 
 visitor_analytics:
-  enabled                : true
+  enabled                : false
   endpoint               : "https://xiaoxi-visitor-observatory.private-visitor-observatory.workers.dev/collect"
+  site_origin            : "https://xiaoxi-li1.github.io"
+
+cloudflare_web_analytics:
+  enabled                : true
+  token                  : "7717b496fc2144c7a752adbade5ad7df"
   site_origin            : "https://xiaoxi-li1.github.io"
 
 # Visitor footprint map. Fill these after creating your own Supabase project.

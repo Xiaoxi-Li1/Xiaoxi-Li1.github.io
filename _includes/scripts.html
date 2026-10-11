@@ -4,9 +4,16 @@
 {% endif %}
 
 {% include analytics.html %}
+{% if site.cloudflare_web_analytics.enabled == true %}
+{% assign cloudflare_web_analytics_token = site.cloudflare_web_analytics.token | default: '' | strip %}
+{% if cloudflare_web_analytics_token != '' and page.url == '/' and page.analytics != false %}
+<script src="{{ '/assets/js/cloudflare-web-analytics.js' | relative_url }}" data-site-token="{{ cloudflare_web_analytics_token | escape }}" data-site-origin="{{ site.cloudflare_web_analytics.site_origin | escape }}" defer></script>
+{% endif %}
+{% else %}
 {% assign visitor_analytics_endpoint = site.visitor_analytics.endpoint | default: '' | strip %}
 {% if site.visitor_analytics.enabled == true and visitor_analytics_endpoint != '' and page.url == '/' %}
 <script src="{{ '/assets/js/visitor-analytics.js' | relative_url }}" data-endpoint="{{ visitor_analytics_endpoint | escape }}" data-site-origin="{{ site.visitor_analytics.site_origin | escape }}" defer></script>
+{% endif %}
 {% endif %}
 {% include fetch_google_scholar_stats.html %}
 {% if page.publication_layout %}

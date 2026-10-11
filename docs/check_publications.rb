@@ -48,6 +48,7 @@ class PublicationsAudit
     "seed2-1" => "ByteDance Seed Team (core contributors including Xiaoxi Li)."
   }.freeze
   TPAMI_TITLE = "Deep Time-Series Forecasting in 10 Years: A Survey"
+  SEED_TITLE = "Seed2.1 Model Card: Agentic Intelligence for Productivity"
   TPAMI_NOTE = "JCR Q1, IF=20.4"
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
   APPROVED_EMPHASIS_MINIMUMS = { "stars_emphasis_min" => 1000, "citations_emphasis_min" => 100 }.freeze
@@ -298,6 +299,7 @@ class PublicationsAudit
     TEAM_AUTHORS.each do |id, expected|
       check(@by_id.dig(id, "display_authors") == expected, "#{id}: display_authors must exactly equal #{expected.inspect}")
     end
+    check(@by_id.dig("seed2-1", "title") == SEED_TITLE, "seed2-1: retain the approved model-card title #{SEED_TITLE.inspect}")
     tpami = @by_id["time-series-survey"] || {}
     check(tpami["title"] == TPAMI_TITLE, "time-series-survey: keep the approved TPAMI title #{TPAMI_TITLE.inspect}")
     check(tpami["venue"] == "IEEE TPAMI 2026", "time-series-survey: venue must be IEEE TPAMI 2026")
@@ -685,7 +687,7 @@ class PublicationsAudit
     region = regions.first
     check(region["role"] == "region" && region["aria-labelledby"] == "-news" && region["tabindex"] == "0", "News scrolling region must be named and keyboard focusable")
     items = region.css("ul > li.news-item")
-    dates = %w[2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2024-03 2025-02 2023-12]
+    dates = %w[2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2025-02 2024-03 2023-12]
     check(items.length == dates.length, "News must retain all twelve existing entries")
     check(items.map { |item| item.at_css("time")&.[]("datetime") } == dates, "News dates and ordering must remain unchanged")
     items.each do |item|

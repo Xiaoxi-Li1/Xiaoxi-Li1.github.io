@@ -51,6 +51,8 @@ Agent-World uses the standard named-author renderer, not `display_authors`. Pres
 
 The override controls presentation only; retain the underlying source authors. The Seed2.1 card intentionally shows the team wording instead of an individual-author toggle.
 
+The Seed2.1 publication title is `Seed2.1 Model Card: Agentic Intelligence for Productivity`, matching the model-card PDF. Its project banner retains its original tagline, caption, and image assets.
+
 Except for the approved Seed2.1 project banner below, use a real figure from the paper's PDF, not an AI-generated substitute or a screenshot of an entire text page. Inspect the crop and both exports, preserve complete diagram boundaries and aspect ratio, and save white-background WebP files as `images/publications/<id>.webp` (about 600px wide) and `<id>-full.webp` (about 1800px wide). Record the thumbnail's actual `image_width` and `image_height`.
 
 For PDF figures, preserve `pdf_url`, one-based `figure_page`, `figure_label`, the source `figure_caption`, and meaningful `figure_alt` in the paper record. Keep any available crop coordinates and PDF SHA-256 metadata as well. Their dialog links retain the exact PDF page and the source label `View this figure in the paper`.

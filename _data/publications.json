@@ -601,7 +601,7 @@
   },
   {
     "id": "seed2-1",
-    "title": "Seed2.1 Model Card: A Next-Generation Agent for Real-World Productivity",
+    "title": "Seed2.1 Model Card: Agentic Intelligence for Productivity",
     "authors": [
       "ByteDance Seed"
     ],
@@ -625,7 +625,7 @@
     "project_url": "https://seed.bytedance.com/en/seed2_1",
     "display_authors": "ByteDance Seed Team (core contributors including Xiaoxi Li).",
     "source_title": "Seed2.1 Model Card: Agentic Intelligence for Productivity",
-    "title_note": "The display title was supplied by Xiaoxi Li; the official PDF cover uses the source_title.",
+    "title_note": "The display title matches the official PDF cover.",
     "featured": false,
     "scholar_id": "XDljV4YAAAAJ:NhqRSupF_l8C",
     "citations": 10,
