@@ -4,6 +4,10 @@
 {% endif %}
 
 {% include analytics.html %}
+{% assign visitor_analytics_endpoint = site.visitor_analytics.endpoint | default: '' | strip %}
+{% if site.visitor_analytics.enabled == true and visitor_analytics_endpoint != '' and page.url == '/' %}
+<script src="{{ '/assets/js/visitor-analytics.js' | relative_url }}" data-endpoint="{{ visitor_analytics_endpoint | escape }}" data-site-origin="{{ site.visitor_analytics.site_origin | escape }}" defer></script>
+{% endif %}
 {% include fetch_google_scholar_stats.html %}
 {% if page.publication_layout %}
 <script src="{{ '/assets/js/publication-metrics.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

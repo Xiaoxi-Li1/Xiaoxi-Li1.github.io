@@ -26,6 +26,11 @@ google_analytics_id      :  # get google_analytics_id from https://analytics.goo
 # Jekyll serve rewrites site.url; keep analytics tied to the live HTTPS origin.
 visitor_statistics_origin : "https://xiaoxi-li1.github.io"
 
+visitor_analytics:
+  enabled                : true
+  endpoint               : "https://xiaoxi-visitor-observatory.private-visitor-observatory.workers.dev/collect"
+  site_origin            : "https://xiaoxi-li1.github.io"
+
 # Visitor footprint map. Fill these after creating your own Supabase project.
 visitor_map:
   supabase_url           : "https://uodnctbyinpvlsvhvhaf.supabase.co"
