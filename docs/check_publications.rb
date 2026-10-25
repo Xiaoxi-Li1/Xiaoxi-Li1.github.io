@@ -55,8 +55,8 @@ class PublicationsAudit
     "Xiaoxi Li", "Jiejun Tan", "Yutao Zhu", "Tat-Seng Chua", "Ji-Rong Wen", "Zhicheng Dou"
   ].freeze
   OCTOBER_NEWS = [
-    "\u{1F680} Released Agent-Reflex: teaching agents to reflect and recover from tool failures and user corrections. [Code]",
-    "\u{1F3C6} Selected for the 2026 CAST Young Talent Development Program for Doctoral Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u79d1\u6280\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879)."
+    "\u{1F3C6} Selected for the CAST Young Talent Development Program for Doctoral Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
+    "\u{1F680} Released Agent-Reflex: teaching agents to reflect and recover from tool failures and user corrections. [Code]"
   ].freeze
   TPAMI_NOTE = "JCR Q1, IF=20.4"
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
@@ -710,8 +710,8 @@ class PublicationsAudit
     dates = %w[2026-10 2026-10 2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2025-02 2024-03 2023-12]
     check(items.length == dates.length, "News must include the two October updates and retain all twelve existing entries")
     check(items.map { |item| item.at_css("time")&.[]("datetime") } == dates, "News dates and ordering must remain unchanged")
-    check(items.first(2).map { |item| text(item.at_css(".news-item__text")) } == OCTOBER_NEWS, "News must begin with the Agent-Reflex release and CAST selection in October 2026")
-    check(items.first && items.first.css("a[href]").map { |link| [text(link), link["href"]] } ==
+    check(items.first(2).map { |item| text(item.at_css(".news-item__text")) } == OCTOBER_NEWS, "News must begin with the CAST selection followed by the Agent-Reflex release in October 2026")
+    check(items[1] && items[1].css("a[href]").map { |link| [text(link), link["href"]] } ==
       [["Agent-Reflex", "https://arxiv.org/abs/2610.17953"], ["[Code]", "https://github.com/RUC-NLPIR/Agent-Reflex"]],
       "Agent-Reflex News must link to the requested paper and official code")
     items.each do |item|
