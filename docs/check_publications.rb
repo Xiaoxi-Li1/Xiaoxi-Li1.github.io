@@ -18,8 +18,8 @@ class PublicationsAudit
                         "I previously interned at Xiaohongshu Inc (the first RedStar program). " \
                         "I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc."
   SELECTED_AWARDS = [
-    "2026: BAAI InnoVibe Most Notable Academic Rising Star (\u9752\u6e90InnoVibe\u6700\u53d7\u77a9\u76ee\u5b66\u672f\u65b0\u661f\uff0c\u5168\u740325\u4eba).",
     "2026: CIE-Tencent Hunyuan PhD Research Incentive Program (\u4e2d\u56fd\u7535\u5b50\u5b66\u4f1a-\u817e\u8baf\u6df7\u5143\u535a\u58eb\u751f\u79d1\u7814\u6fc0\u52b1\u8ba1\u5212\uff0c10w/\u4eba).",
+    "2026: BAAI InnoVibe Most Notable Academic Rising Star (\u9752\u6e90InnoVibe\u6700\u53d7\u77a9\u76ee\u5b66\u672f\u65b0\u661f\uff0c\u5168\u740325\u4eba).",
     "2026: Young Talent Development Program for PhD Students, CAST (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
     "2026: National Scholarship for PhD Students, Renmin University of China (\u4e2d\u56fd\u4eba\u6c11\u5927\u5b66\u535a\u58eb\u751f\u56fd\u5bb6\u5956\u5b66\u91d1; Top 1%)."
   ].freeze

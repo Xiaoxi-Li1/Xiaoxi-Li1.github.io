@@ -130,8 +130,8 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 # Selected Awards
 {: .homepage-section-title}
 
-- 2026: **BAAI InnoVibe Most Notable Academic Rising Star** (青源InnoVibe最受瞩目学术新星，全球25人).
 - 2026: **CIE-Tencent Hunyuan PhD Research Incentive Program** (中国电子学会-腾讯混元博士生科研激励计划，10w/人).
+- 2026: **BAAI InnoVibe Most Notable Academic Rising Star** (青源InnoVibe最受瞩目学术新星，全球25人).
 - 2026: **Young Talent Development Program for PhD Students, CAST** (中国科协青年人才培育工程博士生专项).
 - 2026: **National Scholarship for PhD Students**, Renmin University of China (中国人民大学博士生国家奖学金; Top 1%).
 
