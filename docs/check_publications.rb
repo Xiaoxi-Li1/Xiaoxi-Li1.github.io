@@ -55,7 +55,7 @@ class PublicationsAudit
     "Xiaoxi Li", "Jiejun Tan", "Yutao Zhu", "Tat-Seng Chua", "Ji-Rong Wen", "Zhicheng Dou"
   ].freeze
   OCTOBER_NEWS = [
-    "\u{1F3C6} Selected for the CAST Young Talent Development Program for Doctoral Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
+    "\u{1F3C6} Selected for the CAST Young Talent Development Program for PhD Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
     "\u{1F680} Released Agent-Reflex: teaching agents to reflect and recover from tool failures and user corrections. [Code]"
   ].freeze
   TPAMI_NOTE = "JCR Q1, IF=20.4"
