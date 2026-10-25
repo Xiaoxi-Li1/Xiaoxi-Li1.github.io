@@ -9,7 +9,7 @@ require "nokogiri"
 
 class PublicationsAudit
   ROOT = File.expand_path("..", __dir__)
-  GROUP_COUNTS = { "agents" => 14, "retrieval" => 7, "reward-ml" => 5 }.freeze
+  GROUP_COUNTS = { "agents" => 15, "retrieval" => 7, "reward-ml" => 5 }.freeze
   GROUP_NAV_TITLES = { "agents" => "LLM/VLM Agents", "retrieval" => "RAG & LLMs", "reward-ml" => "Reward & ML" }.freeze
   TOTAL = GROUP_COUNTS.values.sum
   SELF_NAME = "Xiaoxi Li"
@@ -49,6 +49,15 @@ class PublicationsAudit
   }.freeze
   TPAMI_TITLE = "Deep Time-Series Forecasting in 10 Years: A Survey"
   SEED_TITLE = "Seed2.1 Model Card: Agentic Intelligence for Productivity"
+  AGENT_REFLEX_TITLE = "Agent-Reflex: Teaching Language Agents to Act Reflectively"
+  AGENT_REFLEX_AUTHORS = [
+    "Guanting Dong", "Xinyu Yang", "Jiajie Jin", "Yuyang Hu", "Xiaoshuai Song", "Yifei Chen",
+    "Xiaoxi Li", "Jiejun Tan", "Yutao Zhu", "Tat-Seng Chua", "Ji-Rong Wen", "Zhicheng Dou"
+  ].freeze
+  OCTOBER_NEWS = [
+    "\u{1F680} Released Agent-Reflex: teaching agents to reflect and recover from tool failures and user corrections. [Code]",
+    "\u{1F3C6} Selected for the 2026 CAST Young Talent Development Program for Doctoral Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u79d1\u6280\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879)."
+  ].freeze
   TPAMI_NOTE = "JCR Q1, IF=20.4"
   APPROVED_THRESHOLDS = { "stars_over" => 50, "citations_over" => 20 }.freeze
   APPROVED_EMPHASIS_MINIMUMS = { "stars_emphasis_min" => 1000, "citations_emphasis_min" => 100 }.freeze
@@ -268,7 +277,8 @@ class PublicationsAudit
     check(grouped.uniq.length == grouped.length, "A paper is listed in more than one group or repeated within a group")
     check_adjacent("agents", "agent-world", "hypothesis-tree")
     check_adjacent("agents", "hypothesis-tree", "long-horizon-survey")
-    check_adjacent("agents", "long-horizon-survey", "verigraph")
+    check_adjacent("agents", "long-horizon-survey", "agent-reflex")
+    check_adjacent("agents", "agent-reflex", "verigraph")
     check_adjacent("agents", "verigraph", "aepo")
     check_adjacent("agents", "aepo", "tool-star")
     check_adjacent("retrieval", "retrollm", "corpuslm")
@@ -300,6 +310,16 @@ class PublicationsAudit
       check(@by_id.dig(id, "display_authors") == expected, "#{id}: display_authors must exactly equal #{expected.inspect}")
     end
     check(@by_id.dig("seed2-1", "title") == SEED_TITLE, "seed2-1: retain the approved model-card title #{SEED_TITLE.inspect}")
+    reflex = @by_id["agent-reflex"] || {}
+    check(reflex.values_at("title", "year", "publication_url", "pdf_url", "code_url") ==
+      [AGENT_REFLEX_TITLE, 2026, "https://arxiv.org/abs/2610.17953", "https://arxiv.org/pdf/2610.17953v1", "https://github.com/RUC-NLPIR/Agent-Reflex"],
+      "agent-reflex: preserve the verified paper identity and official source links")
+    check(reflex["authors"] == AGENT_REFLEX_AUTHORS, "agent-reflex: retain all twelve authors in the paper's order")
+    check(reflex["venue"] == "Preprint, Under Review" && reflex["featured"] == false, "agent-reflex: use the existing plain preprint presentation")
+    check(reflex.values_at("figure_label", "figure_page", "figure_crop_pdf_points", "source_pdf_sha256") ==
+      ["Figure 3", 6, [70, 62, 542, 258], "4fff88210c593ddea9af668aed934e5dc1792f92d8441477e774192a7f6de16c"],
+      "agent-reflex: retain the complete ORPO figure from PDF v1 page six")
+    check(reflex["scholar_id"] == "XDljV4YAAAAJ:B3FOqHPlNUQC", "agent-reflex: retain the verified Scholar ID for automatic citation updates")
     tpami = @by_id["time-series-survey"] || {}
     check(tpami["title"] == TPAMI_TITLE, "time-series-survey: keep the approved TPAMI title #{TPAMI_TITLE.inspect}")
     check(tpami["venue"] == "IEEE TPAMI 2026", "time-series-survey: venue must be IEEE TPAMI 2026")
@@ -687,9 +707,13 @@ class PublicationsAudit
     region = regions.first
     check(region["role"] == "region" && region["aria-labelledby"] == "-news" && region["tabindex"] == "0", "News scrolling region must be named and keyboard focusable")
     items = region.css("ul > li.news-item")
-    dates = %w[2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2025-02 2024-03 2023-12]
-    check(items.length == dates.length, "News must retain all twelve existing entries")
+    dates = %w[2026-10 2026-10 2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2025-02 2024-03 2023-12]
+    check(items.length == dates.length, "News must include the two October updates and retain all twelve existing entries")
     check(items.map { |item| item.at_css("time")&.[]("datetime") } == dates, "News dates and ordering must remain unchanged")
+    check(items.first(2).map { |item| text(item.at_css(".news-item__text")) } == OCTOBER_NEWS, "News must begin with the Agent-Reflex release and CAST selection in October 2026")
+    check(items.first && items.first.css("a[href]").map { |link| [text(link), link["href"]] } ==
+      [["Agent-Reflex", "https://arxiv.org/abs/2610.17953"], ["[Code]", "https://github.com/RUC-NLPIR/Agent-Reflex"]],
+      "Agent-Reflex News must link to the requested paper and official code")
     items.each do |item|
       time = item.at_css("time[datetime]")
       check(time && text(time) == time["datetime"].tr("-", "."), "News date labels must match their machine-readable dates")

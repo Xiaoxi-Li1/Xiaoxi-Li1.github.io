@@ -11,6 +11,7 @@
     - agent-world
     - hypothesis-tree
     - long-horizon-survey
+    - agent-reflex
     - verigraph
     - aepo
     - tool-star

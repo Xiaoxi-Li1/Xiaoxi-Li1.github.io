@@ -49,6 +49,8 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 <div class="news-scroll" role="region" aria-labelledby="-news" tabindex="0" markdown="1">
 
+- {:.news-item} <time datetime="2026-10">2026.10</time> <span class="news-item__text" markdown="span">🚀 Released [Agent-Reflex](https://arxiv.org/abs/2610.17953): teaching agents to reflect and recover from tool failures and user corrections. [[Code]](https://github.com/RUC-NLPIR/Agent-Reflex)</span>
+- {:.news-item} <time datetime="2026-10">2026.10</time> <span class="news-item__text" markdown="span">🏆 Selected for the **2026 CAST Young Talent Development Program for Doctoral Students** (中国科协青年科技人才培育工程博士生专项).</span>
 - {:.news-item} <time datetime="2026-07">2026.07</time> <span class="news-item__text" markdown="span">🏆 Selected for the **CIE-Tencent PhD Research Incentive Program** (中国电子学会-腾讯博士生科研激励计划).</span>
 - {:.news-item} <time datetime="2026-06">2026.06</time> <span class="news-item__text" markdown="span">🏆 Selected as a **BAAI InnoVibe 2026 Most Notable Academic Rising Star** (青源InnoVibe-2026最受瞩目学术新星), and gave a talk on "Towards Real-World AI Agents" at the **BAAI Conference**. [[Link]](https://hub.baai.ac.cn/view/55541)</span>
 - {:.news-item} <time datetime="2026-04">2026.04</time> <span class="news-item__text" markdown="span">🚀 Released [Agent-World](https://arxiv.org/pdf/2604.18292), scaling real-world environment synthesis for evolving general agent intelligence. [[Demo]](https://agent-tars-world.github.io/-/)</span>
