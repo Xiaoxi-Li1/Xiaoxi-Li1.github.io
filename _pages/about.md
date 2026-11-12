@@ -49,7 +49,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 <div class="news-scroll" role="region" aria-labelledby="-news" tabindex="0" markdown="1">
 
-- {:.news-item} <time datetime="2026-11">2026.11</time> <span class="news-item__text" markdown="span">🏆 Awarded the **Baidu Scholarship** (百度奖学金，全球10人，20w/人).</span>
+- {:.news-item} <time datetime="2026-11">2026.11</time> <span class="news-item__text" markdown="span">🏆 Honored to be awarded the **Baidu Scholarship** (百度奖学金, 全球10人).</span>
 - {:.news-item} <time datetime="2026-10">2026.10</time> <span class="news-item__text" markdown="span">🏆 Selected for the **CAST Young Talent Development Program for PhD Students** (中国科协青年人才培育工程博士生专项).</span>
 - {:.news-item} <time datetime="2026-10">2026.10</time> <span class="news-item__text" markdown="span">🚀 Released [Agent-Reflex](https://arxiv.org/abs/2610.17953): teaching agents to reflect and recover from tool failures and user corrections. [[Code]](https://github.com/RUC-NLPIR/Agent-Reflex)</span>
 - {:.news-item} <time datetime="2026-07">2026.07</time> <span class="news-item__text" markdown="span">🏆 Selected for the **CIE-Tencent PhD Research Incentive Program** (中国电子学会-腾讯博士生科研激励计划).</span>
@@ -131,8 +131,8 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 # Selected Awards
 {: .homepage-section-title}
 
-- 2026: **Baidu Scholarship** (百度奖学金，全球10人，20w/人).
-- 2026: **CIE-Tencent Hunyuan PhD Research Incentive Program** (中国电子学会-腾讯混元博士生科研激励计划，10w/人).
+- 2026: **Baidu Scholarship** (百度奖学金，全球10人).
+- 2026: **CIE-Tencent Hunyuan PhD Research Incentive Program** (中国电子学会-腾讯混元博士生科研激励计划).
 - 2026: **BAAI InnoVibe Most Notable Academic Rising Star** (青源InnoVibe最受瞩目学术新星，全球25人).
 - 2026: **Young Talent Development Program for PhD Students, CAST** (中国科协青年人才培育工程博士生专项).
 - 2026: **National Scholarship for PhD Students**, Renmin University of China (中国人民大学博士生国家奖学金; Top 1%).

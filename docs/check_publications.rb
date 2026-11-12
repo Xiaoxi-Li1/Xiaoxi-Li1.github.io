@@ -18,8 +18,8 @@ class PublicationsAudit
                         "I previously interned at Xiaohongshu Inc (the first RedStar program). " \
                         "I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc."
   SELECTED_AWARDS = [
-    "2026: Baidu Scholarship (\u767e\u5ea6\u5956\u5b66\u91d1\uff0c\u5168\u740310\u4eba\uff0c20w/\u4eba).",
-    "2026: CIE-Tencent Hunyuan PhD Research Incentive Program (\u4e2d\u56fd\u7535\u5b50\u5b66\u4f1a-\u817e\u8baf\u6df7\u5143\u535a\u58eb\u751f\u79d1\u7814\u6fc0\u52b1\u8ba1\u5212\uff0c10w/\u4eba).",
+    "2026: Baidu Scholarship (\u767e\u5ea6\u5956\u5b66\u91d1\uff0c\u5168\u740310\u4eba).",
+    "2026: CIE-Tencent Hunyuan PhD Research Incentive Program (\u4e2d\u56fd\u7535\u5b50\u5b66\u4f1a-\u817e\u8baf\u6df7\u5143\u535a\u58eb\u751f\u79d1\u7814\u6fc0\u52b1\u8ba1\u5212).",
     "2026: BAAI InnoVibe Most Notable Academic Rising Star (\u9752\u6e90InnoVibe\u6700\u53d7\u77a9\u76ee\u5b66\u672f\u65b0\u661f\uff0c\u5168\u740325\u4eba).",
     "2026: Young Talent Development Program for PhD Students, CAST (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
     "2026: National Scholarship for PhD Students, Renmin University of China (\u4e2d\u56fd\u4eba\u6c11\u5927\u5b66\u535a\u58eb\u751f\u56fd\u5bb6\u5956\u5b66\u91d1; Top 1%)."
@@ -55,7 +55,7 @@ class PublicationsAudit
     "Guanting Dong", "Xinyu Yang", "Jiajie Jin", "Yuyang Hu", "Xiaoshuai Song", "Yifei Chen",
     "Xiaoxi Li", "Jiejun Tan", "Yutao Zhu", "Tat-Seng Chua", "Ji-Rong Wen", "Zhicheng Dou"
   ].freeze
-  BAIDU_SCHOLARSHIP_NEWS = "\u{1F3C6} Awarded the Baidu Scholarship (\u767e\u5ea6\u5956\u5b66\u91d1\uff0c\u5168\u740310\u4eba\uff0c20w/\u4eba)."
+  BAIDU_SCHOLARSHIP_NEWS = "\u{1F3C6} Honored to be awarded the Baidu Scholarship (\u767e\u5ea6\u5956\u5b66\u91d1, \u5168\u740310\u4eba)."
   OCTOBER_NEWS = [
     "\u{1F3C6} Selected for the CAST Young Talent Development Program for PhD Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
     "\u{1F680} Released Agent-Reflex: teaching agents to reflect and recover from tool failures and user corrections. [Code]"
@@ -712,7 +712,7 @@ class PublicationsAudit
     dates = %w[2026-11 2026-10 2026-10 2026-07 2026-06 2026-04 2026-03 2026-02 2025-09 2025-08 2025-06 2025-05 2025-02 2024-03 2023-12]
     check(items.length == dates.length, "News must include the November Baidu Scholarship update and retain all fourteen existing entries")
     check(items.map { |item| item.at_css("time")&.[]("datetime") } == dates, "News must place November 2026 first and retain the older dates and ordering")
-    check(items.first && text(items.first.at_css(".news-item__text")) == BAIDU_SCHOLARSHIP_NEWS, "News must begin with the Baidu Scholarship award, 10 recipients worldwide, and RMB 200,000 per recipient")
+    check(items.first && text(items.first.at_css(".news-item__text")) == BAIDU_SCHOLARSHIP_NEWS, "News must begin with the Baidu Scholarship award and 10 recipients worldwide, without a cash amount")
     check(items.drop(1).first(2).map { |item| text(item.at_css(".news-item__text")) } == OCTOBER_NEWS, "The November News must be followed by the CAST selection and Agent-Reflex release in October 2026")
     check(items[2] && items[2].css("a[href]").map { |link| [text(link), link["href"]] } ==
       [["Agent-Reflex", "https://arxiv.org/abs/2610.17953"], ["[Code]", "https://github.com/RUC-NLPIR/Agent-Reflex"]],
