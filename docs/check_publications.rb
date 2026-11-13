@@ -649,8 +649,8 @@ class PublicationsAudit
   def check_section_headings
     headings = @document.css(".page__content > h1, .publications__intro > h1")
     expected = {
-      "about-me" => "About me", "-news" => "News", "-educations" => "Educations",
-      "-experiences" => "Research Experiences", "publications-heading" => "Selected Work",
+      "about-me" => "About me", "-news" => "News", "-experiences" => "Research Experiences",
+      "-educations" => "Educations", "publications-heading" => "Selected Work",
       "selected-awards" => "Selected Awards", "-invited-talks" => "Invited Talks",
       "-academic-services" => "Academic Services"
     }

@@ -68,29 +68,6 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 </div>
 
 
-# Educations
-{: id="-educations" .homepage-section-title}
-
-<ul class="profile-history">
-  <li class="profile-history__item">
-    <span class="profile-history__date"><time datetime="2023-09">2023.09</time> <span class="profile-history__date-end">- Present</span></span>
-    <div class="profile-history__body">
-      <p class="profile-history__title"><img class="profile-history__logo" src="./images/ruc_logo.png" alt="" width="18" height="18"> Renmin University of China</p>
-      <p>Gaoling School of Artificial Intelligence</p>
-      <p class="profile-history__note">Ph.D. student at the <a href="https://ruc-nlpir.github.io/" target="_blank" rel="noopener noreferrer">NLPIR Lab</a>, mentored by Prof. <a href="https://playbigdata.ruc.edu.cn/dou/" target="_blank" rel="noopener noreferrer">Zhicheng Dou</a>.</p>
-    </div>
-  </li>
-  <li class="profile-history__item">
-    <span class="profile-history__date"><time datetime="2019-09">2019.09</time> <span class="profile-history__date-end">- <time datetime="2023-06">2023.06</time></span></span>
-    <div class="profile-history__body">
-      <p class="profile-history__title"><img class="profile-history__logo" src="./images/nku_logo.png" alt="" width="18" height="18"> Nankai University</p>
-      <p>College of Artificial Intelligence</p>
-      <p class="profile-history__note">B.Eng. in Intelligence Science and Technology (Elite Class).</p>
-    </div>
-  </li>
-</ul>
-
-
 # Research Experiences
 {: id="-experiences" .homepage-section-title}
 
@@ -114,6 +91,29 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 </ul>
 <!-- - 2025.06 - Present, <img src="./images/xiaohongshu.png" style="width: 1.8em; position: relative; top: -0.06em;"> <span style="color:#ff2442;">**REDstar**</span> Research Intern, Xiaohongshu Inc. <br> <span style="font-size: 0.93em; margin-left: 1.4em; display: inline-block; margin-top: 0.3em;">- Research Direction: Agentic AI, LLM Reasoning, Deep Research</span> -->
 <!-- <span style="color:#ff2442;">**REDstar**</span> -->
+
+
+# Educations
+{: id="-educations" .homepage-section-title}
+
+<ul class="profile-history">
+  <li class="profile-history__item">
+    <span class="profile-history__date"><time datetime="2023-09">2023.09</time> <span class="profile-history__date-end">- Present</span></span>
+    <div class="profile-history__body">
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/ruc_logo.png" alt="" width="18" height="18"> Renmin University of China</p>
+      <p>Gaoling School of Artificial Intelligence</p>
+      <p class="profile-history__note">Ph.D. student at the <a href="https://ruc-nlpir.github.io/" target="_blank" rel="noopener noreferrer">NLPIR Lab</a>, mentored by Prof. <a href="https://playbigdata.ruc.edu.cn/dou/" target="_blank" rel="noopener noreferrer">Zhicheng Dou</a>.</p>
+    </div>
+  </li>
+  <li class="profile-history__item">
+    <span class="profile-history__date"><time datetime="2019-09">2019.09</time> <span class="profile-history__date-end">- <time datetime="2023-06">2023.06</time></span></span>
+    <div class="profile-history__body">
+      <p class="profile-history__title"><img class="profile-history__logo" src="./images/nku_logo.png" alt="" width="18" height="18"> Nankai University</p>
+      <p>College of Artificial Intelligence</p>
+      <p class="profile-history__note">B.Eng. in Intelligence Science and Technology (Elite Class).</p>
+    </div>
+  </li>
+</ul>
 
 
 {% include publications.html %}
