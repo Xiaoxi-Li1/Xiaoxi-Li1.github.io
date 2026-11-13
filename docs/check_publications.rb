@@ -55,7 +55,7 @@ class PublicationsAudit
     "Guanting Dong", "Xinyu Yang", "Jiajie Jin", "Yuyang Hu", "Xiaoshuai Song", "Yifei Chen",
     "Xiaoxi Li", "Jiejun Tan", "Yutao Zhu", "Tat-Seng Chua", "Ji-Rong Wen", "Zhicheng Dou"
   ].freeze
-  BAIDU_SCHOLARSHIP_NEWS = "\u{1F3C6} Honored to be awarded the Baidu Scholarship (\u767e\u5ea6\u5956\u5b66\u91d1, \u5168\u740310\u4eba)."
+  BAIDU_SCHOLARSHIP_NEWS = "\u{1F3C6} Honored to be awarded the 2026 Baidu Scholarship (\u767e\u5ea6\u5956\u5b66\u91d1, \u5168\u740310\u4eba)."
   OCTOBER_NEWS = [
     "\u{1F3C6} Selected for the CAST Young Talent Development Program for PhD Students (\u4e2d\u56fd\u79d1\u534f\u9752\u5e74\u4eba\u624d\u57f9\u80b2\u5de5\u7a0b\u535a\u58eb\u751f\u4e13\u9879).",
     "\u{1F680} Released Agent-Reflex: teaching agents to reflect and recover from tool failures and user corrections. [Code]"
