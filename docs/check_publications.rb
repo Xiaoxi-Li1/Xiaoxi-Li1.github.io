@@ -111,11 +111,12 @@ class PublicationsAudit
   SEED_BANNER = {
     "figure_source_type" => "project-banner",
     "figure_source_url" => "https://seed.bytedance.com/en/seed2_1",
-    "figure_label" => "Project banner",
-    "image_width" => 600, "image_height" => 240,
-    "image_full_width" => 1409, "image_full_height" => 564,
-    "image_version" => "d98af11ba52b",
-    "source_image_sha256" => "d98af11ba52b86d1274502f4d279a9e4ca4f9bda431837969ec2e54c6b3a370e"
+    "figure_label" => "Release cover",
+    "image_width" => 600, "image_height" => 375,
+    "image_full_width" => 900, "image_full_height" => 563,
+    "image_version" => "acd1a378bab0",
+    "source_image_url" => "https://joeying1019.github.io/images/research/seed-2-1-cover.webp",
+    "source_image_sha256" => "acd1a378bab026b518f070d60d3fd5fd6add5c2974602009b239b71c7ab8ce2a"
   }.freeze
   PROFILE_METRICS_SOURCE = "https://raw.githubusercontent.com/Xiaoxi-Li1/Xiaoxi-Li1.github.io/google-scholar-stats/gs_data.json"
   PROFILE_METRICS = {
@@ -939,7 +940,7 @@ class PublicationsAudit
       check(figure["data-figure-title"] == paper["title"], "#{id}: figure dialog title differs from data")
       if id == "seed2-1"
         expected_source = SEED_BANNER["figure_source_url"]
-        expected_caption = "Project banner \u00b7 Project page"
+        expected_caption = "Release cover \u00b7 Project page"
         expected_source_label = "View project page"
       else
         expected_source = "#{paper['pdf_url']}#page=#{paper['figure_page']}"
