@@ -17,7 +17,7 @@ class PublicationsAudit
   HOMEPAGE_TITLE = "Xiaoxi Li (#{SELF_NAME_ZH}) | Homepage | AI Agents Researcher"
   DBLP_PROFILE = "https://dblp.org/pid/135/5865-5.html"
   HIGHLIGHT_ONLY_IDS = %w[genir-survey retrollm corpuslm unigen].freeze
-  ABOUT_IDENTITY_COPY = "I am Xiaoxi Li (#{SELF_NAME_ZH}), a 4th-year PhD student at the Gaoling School of Artificial Intelligence, Renmin University of China, " \
+  ABOUT_IDENTITY_COPY = "I am Xiaoxi Li, a 4th-year PhD student at the Gaoling School of Artificial Intelligence, Renmin University of China, " \
                         "mentored by Prof. Zhicheng Dou. I earned my bachelor's degree (2019-2023) at Nankai University."
   ABOUT_RESEARCH_COPY = "I'm currently a research intern at ByteDance Seed, focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs. " \
                         "I previously interned at Xiaohongshu Inc (the first RedStar program). " \
@@ -511,7 +511,7 @@ class PublicationsAudit
     check(@document.at_css("link[rel='canonical']")&.[]("href") == "https://xiaoxi-li1.github.io/", "Homepage must retain its canonical URL")
 
     introduction = @document.at_css("#about-en > p:first-child")
-    check(text(introduction).tr("\u2019", "'") == ABOUT_IDENTITY_COPY && statically_visible?(introduction), "English introduction must name Xiaoxi Li in both languages and retain education details")
+    check(text(introduction).tr("\u2019", "'") == ABOUT_IDENTITY_COPY && statically_visible?(introduction), "English introduction must use only Xiaoxi Li's English name and retain education details")
     header = @document.at_css(".about-heading")
     button = header&.at_css("button.about-language-toggle[data-about-language-toggle]")
     if check(button, "About me heading must have one adjacent native language-switch button")
@@ -552,7 +552,7 @@ class PublicationsAudit
       check(text(chinese).include?(value), "Chinese introduction must retain the approved fact: #{value}")
     end
     closing = chinese.xpath("./p").last
-    check(text(closing) == "\u6211\u5e0c\u671b\u6253\u9020\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53\uff0c\u4f7f\u5176\u53ef\u9760\u3001\u80fd\u529b\u5f3a\u5927\uff0c\u5e76\u80fd\u5728\u65e5\u5e38\u751f\u6d3b\u4e2d\u63d0\u4f9b\u5207\u5b9e\u5e2e\u52a9\u3002", "Chinese translation must include the complete real-world-agent closing sentence")
+    check(text(closing) == "\u6211\u5e0c\u671b\u6253\u9020\u53ef\u9760\u3001\u5b9e\u7528\u7684\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53\uff0c\u5e2e\u52a9\u4eba\u4eec\u89e3\u51b3\u65e5\u5e38\u751f\u6d3b\u4e2d\u7684\u5b9e\u9645\u95ee\u9898\u3002", "Chinese closing must use the natural, practical real-world-agent wording")
     check(text(closing.at_css("strong")) == "\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53", "Chinese closing must preserve the original bold emphasis")
   end
 

@@ -28,7 +28,7 @@ redirect_from:
 <div id="about-biography" lang="en" markdown="1">
 <div id="about-en" class="about-language-panel" lang="en" markdown="1">
 
-I am Xiaoxi Li (李晓熙), a 4th-year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
+I am Xiaoxi Li, a 4th-year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
 I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), focusing on **RL scaling for general agents**, particularly co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
 
@@ -44,18 +44,18 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 <div id="about-zh" class="about-language-panel" lang="zh-CN" hidden markdown="1">
 
-我是李晓熙（Xiaoxi Li），[中国人民大学](https://www.ruc.edu.cn/)[高瓴人工智能学院](https://ai.ruc.edu.cn/)四年级博士生，师从[窦志成](http://playbigdata.ruc.edu.cn/dou)教授。我于 2019 至 2023 年在[南开大学](https://www.nankai.edu.cn/)就读，并获得学士学位。
+我是李晓熙（Xiaoxi Li），现为[中国人民大学](https://www.ruc.edu.cn/)[高瓴人工智能学院](https://ai.ruc.edu.cn/)四年级博士生，导师是[窦志成](http://playbigdata.ruc.edu.cn/dou)教授。本科就读于[南开大学](https://www.nankai.edu.cn/)（2019-2023 年），获学士学位。
 
-我目前在[字节跳动 Seed](https://seed.bytedance.com/)担任研究实习生，专注于**通用智能体的强化学习规模化训练**，尤其是 co-work 智能体的强化学习与 Seed 智能体的大规模强化学习训练。我此前曾在[小红书](https://job.xiaohongshu.com/campus/redstar)实习（首届 RedStar 项目）。我已在 TPAMI、NeurIPS、ICML、ICLR、ACL、EMNLP、SIGIR 等顶级期刊和会议发表 30 余篇论文（其中 8 篇为第一作者论文）。
+我目前在[字节跳动 Seed](https://seed.bytedance.com/)担任研究实习生，聚焦**通用智能体的强化学习规模化训练**，主要从事 co-work 智能体的 RL 训练和 Seed 智能体的大规模 RL 训练。此前曾在[小红书](https://job.xiaohongshu.com/campus/redstar)实习，参与首届 RedStar 项目。我已在 TPAMI、NeurIPS、ICML、ICLR、ACL、EMNLP、SIGIR 等顶级期刊和会议发表 30 余篇论文，其中 8 篇为第一作者论文。
 {: data-profile-metrics-slot="true"}
 
 **研究方向：**
-- **全模态智能体：** 构建能够看、听、推理并采取行动的 AI 智能体（[OmniGAIA](https://arxiv.org/abs/2602.22897)、[Seed2.1](https://seed.bytedance.com/en/seed2_1)）；
-- **语言智能体：** 开发具备智能体能力的通用大语言模型（[DeepAgent](https://arxiv.org/abs/2510.21618)、[Agent-World](https://arxiv.org/abs/2604.18292)、[AEPO](https://arxiv.org/abs/2510.14545)、[Tool-Star](https://arxiv.org/abs/2505.16410)）；
-- **深度研究：** 通过网络信息搜寻增强长时程推理能力（[WebThinker](https://arxiv.org/abs/2504.21776)、[Search-o1](https://arxiv.org/abs/2501.05366)、[HiRA](https://arxiv.org/abs/2507.02652)）；
-- **检索增强大语言模型：** 借助知识检索提升大语言模型的能力（[RetroLLM](https://aclanthology.org/2025.acl-long.819/)、[CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778)、[UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)）。
+- **全模态智能体：** 打造能看、能听、会推理、能行动的 AI 智能体（[OmniGAIA](https://arxiv.org/abs/2602.22897)、[Seed2.1](https://seed.bytedance.com/en/seed2_1)）；
+- **语言智能体：** 研发具备通用智能体能力的大语言模型（[DeepAgent](https://arxiv.org/abs/2510.21618)、[Agent-World](https://arxiv.org/abs/2604.18292)、[AEPO](https://arxiv.org/abs/2510.14545)、[Tool-Star](https://arxiv.org/abs/2505.16410)）；
+- **深度研究：** 结合网络搜索与信息获取，提升长程推理能力（[WebThinker](https://arxiv.org/abs/2504.21776)、[Search-o1](https://arxiv.org/abs/2501.05366)、[HiRA](https://arxiv.org/abs/2507.02652)）；
+- **检索增强大语言模型：** 通过检索外部知识，增强大语言模型的能力（[RetroLLM](https://aclanthology.org/2025.acl-long.819/)、[CorpusLM](https://dl.acm.org/doi/abs/10.1145/3626772.3657778)、[UniGen](https://ojs.aaai.org/index.php/AAAI/article/download/28714/29380)）。
 
-我希望打造**真实世界 AI 智能体**，使其可靠、能力强大，并能在日常生活中提供切实帮助。
+我希望打造可靠、实用的**真实世界 AI 智能体**，帮助人们解决日常生活中的实际问题。
 
 </div>
 </div>
