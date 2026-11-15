@@ -1,7 +1,8 @@
 ﻿---
 permalink: /
 title: ""
-excerpt: "Research on real-world AI agents, retrieval-augmented language models, and reward modeling."
+seo_title: "Xiaoxi Li (李晓熙) | Homepage | AI Agents Researcher"
+excerpt: "Xiaoxi Li (李晓熙), a PhD student at Renmin University of China and AI agents researcher working on real-world agents, retrieval-augmented LLMs, and reward modeling."
 author_profile: true
 publication_layout: true
 redirect_from: 
@@ -21,9 +22,19 @@ redirect_from:
 # About me
 {: .homepage-section-title}
 
-I am currently a 4th year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
+I am Xiaoxi Li (李晓熙), a 4th-year PhD student at the [Gaoling School of Artificial Intelligence](https://ai.ruc.edu.cn/), [Renmin University of China](https://www.ruc.edu.cn/), mentored by Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou). I earned my bachelor's degree (2019-2023) at [Nankai University](https://www.nankai.edu.cn/).
 
 I'm currently a research intern at [ByteDance Seed](https://seed.bytedance.com/), focusing on **RL scaling for general agents**, particularly co-work agent RL and Seed agent RL big runs. I previously interned at [Xiaohongshu Inc](https://job.xiaohongshu.com/campus/redstar) (the first RedStar program). I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc. {% include profile-metrics.html %}
+
+<details class="profile-bio">
+  <summary class="profile-bio__toggle" lang="zh-CN" aria-controls="profile-bio-zh"><span class="profile-bio__label--closed">查看中文简介</span><span class="profile-bio__label--open">收起中文简介</span></summary>
+  <div class="profile-bio__body" id="profile-bio-zh" lang="zh-CN">
+    <p>我是李晓熙（Xiaoxi Li），<a href="https://www.ruc.edu.cn/">中国人民大学</a><a href="https://ai.ruc.edu.cn/">高瓴人工智能学院</a>四年级博士生，导师为<a href="https://playbigdata.ruc.edu.cn/dou/">窦志成</a>教授。本科于 2019 至 2023 年就读于<a href="https://www.nankai.edu.cn/">南开大学</a>。</p>
+    <p>我目前在字节跳动 <a href="https://seed.bytedance.com/">ByteDance Seed</a> 担任研究实习生，专注于<strong>通用智能体的强化学习规模化训练</strong>，尤其是 co-work agent RL 与 Seed agent RL 大规模训练。此前曾在<a href="https://job.xiaohongshu.com/campus/redstar">小红书</a>实习，入选首届 RedStar 项目。</p>
+    <p>已在 TPAMI、NeurIPS、ICML、ICLR、ACL、EMNLP、SIGIR 等期刊和会议发表 30 余篇论文，其中 8 篇为第一作者论文。</p>
+    <p>研究方向包括多模态智能体、通用语言智能体、深度研究（Deep Research）和检索增强大语言模型。我希望构建可靠、能力全面，并能在日常生活中提供切实帮助的真实世界 AI 智能体。</p>
+  </div>
+</details>
 
 **Research Interests：**
 - **Omni-Modal Agents:** Building AI agents that can see, listen, reason, and act ([OmniGAIA](https://arxiv.org/abs/2602.22897), [Seed2.1](https://seed.bytedance.com/en/seed2_1));

@@ -13,7 +13,12 @@ class PublicationsAudit
   GROUP_NAV_TITLES = { "agents" => "LLM/VLM Agents", "retrieval" => "RAG & LLMs", "reward-ml" => "Reward & ML" }.freeze
   TOTAL = GROUP_COUNTS.values.sum
   SELF_NAME = "Xiaoxi Li"
+  SELF_NAME_ZH = "\u674e\u6653\u7199"
+  HOMEPAGE_TITLE = "Xiaoxi Li (#{SELF_NAME_ZH}) | Homepage | AI Agents Researcher"
+  DBLP_PROFILE = "https://dblp.org/pid/135/5865-5.html"
   HIGHLIGHT_ONLY_IDS = %w[genir-survey retrollm corpuslm unigen].freeze
+  ABOUT_IDENTITY_COPY = "I am Xiaoxi Li (#{SELF_NAME_ZH}), a 4th-year PhD student at the Gaoling School of Artificial Intelligence, Renmin University of China, " \
+                        "mentored by Prof. Zhicheng Dou. I earned my bachelor's degree (2019-2023) at Nankai University."
   ABOUT_RESEARCH_COPY = "I'm currently a research intern at ByteDance Seed, focusing on RL scaling for general agents, particularly co-work agent RL and Seed agent RL big runs. " \
                         "I previously interned at Xiaohongshu Inc (the first RedStar program). " \
                         "I have published 30+ papers (8 as first author) in leading journals and conferences, including TPAMI, NeurIPS, ICML, ICLR, ACL, EMNLP, SIGIR, etc."
@@ -439,6 +444,7 @@ class PublicationsAudit
     all_ids = @document.css("[id]").map { |node| node["id"] }
     duplicates = all_ids.tally.select { |_, count| count > 1 }.keys
     check(duplicates.empty?, "Rendered HTML contains duplicate DOM IDs: #{duplicates.join(', ')}")
+    check_homepage_identity
     check_footer
     check_profile_metrics_html
     check_author_contacts
@@ -486,6 +492,46 @@ class PublicationsAudit
       check(dialog.at_css("button.figure-dialog__close[type='button'][aria-label]"), "Figure dialog must have a named native close button")
       check(dialog.at_css("a#figure-source"), "Figure dialog must retain the original PDF or project-page source link")
     end
+  end
+
+  def check_homepage_identity
+    titles = @document.css("head > title")
+    check(titles.length == 1 && text(titles.first) == HOMEPAGE_TITLE, "Homepage title must include both names, Homepage, and AI Agents Researcher exactly once")
+    ["meta[property='og:title']", "meta[name='twitter:title']"].each do |selector|
+      nodes = @document.css(selector)
+      check(nodes.length == 1 && nodes.first["content"] == HOMEPAGE_TITLE, "#{selector}: share the approved bilingual homepage title")
+    end
+    description = @document.at_css("meta[name='description']")&.[]("content")
+    check(nonempty?(description) && [SELF_NAME, SELF_NAME_ZH, "PhD student", "Renmin University of China", "AI agents researcher"].all? { |value| description.include?(value) }, "Homepage description must identify the researcher, institution, and field")
+    ["meta[name='description']", "meta[property='og:description']", "meta[name='twitter:description']"].each do |selector|
+      nodes = @document.css(selector)
+      check(nodes.length == 1 && nodes.first["content"] == description, "#{selector}: use one consistent identity-focused description")
+    end
+    check(@document.at_css("link[rel='canonical']")&.[]("href") == "https://xiaoxi-li1.github.io/", "Homepage must retain its canonical URL")
+
+    introduction = @document.at_css("#about-me + p")
+    check(text(introduction).tr("\u2019", "'") == ABOUT_IDENTITY_COPY && statically_visible?(introduction), "English introduction must name Xiaoxi Li in both languages and retain education details")
+    biographies = @document.css("details.profile-bio")
+    return unless check(biographies.length == 1, "Render one native Chinese biography disclosure")
+
+    biography = biographies.first
+    check(!biography.key?("open"), "Chinese biography must start collapsed")
+    check(biography.previous_element&.at_css(".profile-metrics"), "Chinese biography control must follow the second English paragraph without replacing it")
+    summary = biography.element_children.first
+    if check(summary&.name == "summary", "Chinese biography must start with a native keyboard-operable summary")
+      check(summary["lang"] == "zh-CN" && summary["aria-controls"] == "profile-bio-zh" && statically_visible?(summary), "Biography control must be visible and reference its Chinese content")
+      check(text(summary.at_css(".profile-bio__label--closed")) == "\u67e5\u770b\u4e2d\u6587\u7b80\u4ecb", "Collapsed biography control must offer to view the Chinese introduction")
+      check(text(summary.at_css(".profile-bio__label--open")) == "\u6536\u8d77\u4e2d\u6587\u7b80\u4ecb", "Expanded biography control must offer to collapse the Chinese introduction")
+    end
+    body = biography.at_css("#profile-bio-zh.profile-bio__body")
+    return unless check(body && body["lang"] == "zh-CN", "Chinese biography must have its own correctly marked language region")
+
+    check(body.xpath("./p").length == 4 && !statically_visible?(body), "Chinese biography must contain four initially collapsed paragraphs")
+    [SELF_NAME_ZH, "\u4e2d\u56fd\u4eba\u6c11\u5927\u5b66", "\u56db\u5e74\u7ea7\u535a\u58eb\u751f", "\u5357\u5f00\u5927\u5b66", "ByteDance Seed", "RedStar", "30", "8", "Deep Research"].each do |value|
+      check(text(body).include?(value), "Chinese biography must retain the approved fact: #{value}")
+    end
+    check(body.css("script, iframe, .profile-metrics, [data-profile-metric]").empty?, "Chinese biography must not add scripts, external embeds, or duplicate metric counters")
+    body.css("a[href]").each { |link| check(https?(link["href"]), "Chinese biography links must use HTTPS") }
   end
 
   def check_profile_metrics_data
@@ -676,12 +722,20 @@ class PublicationsAudit
     expected_url = "https://www.xiaohongshu.com/user/profile/5f266ae1000000000100a9cb"
     expected_wechat = "Xixi010111"
     author = @config["author"]
+    check(author["dblp"] == DBLP_PROFILE, "Sidebar DBLP must target the user-confirmed Xiaoxi Li 0005 author record")
+    check(@document.css("a[href='https://dblp.org/pid/135/5865.html']").empty?, "Do not link to the DBLP namesake directory")
     check(author["xiaohongshu"] == expected_url, "Sidebar Xiaohongshu URL must be the user's canonical profile without temporary query parameters")
     check(author["wechat"] == expected_wechat, "Sidebar WeChat ID must match the user's supplied ID")
     %w[.author__urls .author__urls_sm].each do |selector|
       container = @document.at_css(selector)
       next unless check(container, "Missing author contact container #{selector}")
 
+      dblp_links = container.css("a[href='#{DBLP_PROFILE}']")
+      if check(dblp_links.length == 1, "#{selector}: expected one link to Xiaoxi Li 0005 on DBLP")
+        link = dblp_links.first
+        check(text(link).include?("DBLP") || link["aria-label"] == "DBLP", "#{selector}: DBLP link needs an accessible name")
+        check(link["target"] == "_blank" && %w[noopener noreferrer].all? { |value| link["rel"].to_s.split.include?(value) }, "#{selector}: DBLP link needs safe new-tab attributes")
+      end
       links = container.css("a[data-xiaohongshu]")
       if check(links.length == 1, "#{selector}: expected one Xiaohongshu link")
         link = links.first
