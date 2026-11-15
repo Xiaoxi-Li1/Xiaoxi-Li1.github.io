@@ -549,9 +549,12 @@ class PublicationsAudit
       links = lambda { |node| node.css("a").map { |link| [text(link), link["href"]] } }
       check(links.call(item) == links.call(original), "Chinese research direction #{index + 1}: retain every paper label and URL in the original order")
     end
-    [SELF_NAME_ZH, "\u56db\u5e74\u7ea7\u535a\u58eb\u751f", "2019", "2023", "\u5b66\u58eb\u5b66\u4f4d", "co-work", "Seed", "RedStar", "30", "8", "TPAMI", "NeurIPS", "ICML", "ICLR", "ACL", "EMNLP", "SIGIR"].each do |value|
+    [SELF_NAME_ZH, "\u56db\u5e74\u7ea7\u535a\u58eb\u751f", "2019", "2023", "\u5b66\u58eb\u5b66\u4f4d", "Seed", "30", "8", "TPAMI", "NeurIPS", "ICML", "ICLR", "ACL", "EMNLP", "SIGIR"].each do |value|
       check(text(chinese).include?(value), "Chinese introduction must retain the approved fact: #{value}")
     end
+    chinese_role = text(chinese.xpath("./p")[1])
+    check(chinese_role.include?("\u529e\u516c\u751f\u4ea7\u529b\u667a\u80fd\u4f53\u7684 RL \u8bad\u7ec3\u548c Seed \u6a21\u578b\u7684 RL \u5408\u7248\u8bad\u7ec3"), "Chinese Seed role must use the approved office-productivity-agent and joint-RL-training wording")
+    check(chinese_role.include?("\u5165\u9009\u9996\u5c4a RedStar \u9879\u76ee"), "Chinese RedStar wording must state selection into the first program")
     closing = chinese.xpath("./p").last
     check(text(closing) == "\u6211\u5e0c\u671b\u6253\u9020\u53ef\u9760\u3001\u5b9e\u7528\u7684\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53\uff0c\u5e2e\u52a9\u4eba\u4eec\u89e3\u51b3\u65e5\u5e38\u751f\u6d3b\u4e2d\u7684\u5b9e\u9645\u95ee\u9898\u3002", "Chinese closing must use the natural, practical real-world-agent wording")
     check(text(closing.at_css("strong")) == "\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53", "Chinese closing must preserve the original bold emphasis")

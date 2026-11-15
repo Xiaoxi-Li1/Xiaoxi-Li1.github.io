@@ -46,7 +46,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 我是李晓熙（Xiaoxi Li），现为[中国人民大学](https://www.ruc.edu.cn/)[高瓴人工智能学院](https://ai.ruc.edu.cn/)四年级博士生，导师是[窦志成](http://playbigdata.ruc.edu.cn/dou)教授。本科就读于[南开大学](https://www.nankai.edu.cn/)（2019-2023 年），获学士学位。
 
-我目前在[字节跳动 Seed](https://seed.bytedance.com/)担任研究实习生，聚焦**通用智能体的强化学习规模化训练**，主要从事 co-work 智能体的 RL 训练和 Seed 智能体的大规模 RL 训练。此前曾在[小红书](https://job.xiaohongshu.com/campus/redstar)实习，参与首届 RedStar 项目。我已在 TPAMI、NeurIPS、ICML、ICLR、ACL、EMNLP、SIGIR 等顶级期刊和会议发表 30 余篇论文，其中 8 篇为第一作者论文。
+我目前在[字节跳动 Seed](https://seed.bytedance.com/)担任研究实习生，聚焦**通用智能体的强化学习规模化训练**，主要从事办公生产力智能体的 RL 训练和 Seed 模型的 RL 合版训练。此前曾在[小红书](https://job.xiaohongshu.com/campus/redstar)实习，入选首届 RedStar 项目。我已在 TPAMI、NeurIPS、ICML、ICLR、ACL、EMNLP、SIGIR 等顶级期刊和会议发表 30 余篇论文，其中 8 篇为第一作者论文。
 {: data-profile-metrics-slot="true"}
 
 **研究方向：**
