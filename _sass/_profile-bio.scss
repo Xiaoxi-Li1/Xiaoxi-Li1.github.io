@@ -1,85 +1,50 @@
-.page__content .profile-bio {
-  margin: 4px 0 20px;
-  color: #232830;
-  font-family: "Outfit", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+.page__content .about-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
 
-  .profile-bio__toggle {
-    width: fit-content;
-    max-width: 100%;
-    min-height: 36px;
-    padding: 6px 12px;
-    border: 1px solid #cbd4e1;
-    border-radius: 6px;
+  #about-me.homepage-section-title {
+    margin: 0;
+  }
+
+  .about-language-toggle {
+    appearance: none;
+    min-height: 24px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
     color: #2058ad;
-    background: #fff;
-    font-size: 14px;
-    font-weight: 500;
+    background: transparent;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
     line-height: 1.5;
+    letter-spacing: normal;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 3px;
+    white-space: nowrap;
     cursor: pointer;
-
-    &:hover {
-      border-color: currentColor;
-    }
 
     &:focus-visible {
       outline: 2px solid #2058ad;
       outline-offset: 3px;
     }
   }
+}
 
-  .profile-bio__label--open {
-    display: none;
+#about-biography {
+  font-family: "Trebuchet MS", Helvetica, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+
+  .profile-metrics > a {
+    font-family: $global-font-family;
   }
+}
 
-  &[open] {
-    .profile-bio__label--closed {
-      display: none;
-    }
-
-    .profile-bio__label--open {
-      display: inline;
-    }
-  }
-
-  .profile-bio__body {
-    margin-top: 12px;
-    padding: 14px 16px;
-    border: 1px solid #e6eaf0;
-    border-radius: 6px;
-    background: #fafbfc;
-    font-size: 15px;
-    line-height: 1.85;
-
-    p {
-      margin: 0 0 10px;
-      font-size: inherit;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    a {
-      color: #2058ad;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-
-      &:focus-visible {
-        outline: 2px solid #2058ad;
-        outline-offset: 3px;
-      }
-    }
-  }
-
-  @media (max-width: 640px) {
-    .profile-bio__toggle {
-      min-height: 44px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .profile-bio__body {
-      padding: 12px;
-    }
-  }
+.about-language-panel[hidden],
+.about-language-toggle[hidden] {
+  display: none !important;
 }

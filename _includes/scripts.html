@@ -3,6 +3,10 @@
 <script src="{{ '/assets/js/author-contact.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {% endif %}
 
+{% if page.about_language_switch %}
+<script src="{{ '/assets/js/about-language.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+{% endif %}
+
 {% include analytics.html %}
 {% if site.cloudflare_web_analytics.enabled == true %}
 {% assign cloudflare_web_analytics_token = site.cloudflare_web_analytics.token | default: '' | strip %}

@@ -127,6 +127,7 @@ class PublicationsAudit
     "/assets/css/main.css" => ["link[rel='stylesheet'][href]", "href", nil],
     "/assets/js/main.min.js" => ["script[src]", "src", false],
     "/assets/js/author-contact.js" => ["script[src]", "src", true],
+    "/assets/js/about-language.js" => ["script[src]", "src", true],
     "/assets/js/publication-metrics.js" => ["script[src]", "src", true],
     "/assets/js/publications.js" => ["script[src]", "src", true],
     "/assets/js/site-traffic.js" => ["script[src]", "src", true]
@@ -509,29 +510,50 @@ class PublicationsAudit
     end
     check(@document.at_css("link[rel='canonical']")&.[]("href") == "https://xiaoxi-li1.github.io/", "Homepage must retain its canonical URL")
 
-    introduction = @document.at_css("#about-me + p")
+    introduction = @document.at_css("#about-en > p:first-child")
     check(text(introduction).tr("\u2019", "'") == ABOUT_IDENTITY_COPY && statically_visible?(introduction), "English introduction must name Xiaoxi Li in both languages and retain education details")
-    biographies = @document.css("details.profile-bio")
-    return unless check(biographies.length == 1, "Render one native Chinese biography disclosure")
-
-    biography = biographies.first
-    check(!biography.key?("open"), "Chinese biography must start collapsed")
-    check(biography.previous_element&.at_css(".profile-metrics"), "Chinese biography control must follow the second English paragraph without replacing it")
-    summary = biography.element_children.first
-    if check(summary&.name == "summary", "Chinese biography must start with a native keyboard-operable summary")
-      check(summary["lang"] == "zh-CN" && summary["aria-controls"] == "profile-bio-zh" && statically_visible?(summary), "Biography control must be visible and reference its Chinese content")
-      check(text(summary.at_css(".profile-bio__label--closed")) == "\u67e5\u770b\u4e2d\u6587\u7b80\u4ecb", "Collapsed biography control must offer to view the Chinese introduction")
-      check(text(summary.at_css(".profile-bio__label--open")) == "\u6536\u8d77\u4e2d\u6587\u7b80\u4ecb", "Expanded biography control must offer to collapse the Chinese introduction")
+    header = @document.at_css(".about-heading")
+    button = header&.at_css("button.about-language-toggle[data-about-language-toggle]")
+    if check(button, "About me heading must have one adjacent native language-switch button")
+      check(header.element_children.map(&:name) == %w[h1 button] && header.at_css("h1")&.[]("id") == "about-me", "Language control must follow the About me title, not appear below the prose")
+      check(button["type"] == "button" && button["aria-controls"] == "about-biography" && button["lang"] == "zh-CN", "Language control must target the About me text and declare its label language")
+      check(text(button) == "\u4e2d\u6587\u7248" && button.key?("hidden"), "Language control must say Chinese Version and stay hidden until its handler is ready")
     end
-    body = biography.at_css("#profile-bio-zh.profile-bio__body")
-    return unless check(body && body["lang"] == "zh-CN", "Chinese biography must have its own correctly marked language region")
+    biography = @document.at_css("#about-biography")
+    english = biography&.at_css("#about-en.about-language-panel")
+    chinese = biography&.at_css("#about-zh.about-language-panel")
+    return unless check(english && chinese, "About me must contain complete English and Chinese language panels")
 
-    check(body.xpath("./p").length == 4 && !statically_visible?(body), "Chinese biography must contain four initially collapsed paragraphs")
-    [SELF_NAME_ZH, "\u4e2d\u56fd\u4eba\u6c11\u5927\u5b66", "\u56db\u5e74\u7ea7\u535a\u58eb\u751f", "\u5357\u5f00\u5927\u5b66", "ByteDance Seed", "RedStar", "30", "8", "Deep Research"].each do |value|
-      check(text(body).include?(value), "Chinese biography must retain the approved fact: #{value}")
+    check(biography.element_children.map { |node| node["id"] } == %w[about-en about-zh], "About me must keep exactly two language panels")
+    check(english["lang"] == "en" && chinese["lang"] == "zh-CN", "About me versions must declare their correct languages")
+    check(statically_visible?(english) && !statically_visible?(chinese), "English must be the visible default and no-JavaScript fallback")
+    [english, chinese].each do |panel|
+      check(panel.element_children.map(&:name) == %w[p p p ul p], "#{panel['id']}: keep the two introduction paragraphs, research heading, list, and closing sentence")
+      check(panel.css("ul > li").length == 4, "#{panel['id']}: preserve all four research directions")
     end
-    check(body.css("script, iframe, .profile-metrics, [data-profile-metric]").empty?, "Chinese biography must not add scripts, external embeds, or duplicate metric counters")
-    body.css("a[href]").each { |link| check(https?(link["href"]), "Chinese biography links must use HTTPS") }
+    check(english.at_css(".profile-metrics")&.parent == english.xpath("./p")[1], "English metrics must start in the second paragraph, which is their return destination")
+    slots = chinese.css("p[data-profile-metrics-slot]")
+    check(slots.length == 1 && slots.first == chinese.xpath("./p")[1], "Chinese shared-metrics destination must be the second paragraph")
+    check(chinese.css("script, iframe, .profile-metrics, [data-profile-metric]").empty?, "Chinese panel must not duplicate live metric elements or add external embeds")
+    check(@document.css("details.profile-bio, .profile-bio__body").empty?, "Do not render the superseded expandable biography card")
+    2.times do |index|
+      english_links = english.xpath("./p")[index].css("a:not([data-profile-metric])").map { |node| node["href"] }
+      chinese_links = chinese.xpath("./p")[index].css("a").map { |node| node["href"] }
+      check(english_links.sort == chinese_links.sort, "Chinese introduction paragraph #{index + 1}: preserve every original institution and mentor link")
+    end
+    labels = ["\u5168\u6a21\u6001\u667a\u80fd\u4f53\uff1a", "\u8bed\u8a00\u667a\u80fd\u4f53\uff1a", "\u6df1\u5ea6\u7814\u7a76\uff1a", "\u68c0\u7d22\u589e\u5f3a\u5927\u8bed\u8a00\u6a21\u578b\uff1a"]
+    chinese.css("ul > li").each_with_index do |item, index|
+      original = english.css("ul > li")[index]
+      check(text(item.at_css("strong")) == labels[index], "Chinese research direction #{index + 1}: retain its bold translated label")
+      links = lambda { |node| node.css("a").map { |link| [text(link), link["href"]] } }
+      check(links.call(item) == links.call(original), "Chinese research direction #{index + 1}: retain every paper label and URL in the original order")
+    end
+    [SELF_NAME_ZH, "\u56db\u5e74\u7ea7\u535a\u58eb\u751f", "2019", "2023", "\u5b66\u58eb\u5b66\u4f4d", "co-work", "Seed", "RedStar", "30", "8", "TPAMI", "NeurIPS", "ICML", "ICLR", "ACL", "EMNLP", "SIGIR"].each do |value|
+      check(text(chinese).include?(value), "Chinese introduction must retain the approved fact: #{value}")
+    end
+    closing = chinese.xpath("./p").last
+    check(text(closing) == "\u6211\u5e0c\u671b\u6253\u9020\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53\uff0c\u4f7f\u5176\u53ef\u9760\u3001\u80fd\u529b\u5f3a\u5927\uff0c\u5e76\u80fd\u5728\u65e5\u5e38\u751f\u6d3b\u4e2d\u63d0\u4f9b\u5207\u5b9e\u5e2e\u52a9\u3002", "Chinese translation must include the complete real-world-agent closing sentence")
+    check(text(closing.at_css("strong")) == "\u771f\u5b9e\u4e16\u754c AI \u667a\u80fd\u4f53", "Chinese closing must preserve the original bold emphasis")
   end
 
   def check_profile_metrics_data
@@ -568,11 +590,13 @@ class PublicationsAudit
     check(@document.css("[data-profile-metric]").length == PROFILE_METRICS.length, "Only two aggregate profile metric hooks may be present; omit first-author metrics")
     check(wrapper.css("img").empty?, "Profile metrics must be text links, not badge images")
     check(wrapper.css("[data-citation-metric], [data-star-metric], [data-citation-threshold], [data-star-threshold]").empty?, "Aggregate profile totals must not reuse per-paper threshold hooks")
+    check(wrapper.css("[data-profile-prose]").map { |node| node["data-profile-prose"] } == %w[lead and end], "Only the metric sentence's surrounding prose should be translated; preserve the live links")
     PROFILE_METRICS.each do |key, (label, display_key)|
       matches = links.select { |link| link["data-profile-metric"] == key }
       next unless check(matches.length == 1, "Profile #{key}: expected one text link")
 
       link = matches.first
+      check(link["lang"] == "en", "Profile #{key}: retain the English metric label in both languages")
       compact = key != display_key
       expected_href = compact ? "https://github.com/sunnynexus" : @config.dig("author", "googlescholar")
       check(https?(expected_href) && link["href"] == expected_href, "Profile #{key}: link must target its configured Scholar or GitHub profile")
@@ -598,7 +622,7 @@ class PublicationsAudit
   end
 
   def check_research_interests
-    items = @document.css(".page__content > ul > li").select { |item| text(item.at_css("strong")) == "Omni-Modal Agents:" }
+    items = @document.css("#about-en > ul > li").select { |item| text(item.at_css("strong")) == "Omni-Modal Agents:" }
     return unless check(items.length == 1, "Research Interests must retain one Omni-Modal Agents entry")
 
     item = items.first
@@ -693,7 +717,7 @@ class PublicationsAudit
   end
 
   def check_section_headings
-    headings = @document.css(".page__content > h1, .publications__intro > h1")
+    headings = @document.css(".page__content > h1, .about-heading > h1, .publications__intro > h1")
     expected = {
       "about-me" => "About me", "-news" => "News", "-experiences" => "Research Experiences",
       "-educations" => "Educations", "publications-heading" => "Selected Work",
