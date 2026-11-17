@@ -179,7 +179,7 @@ I aim to build **Real-World AI Agents** that are reliable, capable, and genuinel
 
 <!-- - AC/SPC: ACL Rolling Review -->
 - PC Member: ACL Rolling Review, NeurIPS, ICML, ICLR, SIGIR, AAAI (Silver Reviewer Award @ ICML'26)
-- Journal Reviewer: ACM Computing Surveys, TMLR, TOIS
+- Journal Reviewer: ACM Computing Surveys, TMLR, TKDE, TOIS
 
 
 <!-- {% include visitor-map.html %} -->
